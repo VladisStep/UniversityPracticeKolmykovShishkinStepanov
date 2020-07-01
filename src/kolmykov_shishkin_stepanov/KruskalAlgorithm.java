@@ -8,7 +8,7 @@ public class KruskalAlgorithm {
         nodes = new Node[num];
         for (int i = 0; i < num; i++) {
             nodes[i] = new Node(i);
-            Main.getGraphicsPanel().drawNode(i, num);
+            Window.getGraphicsPanel().drawNode(i, num);
         }
     }
 

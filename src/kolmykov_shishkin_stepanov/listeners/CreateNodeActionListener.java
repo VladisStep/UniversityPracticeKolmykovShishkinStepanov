@@ -1,6 +1,7 @@
 package kolmykov_shishkin_stepanov.listeners;
 
 import kolmykov_shishkin_stepanov.Main;
+import kolmykov_shishkin_stepanov.Window;
 
 import javax.swing.*;
 import java.awt.event.ActionEvent;
@@ -25,8 +26,8 @@ public class CreateNodeActionListener implements ActionListener {
             JOptionPane.showMessageDialog(Main.getMainFrame(), "Incorrect input (> 15)");
             return;
         }
-        Main.setNumberOfNodes(num);
+        Window.setNumberOfNodes(num);
 
-        Main.changeEnableOfCreateMenu();
+        Window.changeEnableOfCreateMenu();
     }
 }
