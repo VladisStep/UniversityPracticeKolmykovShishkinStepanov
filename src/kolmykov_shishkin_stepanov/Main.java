@@ -12,8 +12,11 @@ public class Main {
     private static JMenuBar menuBar;
     private static JMenu createMenu;
     private static JMenuItem createNodesMenuItem;
-    private static JMenuItem createVertexMenuItem;
+    private static JMenuItem createEdgeMenuItem;
     private static GraphicsPanel graphicsPanel;
+
+    private static JMenu createExampleMenu;
+    private static JMenuItem createFirstExampleItem;
 
     private static int nodesQuantity;
 
@@ -24,24 +27,38 @@ public class Main {
     }
 
     public static void initWindow() {
-        mainFrame = new JFrame("Genius app");
-        mainFrame.setSize(1600, 1000);
-        mainFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        mainFrame.setLocationRelativeTo(null);
-        mainFrame.setLayout(new GridBagLayout());
+        mainFrame = new JFrame("Genius app");                   // создание формы
+        mainFrame.setSize(1600, 1000);                  // выбор размера формы
+        mainFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);    // выбор действия при закрытии формы
+        mainFrame.setLocationRelativeTo(null);                       // открытие формы посередине экрана
+        mainFrame.setLayout(new GridBagLayout());                    // установка расположения вершин
 
-        menuBar = new JMenuBar();
+        menuBar = new JMenuBar();           // создание и установка меню-бара
         mainFrame.setJMenuBar(menuBar);
 
-        createMenu = new JMenu("Create graph");
-        menuBar.add(createMenu);
-        createNodesMenuItem = new JMenuItem("Create nodes");
-        createNodesMenuItem.addActionListener(new CreateNodeActionListener());
-        createMenu.add(createNodesMenuItem);
-        createVertexMenuItem = new JMenuItem("Create vertex");
-        createVertexMenuItem.addActionListener(new CreateVertexActionListener());
-        createMenu.add(createVertexMenuItem);
-        createVertexMenuItem.setEnabled(false);
+        createMenu = new JMenu("Create graph");                                 // создание пункта меню
+        menuBar.add(createMenu);                                                   // добавление пункта
+        createNodesMenuItem = new JMenuItem("Create nodes");                  // создание подпункта меню
+        createNodesMenuItem.addActionListener(new CreateNodeActionListener());     // добавление метода в пункт
+        createMenu.add(createNodesMenuItem);                                       // добавление подпкнкта
+        createEdgeMenuItem = new JMenuItem("Create edge");
+        createEdgeMenuItem.addActionListener(new CreateEdgeActionListener());
+        createMenu.add(createEdgeMenuItem);
+        createEdgeMenuItem.setEnabled(false);                                       // блокировка "Create edge" вначале
+
+
+
+        //----------------------------------------
+
+
+        createExampleMenu = new JMenu("Examples");                                 // создание пункта меню
+        menuBar.add(createExampleMenu);                                                   // добавление пункта
+        createFirstExampleItem = new JMenuItem("First");                  // создание подпункта меню
+        createFirstExampleItem.addActionListener(new CreateFirstExampleActionListener());     // добавление метода в пункт
+        createExampleMenu.add(createFirstExampleItem);                                       // добавление подпкнкта
+
+        //----------------------------------------
+
 
         graphicsPanel = new GraphicsPanel();
         mainFrame.add(graphicsPanel,
@@ -53,12 +70,12 @@ public class Main {
 
         algorithm = new KruskalAlgorithm();
 
-        mainFrame.setVisible(true);
+        mainFrame.setVisible(true);     // отображение формы
     }
 
-    public static void addVertex(int number1, int number2, int value) {
+    public static void addEdge(int number1, int number2, int value) {
 
-        graphicsPanel.drawVertex(number1, number2, value, nodesQuantity);
+        graphicsPanel.drawEdge(number1, number2, value, nodesQuantity);
     }
 
     public static void setNumberOfNodes(int num) {
@@ -66,9 +83,9 @@ public class Main {
         algorithm.setNumOfNodes(num);
     }
 
-    public static void changeEnableOfCreateMenu() {
+    public static void changeEnableOfCreateMenu() {   // "Create nodes" – нельзя, а "Create edge" – можно
         createNodesMenuItem.setEnabled(false);
-        createVertexMenuItem.setEnabled(true);
+        createEdgeMenuItem.setEnabled(true);
     }
 
     public static JFrame getMainFrame() {
