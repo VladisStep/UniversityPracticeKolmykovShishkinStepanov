@@ -9,17 +9,17 @@ import javax.swing.*;
 import java.awt.*;
 
 public class Window extends JFrame {
-    private static JMenuBar menuBar;
-    private static JMenu createMenu;
-    private static JMenuItem createNodesMenuItem;
-    private static JMenuItem createEdgeMenuItem;
-    private static GraphicsPanel graphicsPanel;
+    private JMenuBar menuBar;
+    private JMenu createMenu;
+    private JMenuItem createNodesMenuItem;
+    private JMenuItem createEdgeMenuItem;
+    private GraphicsPanel graphicsPanel;
 
-    private static JMenu createExampleMenu;
-    private static JMenuItem createFirstExampleItem;
+    private JMenu createExampleMenu;
+    private JMenuItem createFirstExampleItem;
 
-    private static int nodesQuantity;
-    private static KruskalAlgorithm algorithm;
+    private int nodesQuantity;
+    private KruskalAlgorithm algorithm;
 
     public Window() {
         super("Genius app");        // создание формы
@@ -34,10 +34,10 @@ public class Window extends JFrame {
         createMenu = new JMenu("Create graph");                                 // создание пункта меню
         menuBar.add(createMenu);                                                   // добавление пункта
         createNodesMenuItem = new JMenuItem("Create nodes");                  // создание подпункта меню
-        createNodesMenuItem.addActionListener(new CreateNodeActionListener());     // добавление метода в пункт
+        createNodesMenuItem.addActionListener(new CreateNodeActionListener(this));     // добавление метода в пункт
         createMenu.add(createNodesMenuItem);                                       // добавление подпукнкта
         createEdgeMenuItem = new JMenuItem("Create edge");
-        createEdgeMenuItem.addActionListener(new CreateEdgeActionListener());
+        createEdgeMenuItem.addActionListener(new CreateEdgeActionListener(this));
         createMenu.add(createEdgeMenuItem);
         createEdgeMenuItem.setEnabled(false);                                       // блокировка кнопки "Create edge"
 
@@ -46,7 +46,7 @@ public class Window extends JFrame {
         createExampleMenu = new JMenu("Examples");                                 // создание пункта меню
         menuBar.add(createExampleMenu);                                                   // добавление пункта
         createFirstExampleItem = new JMenuItem("First");                  // создание подпункта меню
-        createFirstExampleItem.addActionListener(new CreateFirstExampleActionListener());     // добавление метода в пункт
+        createFirstExampleItem.addActionListener(new CreateFirstExampleActionListener(this));     // добавление метода в пункт
         createExampleMenu.add(createFirstExampleItem);                                       // добавление подпункта
 
         //----------------------------------------
@@ -59,32 +59,32 @@ public class Window extends JFrame {
                         new Insets(2, 2, 2, 2),
                         0, 0));
 
-        algorithm = new KruskalAlgorithm();
+        algorithm = new KruskalAlgorithm(this);
 
         this.setVisible(true);     // отображение формы
     }
 
-    public static void addEdge(int number1, int number2, int value) {
+    public void addEdge(int number1, int number2, int value) {
         if (number1 >= nodesQuantity || number1 < 0 || number2 >= nodesQuantity || number2 < 0) {
-            JOptionPane.showMessageDialog(Main.getMainFrame(), "Incorrect input (wrong nodes numbers)");
+            JOptionPane.showMessageDialog(this, "Incorrect input (wrong nodes numbers)");
             return;
         }
 
         graphicsPanel.drawEdge(number1, number2, value, nodesQuantity);
     }
 
-    public static void setNumberOfNodes(int num) {
+    public void setNumberOfNodes(int num) {
         nodesQuantity = num;
         algorithm.setNumOfNodes(num);
     }
 
-    public static void changeEnableOfCreateMenu() {   // "Create nodes" – нельзя, "Create edge" – можно, "Examples" - нельзя
+    public void changeEnableOfCreateMenu() {   // "Create nodes" – нельзя, "Create edge" – можно, "Examples" - нельзя
         createNodesMenuItem.setEnabled(false);
         createEdgeMenuItem.setEnabled(true);
         createExampleMenu.setEnabled(false);
     }
 
-    public static GraphicsPanel getGraphicsPanel() {
+    public GraphicsPanel getGraphicsPanel() {
         return graphicsPanel;
     }
 }
