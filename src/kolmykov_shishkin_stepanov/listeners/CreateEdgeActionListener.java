@@ -8,6 +8,12 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class CreateEdgeActionListener implements ActionListener {
+    Window window;
+
+    public CreateEdgeActionListener(Window window) {
+        this.window = window;
+    }
+
     @Override
     public void actionPerformed(ActionEvent e) {
         String input = JOptionPane.showInputDialog("Enter node's numbers and value (with space)");
@@ -17,25 +23,25 @@ public class CreateEdgeActionListener implements ActionListener {
         try {
             String[] arr = input.split(" ");
             if (arr.length != 3) {
-                JOptionPane.showMessageDialog(Main.getMainFrame(), "Incorrect input (should be 3 args)");
+                JOptionPane.showMessageDialog(window, "Incorrect input (should be 3 args)");
                 return;
             }
             number1 = Integer.parseInt(arr[0]);
             number2 = Integer.parseInt(arr[1]);
             if(number1 == number2) {
-                JOptionPane.showMessageDialog(Main.getMainFrame(), "Incorrect input (same node's number)");
+                JOptionPane.showMessageDialog(window, "Incorrect input (same node's number)");
                 return;
             }
             value = Integer.parseInt(arr[2]);
             if(value <= 0) {
-                JOptionPane.showMessageDialog(Main.getMainFrame(), "Incorrect input (value <= 0)");
+                JOptionPane.showMessageDialog(window, "Incorrect input (value <= 0)");
                 return;
             }
         }catch (NumberFormatException ex) {
-            JOptionPane.showMessageDialog(Main.getMainFrame(), "Incorrect input (NaN)");
+            JOptionPane.showMessageDialog(window, "Incorrect input (NaN)");
             return;
         }
 
-        Window.addEdge(number1, number2, value);
+        window.addEdge(number1, number2, value);
     }
 }

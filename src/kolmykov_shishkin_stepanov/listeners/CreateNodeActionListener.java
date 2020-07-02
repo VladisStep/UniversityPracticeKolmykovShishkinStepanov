@@ -8,6 +8,11 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class CreateNodeActionListener implements ActionListener {
+    Window window;
+
+    public CreateNodeActionListener(Window window) {
+        this.window = window;
+    }
 
     @Override
     public void actionPerformed(ActionEvent e) {
@@ -16,18 +21,18 @@ public class CreateNodeActionListener implements ActionListener {
         try {
             num = Integer.parseInt(input);
         }catch (NumberFormatException ex) {
-            JOptionPane.showMessageDialog(Main.getMainFrame(), "Incorrect input");
+            JOptionPane.showMessageDialog(window, "Incorrect input");
             return;
         }
         if (num < 2) {
-            JOptionPane.showMessageDialog(Main.getMainFrame(), "Incorrect input (< 2)");
+            JOptionPane.showMessageDialog(window, "Incorrect input (< 2)");
             return;
         } else if (num > 15) {
-            JOptionPane.showMessageDialog(Main.getMainFrame(), "Incorrect input (> 15)");
+            JOptionPane.showMessageDialog(window, "Incorrect input (> 15)");
             return;
         }
-        Window.setNumberOfNodes(num);
+        window.setNumberOfNodes(num);
 
-        Window.changeEnableOfCreateMenu();
+        window.changeEnableOfCreateMenu();
     }
 }
