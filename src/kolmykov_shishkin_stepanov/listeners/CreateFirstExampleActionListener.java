@@ -8,24 +8,29 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class CreateFirstExampleActionListener implements ActionListener {
+    private Window window;
+
+    public CreateFirstExampleActionListener(Window window) {
+        this.window = window;
+    }
 
     @Override
     public void actionPerformed(ActionEvent e) {
 
-        Window.setNumberOfNodes(7);
-        Window.changeEnableOfCreateMenu();
+        window.setNumberOfNodes(7);
+        window.changeEnableOfCreateMenu();
 
-        Window.addEdge(0, 1, 7);
-        Window.addEdge(0, 3, 5);
-        Window.addEdge(1, 2, 8);
-        Window.addEdge(1, 3, 9);
-        Window.addEdge(1, 4, 7);
-        Window.addEdge(2, 4, 5);
-        Window.addEdge(3, 5, 6);
-        Window.addEdge(3, 4, 15);
-        Window.addEdge(4, 5, 8);
-        Window.addEdge(4, 6, 9);
-        Window.addEdge(5, 6, 11);
+        window.addEdge(0, 1, 7);
+        window.addEdge(0, 3, 5);
+        window.addEdge(1, 2, 8);
+        window.addEdge(1, 3, 9);
+        window.addEdge(1, 4, 7);
+        window.addEdge(2, 4, 5);
+        window.addEdge(3, 5, 6);
+        window.addEdge(3, 4, 15);
+        window.addEdge(4, 5, 8);
+        window.addEdge(4, 6, 9);
+        window.addEdge(5, 6, 11);
 
 
 
