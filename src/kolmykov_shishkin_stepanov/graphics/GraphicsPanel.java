@@ -2,7 +2,6 @@ package kolmykov_shishkin_stepanov.graphics;
 
 import javax.swing.*;
 import java.awt.*;
-import java.util.ArrayList;
 
 public class GraphicsPanel extends JPanel {
     private final double RADIUS = 300; // было 450, на 13-дюймовый экран не все вершины влезают

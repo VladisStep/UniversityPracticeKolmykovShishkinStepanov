@@ -5,8 +5,8 @@ import kolmykov_shishkin_stepanov.listeners.*;
 
 import javax.swing.*;
 import java.awt.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
+import java.awt.event.ComponentAdapter;
+import java.awt.event.ComponentEvent;
 
 public class Window extends JFrame {
     private JMenuBar menuBar;
@@ -35,7 +35,6 @@ public class Window extends JFrame {
         this.setSize(1600, 1000);                  // выбор размера формы
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);    // выбор действия при закрытии формы
         this.setLocationRelativeTo(null);                       // открытие формы посередине экрана
-        //this.setLayout(new GridBagLayout());
         this.setLayout(new GridBagLayout());
 
         menuBar = new JMenuBar();            // создание и установка меню-бара
@@ -66,12 +65,8 @@ public class Window extends JFrame {
         createThirdExampleItem.addActionListener(new CreateThirdExampleActionListener(this));
         createExampleMenu.add(createThirdExampleItem);
 
-        //----------------------------------------
         JPanel buttonsPanel = new JPanel();
-
-
         buttonsPanel.setLayout(new GridLayout(0,1));
-
         add(buttonsPanel,new GridBagConstraints(1, 0, 1, 1, 0.1, 0.4,
                 GridBagConstraints.CENTER,
                 GridBagConstraints.CENTER,
@@ -81,7 +76,6 @@ public class Window extends JFrame {
 
 
         stepButton = new JButton("Step");
-
         stepButton.setMaximumSize(new Dimension(20, 20));
         Font bigFontTR = new Font("Arial", Font.BOLD, 20);
         stepButton.setFont(bigFontTR);
@@ -103,10 +97,6 @@ public class Window extends JFrame {
         buttonsPanel.add(restartButton);
         restartButton.setVisible(false);
 
-
-        //----------------------------------------
-
-
         createAlgorithmMenu = new JMenu("Algorithm");
         menuBar.add(createAlgorithmMenu);
         createRunItem = new JMenuItem("Run");
@@ -121,10 +111,14 @@ public class Window extends JFrame {
                         new Insets(2, 2, 2, 2),
                         0, 0));
 
-        //add(graphicsPanel, BorderLayout.CENTER);
-
         algorithm = new KruskalAlgorithm(this);
 
+        addComponentListener(new ComponentAdapter() {
+            @Override
+            public void componentResized(ComponentEvent e) {
+                //TODO ОТРИСОВКА ГРАФА
+            }
+        });
 
         this.setVisible(true);     // отображение формы
     }
