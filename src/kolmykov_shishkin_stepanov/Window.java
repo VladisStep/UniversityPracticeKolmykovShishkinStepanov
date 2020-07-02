@@ -65,10 +65,7 @@ public class Window extends JFrame {
     }
 
     public void addEdge(int number1, int number2, int value) {
-        if (number1 >= nodesQuantity || number1 < 0 || number2 >= nodesQuantity || number2 < 0) {
-            JOptionPane.showMessageDialog(this, "Incorrect input (wrong nodes numbers)");
-            return;
-        }
+
 
         graphicsPanel.drawEdge(number1, number2, value, nodesQuantity);
     }
@@ -86,5 +83,9 @@ public class Window extends JFrame {
 
     public GraphicsPanel getGraphicsPanel() {
         return graphicsPanel;
+    }
+
+    public int getNodesQuantity() {
+        return nodesQuantity;
     }
 }
