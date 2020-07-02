@@ -1,15 +1,16 @@
 package kolmykov_shishkin_stepanov.listeners;
 
 import kolmykov_shishkin_stepanov.Main;
+import kolmykov_shishkin_stepanov.Window;
 
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-public class CreateVertexActionListener implements ActionListener {
+public class CreateEdgeActionListener implements ActionListener {
     @Override
     public void actionPerformed(ActionEvent e) {
-        String input = JOptionPane.showInputDialog("Inter node's numbers and value (with space)");
+        String input = JOptionPane.showInputDialog("Enter node's numbers and value (with space)");
         int number1;
         int number2;
         int value;
@@ -27,7 +28,7 @@ public class CreateVertexActionListener implements ActionListener {
             }
             value = Integer.parseInt(arr[2]);
             if(value <= 0) {
-                JOptionPane.showMessageDialog(Main.getMainFrame(), "Incorrect input (same node's number)");
+                JOptionPane.showMessageDialog(Main.getMainFrame(), "Incorrect input (value <= 0)");
                 return;
             }
         }catch (NumberFormatException ex) {
@@ -35,6 +36,6 @@ public class CreateVertexActionListener implements ActionListener {
             return;
         }
 
-        Main.addVertex(number1, number2, value);
+        Window.addEdge(number1, number2, value);
     }
 }

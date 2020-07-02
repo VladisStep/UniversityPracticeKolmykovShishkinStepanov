@@ -5,7 +5,7 @@ import java.awt.*;
 import java.util.ArrayList;
 
 public class GraphicsPanel extends JPanel {
-    private final double RADIUS = 425;
+    private final double RADIUS = 300; // было 450, на 13-дюймовый экран не все вершины влезают
     private final double H = 50;
     private final double W = 50;
     private final double X0 = 800;
@@ -21,7 +21,7 @@ public class GraphicsPanel extends JPanel {
         drawNumber(number, x, y, Color.WHITE);
     }
 
-    public void drawVertex(int number1, int number2, int value, int quantity) {
+    public void drawEdge(int number1, int number2, int value, int quantity) {
         double angle1 = Math.PI* 2/quantity * number1;
         double x1 = X0 + RADIUS * Math.cos(angle1) + 20;
         double y1 = Y0 + RADIUS * Math.sin(angle1) + 30;
@@ -40,6 +40,7 @@ public class GraphicsPanel extends JPanel {
     private void drawLine(double x1, double y1, double x2, double y2) {
         Graphics2D graphics2D = (Graphics2D) getGraphics();
         graphics2D.setColor(Color.BLACK);
+        graphics2D.setStroke(new BasicStroke(4));
         graphics2D.draw(new Line(x1, y1, x2, y2));
         graphics2D.dispose();
     }
