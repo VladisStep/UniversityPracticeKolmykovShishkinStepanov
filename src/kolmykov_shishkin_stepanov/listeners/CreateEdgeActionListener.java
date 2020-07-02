@@ -1,5 +1,6 @@
 package kolmykov_shishkin_stepanov.listeners;
 
+import kolmykov_shishkin_stepanov.AddEdgeWindow;
 import kolmykov_shishkin_stepanov.Main;
 import kolmykov_shishkin_stepanov.Window;
 
@@ -16,7 +17,7 @@ public class CreateEdgeActionListener implements ActionListener {
 
     @Override
     public void actionPerformed(ActionEvent e) {
-        String input = JOptionPane.showInputDialog("Enter node's numbers and value (with space)");
+        /*String input = JOptionPane.showInputDialog("Enter node's numbers and value (with space)");
         int number1;
         int number2;
         int value;
@@ -42,6 +43,8 @@ public class CreateEdgeActionListener implements ActionListener {
             return;
         }
 
-        window.addEdge(number1, number2, value);
+        window.addEdge(number1, number2, value);*/
+
+        new AddEdgeWindow(window).setVisible(true);
     }
 }

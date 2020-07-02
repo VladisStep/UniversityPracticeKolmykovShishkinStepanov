@@ -1,12 +1,12 @@
 package kolmykov_shishkin_stepanov;
 
 import kolmykov_shishkin_stepanov.graphics.GraphicsPanel;
-import kolmykov_shishkin_stepanov.listeners.CreateEdgeActionListener;
-import kolmykov_shishkin_stepanov.listeners.CreateFirstExampleActionListener;
-import kolmykov_shishkin_stepanov.listeners.CreateNodeActionListener;
+import kolmykov_shishkin_stepanov.listeners.*;
 
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
 public class Window extends JFrame {
     private JMenuBar menuBar;
@@ -17,18 +17,28 @@ public class Window extends JFrame {
 
     private JMenu createExampleMenu;
     private JMenuItem createFirstExampleItem;
+    private JMenuItem createSecondExampleItem;
+    private JMenuItem createThirdExampleItem;
+
+    private JMenu createAlgorithmMenu;                  // Algorithm
+    private JMenuItem createRunItem;                    // Algorithm -> Run
+
+    private JButton stepButton;
+    private JButton showResultButton;
+    private JButton restartButton;
 
     private int nodesQuantity;
     private KruskalAlgorithm algorithm;
 
     public Window() {
-        super("Genius app");        // создание формы
+        super("Genius app");                                // создание формы
         this.setSize(1600, 1000);                  // выбор размера формы
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);    // выбор действия при закрытии формы
         this.setLocationRelativeTo(null);                       // открытие формы посередине экрана
-        this.setLayout(new GridBagLayout());                    // установка расположения вершин
+        //this.setLayout(new GridBagLayout());
+        this.setLayout(new GridBagLayout());
 
-        menuBar = new JMenuBar();           // создание и установка меню-бара
+        menuBar = new JMenuBar();            // создание и установка меню-бара
         this.setJMenuBar(menuBar);
 
         createMenu = new JMenu("Create graph");                                 // создание пункта меню
@@ -41,15 +51,67 @@ public class Window extends JFrame {
         createMenu.add(createEdgeMenuItem);
         createEdgeMenuItem.setEnabled(false);                                       // блокировка кнопки "Create edge"
 
+        createExampleMenu = new JMenu("Examples");
+        menuBar.add(createExampleMenu);
+
+        createFirstExampleItem = new JMenuItem("First");                                        // first example
+        createFirstExampleItem.addActionListener(new CreateFirstExampleActionListener(this));
+        createExampleMenu.add(createFirstExampleItem);
+
+        createSecondExampleItem = new JMenuItem("Second");                                      // second example
+        createSecondExampleItem.addActionListener(new CreateSecondExampleActionListener(this));
+        createExampleMenu.add(createSecondExampleItem);
+
+        createThirdExampleItem = new JMenuItem("Third");                                        //  third example
+        createThirdExampleItem.addActionListener(new CreateThirdExampleActionListener(this));
+        createExampleMenu.add(createThirdExampleItem);
+
+        //----------------------------------------
+        JPanel buttonsPanel = new JPanel();
+
+
+        buttonsPanel.setLayout(new GridLayout(0,1));
+
+        add(buttonsPanel,new GridBagConstraints(1, 0, 1, 1, 0.1, 0.4,
+                GridBagConstraints.CENTER,
+                GridBagConstraints.CENTER,
+                new Insets(2, 2, 2, 2),
+                0, 0) );
+
+
+
+        stepButton = new JButton("Step");
+
+        stepButton.setMaximumSize(new Dimension(20, 20));
+        Font bigFontTR = new Font("Arial", Font.BOLD, 20);
+        stepButton.setFont(bigFontTR);
+        stepButton.addActionListener(new StepButtonActionListener(this));
+        buttonsPanel.add(stepButton);
+        stepButton.setVisible(false);
+
+        showResultButton = new JButton("Result");
+        showResultButton.setPreferredSize(new Dimension(120, 50));
+        showResultButton.setFont(bigFontTR);
+        showResultButton.addActionListener(new StepButtonActionListener(this));
+        buttonsPanel.add(showResultButton);
+        showResultButton.setVisible(false);
+
+        restartButton = new JButton("Restart");
+        restartButton.setPreferredSize(new Dimension(120, 50));
+        restartButton.setFont(bigFontTR);
+        restartButton.addActionListener(new StepButtonActionListener(this));
+        buttonsPanel.add(restartButton);
+        restartButton.setVisible(false);
+
+
         //----------------------------------------
 
-        createExampleMenu = new JMenu("Examples");                                 // создание пункта меню
-        menuBar.add(createExampleMenu);                                                   // добавление пункта
-        createFirstExampleItem = new JMenuItem("First");                  // создание подпункта меню
-        createFirstExampleItem.addActionListener(new CreateFirstExampleActionListener(this));     // добавление метода в пункт
-        createExampleMenu.add(createFirstExampleItem);                                       // добавление подпункта
 
-        //----------------------------------------
+        createAlgorithmMenu = new JMenu("Algorithm");
+        menuBar.add(createAlgorithmMenu);
+        createRunItem = new JMenuItem("Run");
+        createRunItem.addActionListener(new RunActionListener(this));
+        createAlgorithmMenu.add(createRunItem);
 
         graphicsPanel = new GraphicsPanel();
         this.add(graphicsPanel,
@@ -59,16 +121,16 @@ public class Window extends JFrame {
                         new Insets(2, 2, 2, 2),
                         0, 0));
 
+        //add(graphicsPanel, BorderLayout.CENTER);
+
         algorithm = new KruskalAlgorithm(this);
+
 
         this.setVisible(true);     // отображение формы
     }
 
     public void addEdge(int number1, int number2, int value) {
-        if (number1 >= nodesQuantity || number1 < 0 || number2 >= nodesQuantity || number2 < 0) {
-            JOptionPane.showMessageDialog(this, "Incorrect input (wrong nodes numbers)");
-            return;
-        }
+
 
         graphicsPanel.drawEdge(number1, number2, value, nodesQuantity);
     }
@@ -84,7 +146,17 @@ public class Window extends JFrame {
         createExampleMenu.setEnabled(false);
     }
 
+    public void changeEnableOfstepButton(){
+        stepButton.setVisible(true);
+        showResultButton.setVisible(true);
+        restartButton.setVisible(true);
+    }
+
     public GraphicsPanel getGraphicsPanel() {
         return graphicsPanel;
+    }
+
+    public int getNodesQuantity() {
+        return nodesQuantity;
     }
 }
