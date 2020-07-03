@@ -21,25 +21,9 @@
   <component name="ChangeListManager">
     <list default="true" id="ccbf1c18-5799-4103-9389-3cac2b35cc7d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PRACTICE/META-INF/PRACTICE.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PRACTICE/kolmykov_shishkin_stepanov/KruskalAlgorithm.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PRACTICE/kolmykov_shishkin_stepanov/KruskalAlgorithm.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PRACTICE/kolmykov_shishkin_stepanov/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PRACTICE/kolmykov_shishkin_stepanov/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PRACTICE/kolmykov_shishkin_stepanov/Node.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PRACTICE/kolmykov_shishkin_stepanov/Node.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PRACTICE/kolmykov_shishkin_stepanov/Window.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PRACTICE/kolmykov_shishkin_stepanov/Window.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PRACTICE/kolmykov_shishkin_stepanov/graphics/Circle.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PRACTICE/kolmykov_shishkin_stepanov/graphics/Circle.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PRACTICE/kolmykov_shishkin_stepanov/graphics/GraphicsPanel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PRACTICE/kolmykov_shishkin_stepanov/graphics/GraphicsPanel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PRACTICE/kolmykov_shishkin_stepanov/graphics/Line.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PRACTICE/kolmykov_shishkin_stepanov/graphics/Line.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PRACTICE/kolmykov_shishkin_stepanov/graphics/Point.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PRACTICE/kolmykov_shishkin_stepanov/graphics/Point.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PRACTICE/kolmykov_shishkin_stepanov/listeners/CreateEdgeActionListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PRACTICE/kolmykov_shishkin_stepanov/listeners/CreateEdgeActionListener.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PRACTICE/kolmykov_shishkin_stepanov/listeners/CreateFirstExampleActionListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PRACTICE/kolmykov_shishkin_stepanov/listeners/CreateFirstExampleActionListener.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PRACTICE/kolmykov_shishkin_stepanov/listeners/CreateNodeActionListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PRACTICE/kolmykov_shishkin_stepanov/listeners/CreateNodeActionListener.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PRACTICE/kolmykov_shishkin_stepanov/listeners/CreateSecondExampleActionListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PRACTICE/kolmykov_shishkin_stepanov/listeners/CreateSecondExampleActionListener.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PRACTICE/kolmykov_shishkin_stepanov/listeners/CreateThirdExampleActionListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PRACTICE/kolmykov_shishkin_stepanov/listeners/CreateThirdExampleActionListener.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PRACTICE/kolmykov_shishkin_stepanov/listeners/StepButtonActionListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PRACTICE/kolmykov_shishkin_stepanov/listeners/StepButtonActionListener.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/kolmykov_shishkin_stepanov/Window.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kolmykov_shishkin_stepanov/Window.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/kolmykov_shishkin_stepanov/graphics/GraphicsPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kolmykov_shishkin_stepanov/graphics/GraphicsPanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/kolmykov_shishkin_stepanov/listeners/CreateEdgeActionListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kolmykov_shishkin_stepanov/listeners/CreateEdgeActionListener.java" afterDir="false" />
     </list>
+    <ignored path="$PROJECT_DIR$/out/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -53,12 +37,12 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/kolmykov_shishkin_stepanov/Window.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="113" column="33" selection-start-line="113" selection-start-column="33" selection-end-line="113" selection-end-column="33" />
+            <state relative-caret-position="841">
+              <caret line="118" column="38" selection-start-line="118" selection-start-column="38" selection-end-line="118" selection-end-column="38" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#3884#3885#0" expanded="true" />
-                <element signature="e#3920#3921#0" expanded="true" />
+                <element signature="e#5220#5390#0" expanded="true" />
+                <element signature="e#5389#5390#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -67,7 +51,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/kolmykov_shishkin_stepanov/graphics/GraphicsPanel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
+            <state relative-caret-position="34">
               <caret line="3" column="18" selection-start-line="3" selection-start-column="18" selection-end-line="3" selection-end-column="18" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -79,14 +63,10 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/kolmykov_shishkin_stepanov/listeners/CreateEdgeActionListener.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+            <state relative-caret-position="204">
+              <caret line="20" selection-start-line="20" selection-end-line="20" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#363#364#0" expanded="true" />
-                <element signature="e#399#400#0" expanded="true" />
-                <element signature="e#512#513#0" expanded="true" />
-                <element signature="e#570#571#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -95,7 +75,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/kolmykov_shishkin_stepanov/AddEdgeWindow.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="918">
+            <state relative-caret-position="833">
               <caret line="54" column="72" selection-start-line="54" selection-start-column="72" selection-end-line="54" selection-end-column="72" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -126,6 +106,12 @@
       </list>
     </option>
   </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="952" />
+    <option name="y" value="-8" />
+    <option name="width" value="976" />
+    <option name="height" value="1056" />
+  </component>
   <component name="ProjectId" id="1e8Vaurd0rxkF9eN5JFoWrq3A9H" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -135,6 +121,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -146,6 +133,11 @@
               <item name="PRACTICE" type="b2602c69:ProjectViewProjectNode" />
               <item name="PRACTICE" type="462c0819:PsiDirectoryNode" />
               <item name="out" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PRACTICE" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PRACTICE" type="462c0819:PsiDirectoryNode" />
+              <item name="REPORTS" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="PRACTICE" type="b2602c69:ProjectViewProjectNode" />
@@ -176,7 +168,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
   </component>
@@ -188,6 +179,9 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/REPORTS/uml" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RunDashboard">
@@ -227,32 +221,39 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="43c3fb61-41d8-42c9-a7c7-774e4963a245" name="Default Changelist" comment="" />
+      <changelist id="ccbf1c18-5799-4103-9389-3cac2b35cc7d" name="Default Changelist" comment="" />
       <created>1593703273432</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1593703273432</updated>
+      <workItem from="1593796288700" duration="266000" />
     </task>
+    <task id="LOCAL-00001" summary="code cleared">
+      <created>1593716849682</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1593716849682</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="807000" />
+    <option name="totallyTimeSpent" value="1316000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26332623" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26599148" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
       <window_info id="Capture Tool" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
-      <window_info anchor="bottom" id="SVN Repositories" weight="0.32936078" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49946696" visible="true" weight="0.32936078" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49946696" weight="0.32936078" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3997833" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -263,6 +264,7 @@
       <window_info anchor="bottom" id="Terminal" order="10" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50053304" side_tool="true" weight="0.32936078" />
       <window_info anchor="bottom" id="Messages" order="12" weight="0.32936078" />
+      <window_info anchor="bottom" id="SVN Repositories" order="13" weight="0.32936078" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -273,6 +275,9 @@
       <window_info anchor="right" id="Capture Analysis" order="7" />
       <window_info anchor="right" id="Palette&#9;" order="8" />
     </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -306,6 +311,10 @@
       </map>
     </option>
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="code cleared" />
+    <option name="LAST_COMMIT_MESSAGE" value="code cleared" />
+  </component>
   <component name="WindowStateProjectService">
     <state x="458" y="223" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog" />
     <state x="458" y="223" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog/0.23.1440.877@0.23.1440.877" />
@@ -333,10 +342,22 @@
     <state x="508" y="382" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1440.877@0.23.1440.877" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/kolmykov_shishkin_stepanov/AddEdgeWindow.java">
+    <entry file="file://$PROJECT_DIR$/src/kolmykov_shishkin_stepanov/Window.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="918">
-          <caret line="54" column="72" selection-start-line="54" selection-start-column="72" selection-end-line="54" selection-end-column="72" />
+        <state relative-caret-position="841">
+          <caret line="118" column="38" selection-start-line="118" selection-start-column="38" selection-end-line="118" selection-end-column="38" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#5220#5390#0" expanded="true" />
+            <element signature="e#5389#5390#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/kolmykov_shishkin_stepanov/graphics/GraphicsPanel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="3" column="18" selection-start-line="3" selection-start-column="18" selection-end-line="3" selection-end-column="18" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -345,36 +366,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/kolmykov_shishkin_stepanov/listeners/CreateEdgeActionListener.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#363#364#0" expanded="true" />
-            <element signature="e#399#400#0" expanded="true" />
-            <element signature="e#512#513#0" expanded="true" />
-            <element signature="e#570#571#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/kolmykov_shishkin_stepanov/graphics/GraphicsPanel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="18" selection-start-line="3" selection-start-column="18" selection-end-line="3" selection-end-column="18" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/kolmykov_shishkin_stepanov/Window.java">
-      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
-          <caret line="113" column="33" selection-start-line="113" selection-start-column="33" selection-end-line="113" selection-end-column="33" />
+          <caret line="20" selection-start-line="20" selection-end-line="20" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#3884#3885#0" expanded="true" />
-            <element signature="e#3920#3921#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/kolmykov_shishkin_stepanov/AddEdgeWindow.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="833">
+          <caret line="54" column="72" selection-start-line="54" selection-start-column="72" selection-end-line="54" selection-end-column="72" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
