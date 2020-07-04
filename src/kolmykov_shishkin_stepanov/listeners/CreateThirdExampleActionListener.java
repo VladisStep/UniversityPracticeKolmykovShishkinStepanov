@@ -17,7 +17,8 @@ public class CreateThirdExampleActionListener implements ActionListener {
     public void actionPerformed(ActionEvent e) {
 
         window.setNumberOfNodes(9);
-        window.changeEnableOfCreateMenu();
+        //window.changeEnableOfCreateMenu();
+        window.changeEnableOfExample();
 
         window.addEdge(0, 1, 4);
         window.addEdge(0, 7, 8);
@@ -33,6 +34,5 @@ public class CreateThirdExampleActionListener implements ActionListener {
         window.addEdge(3, 5, 14);
         window.addEdge(5, 4, 10);
         window.addEdge(3, 4, 9);
-
     }
 }
