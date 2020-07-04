@@ -116,17 +116,38 @@ public class Window extends JFrame {
         addComponentListener(new ComponentAdapter() {
             @Override
             public void componentResized(ComponentEvent e) {
-                //TODO ОТРИСОВКА ГРАФА
+                super.componentResized(e);
+                algorithm.makeDrawRequest();
+            }
+
+            @Override
+            public void componentMoved(ComponentEvent e) {
+                super.componentMoved(e);
+                algorithm.makeDrawRequest();
+            }
+
+            @Override
+            public void componentShown(ComponentEvent e) {
+                super.componentShown(e);
+                algorithm.makeDrawRequest();
+            }
+
+            @Override
+            public void componentHidden(ComponentEvent e) {
+                super.componentHidden(e);
+                algorithm.makeDrawRequest();
             }
         });
 
         this.setVisible(true);     // отображение формы
     }
 
-    public void addEdge(int number1, int number2, int value) {
-
-
-        graphicsPanel.drawEdge(number1, number2, value, nodesQuantity);
+    public void addEdge(int number1, int number2, int capacity) {
+        try {
+            algorithm.addVertex(number1, number2, capacity);
+        }catch (Exception e) { //TODO заменить на свое исключение, возможно обработать его нормально
+            e.printStackTrace();
+        }
     }
 
     public void setNumberOfNodes(int num) {
@@ -140,8 +161,9 @@ public class Window extends JFrame {
         createExampleMenu.setEnabled(false);
     }
 
-    public void changeEnableOfstepButton(){
+    public void changeEnableOfStepButton(){
         stepButton.setVisible(true);
+        stepButton.setEnabled(false);
         showResultButton.setVisible(true);
         restartButton.setVisible(true);
     }
@@ -152,5 +174,9 @@ public class Window extends JFrame {
 
     public int getNodesQuantity() {
         return nodesQuantity;
+    }
+
+    public void redraw() {
+        algorithm.makeDrawRequest();
     }
 }
