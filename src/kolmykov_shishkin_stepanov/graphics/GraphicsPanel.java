@@ -78,7 +78,8 @@ public class GraphicsPanel extends JPanel {
     }
 
     private void clear() {
-        Graphics2D graphics2D = (Graphics2D) getGraphics();
+        Graphics2D graphics2D;
+        graphics2D = (Graphics2D) getGraphics();
         graphics2D.setBackground(Color.WHITE);
         graphics2D.setColor(Color.WHITE);
         graphics2D.fillRect(0, 0, 1300, 1000);

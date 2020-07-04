@@ -21,8 +21,10 @@ public class KruskalAlgorithm implements Runnable{
     }
 
     public void addEdge(int number1, int number2, int capacity) throws AddEdgeException { //TODO поменять exception на свое исключение
-        if (number1 >= nodes.length || number2 >= nodes.length) {
-            throw new AddEdgeException("Incorrect number of node");
+        if (number1 >= nodes.length || number1 < 0) {
+            throw new AddEdgeException("There is no such vertex(" + number1 +")");
+        } else if ( number2 >= nodes.length || number2 < 0){
+            throw new AddEdgeException("There is no such vertex(" + number2 +")");
         }
         nodes[number1].addEdge(number2, capacity);
         nodes[number2].addEdge(number1, capacity);
