@@ -1,5 +1,6 @@
 package kolmykov_shishkin_stepanov;
 
+import kolmykov_shishkin_stepanov.algorithm.KruskalAlgorithm;
 import kolmykov_shishkin_stepanov.exceptions.AddEdgeException;
 import kolmykov_shishkin_stepanov.graphics.GraphicsPanel;
 import kolmykov_shishkin_stepanov.listeners.*;
@@ -10,6 +11,8 @@ import javax.swing.event.AncestorListener;
 import javax.swing.event.ChangeEvent;
 import javax.swing.event.ChangeListener;
 import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import java.awt.event.ComponentAdapter;
 import java.awt.event.ComponentEvent;
 
@@ -109,7 +112,16 @@ public class Window extends JFrame {
         showResultButton = new JButton("Result");
         showResultButton.setPreferredSize(new Dimension(120, 50));
         showResultButton.setFont(bigFontTR);
-        showResultButton.addActionListener(new ResultActionListener(this));
+        //showResultButton.addActionListener(new ResultActionListener(this));
+        showResultButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                algorithm.getResult();
+                changeEnableOfResultButton();
+                redraw();
+                weightOfMST.setText("Weight: " + algorithm.getMinMSTWeight());
+            }
+        });
         buttonsPanel.add(showResultButton);
         showResultButton.setVisible(false);
         showResultButton.setEnabled(false);
@@ -256,4 +268,7 @@ public class Window extends JFrame {
     public void redraw() {
         algorithm.makeDrawRequest();
     }
+
+    public void runAlgorithm () { algorithm.run();}
+
 }

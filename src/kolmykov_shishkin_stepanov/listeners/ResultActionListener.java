@@ -16,5 +16,6 @@ public class ResultActionListener implements ActionListener {
     public void actionPerformed(ActionEvent e) {
         window.changeEnableOfResultButton();
         window.redraw();
+
     }
 }

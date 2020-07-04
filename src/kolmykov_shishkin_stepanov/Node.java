@@ -1,5 +1,6 @@
 package kolmykov_shishkin_stepanov;
 
+import kolmykov_shishkin_stepanov.algorithm.Edge;
 import kolmykov_shishkin_stepanov.exceptions.AddEdgeException;
 
 import java.util.HashMap;
@@ -8,7 +9,7 @@ import java.util.Map;
 public class Node {
     private int number;
 
-    private Map<Integer, Integer> edgesMap = new HashMap<>(); //Словарь номер вершины - длина ребра для хранения исходящих ребер
+    private Map<Integer, Edge> edgesMap = new HashMap<>(); //Словарь номер вершины - длина ребра для хранения исходящих ребер
 
     public Node(int number){ this.number = number; }
 
@@ -18,7 +19,7 @@ public class Node {
 
     public void addEdge(int number, int capacity) throws AddEdgeException { //TODO написать классы для исключений
         if (capacity > 0 && number >= 0 && this.number != number) {
-            edgesMap.put(number, capacity);
+            edgesMap.put(number, new Edge(this.number, number, capacity));
         }
         else {
             if (capacity <= 0){
@@ -31,7 +32,7 @@ public class Node {
         }
     }
 
-    public Map<Integer, Integer> getEdgesMap() {
+    public Map<Integer, Edge> getEdgesMap() {
         return edgesMap;
     }
 }
