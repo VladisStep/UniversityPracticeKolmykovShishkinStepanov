@@ -27,6 +27,9 @@ public class Window extends JFrame {
     private JButton stepButton;
     private JButton showResultButton;
     private JButton restartButton;
+    private JButton prevButton;
+
+    private JLabel weightOfMST;
 
     private int nodesQuantity;
     private KruskalAlgorithm algorithm;
@@ -37,6 +40,8 @@ public class Window extends JFrame {
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);    // выбор действия при закрытии формы
         this.setLocationRelativeTo(null);                       // открытие формы посередине экрана
         this.setLayout(new GridBagLayout());
+
+// TODO сделать граф левее и немного выше
 
         menuBar = new JMenuBar();            // создание и установка меню-бара
         this.setJMenuBar(menuBar);
@@ -74,14 +79,27 @@ public class Window extends JFrame {
                 new Insets(2, 2, 2, 2),
                 0, 0) );
 
+        Font bigFontTR = new Font("Arial", Font.BOLD, 20);
+
+        weightOfMST = new JLabel("Weight: ");
+        weightOfMST.setFont(bigFontTR);
+        buttonsPanel.add(weightOfMST);
+
         stepButton = new JButton("Step");
         stepButton.setMaximumSize(new Dimension(20, 20));
-        Font bigFontTR = new Font("Arial", Font.BOLD, 20);
         stepButton.setFont(bigFontTR);
         stepButton.addActionListener(new StepButtonActionListener(this));
         buttonsPanel.add(stepButton);
         //stepButton.setVisible(false);
         stepButton.setEnabled(false);
+
+        prevButton = new JButton("Prev");
+        prevButton.setMaximumSize(new Dimension(20, 20));
+        prevButton.setFont(bigFontTR);
+        prevButton.addActionListener(new StepButtonActionListener(this));
+        buttonsPanel.add(prevButton);
+        //stepButton.setVisible(false);
+        prevButton.setEnabled(false);
 
         showResultButton = new JButton("Result");
         showResultButton.setPreferredSize(new Dimension(120, 50));
@@ -102,6 +120,7 @@ public class Window extends JFrame {
         createAlgorithmMenu = new JMenu("Algorithm");
         menuBar.add(createAlgorithmMenu);
         createRunItem = new JMenuItem("Run");
+        createRunItem.setEnabled(false);
         createRunItem.addActionListener(new RunActionListener(this));
         createAlgorithmMenu.add(createRunItem);
 
@@ -165,7 +184,9 @@ public class Window extends JFrame {
         createNodesMenuItem.setEnabled(false);
         createEdgeMenuItem.setEnabled(true);
         createExampleMenu.setEnabled(true);
+        createRunItem.setEnabled(true);
     }
+
 
     public void changeEnableOfRunAlgButton() {
         createAlgorithmMenu.setEnabled(false);
@@ -173,6 +194,7 @@ public class Window extends JFrame {
         createExampleMenu.setEnabled(false);
 
         stepButton.setEnabled(true);
+        prevButton.setEnabled(true);
         showResultButton.setEnabled(true);
         restartButton.setEnabled(true);
 //        stepButton.setVisible(true);
@@ -185,6 +207,7 @@ public class Window extends JFrame {
         createNodesMenuItem.setEnabled(true);
         createEdgeMenuItem.setEnabled(false);
         createExampleMenu.setEnabled(false);
+        createRunItem.setEnabled(true);
     }
 
     public void changeEnableOfResultButton() {
@@ -193,8 +216,10 @@ public class Window extends JFrame {
         createExampleMenu.setEnabled(true);
 
         stepButton.setEnabled(false);
+        prevButton.setEnabled(false);
         showResultButton.setEnabled(false);
         restartButton.setEnabled(false);
+        createRunItem.setEnabled(false);
     }
 
     public GraphicsPanel getGraphicsPanel() {
