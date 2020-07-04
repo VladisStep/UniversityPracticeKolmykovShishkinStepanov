@@ -19,38 +19,26 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a5926ede-48f8-4fc8-a141-5a6a8bf86214" name="Default Changelist" comment="Fixed">
-      <change afterPath="$PROJECT_DIR$/src/kolmykov_shishkin_stepanov/exceptions/AddEdgeException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/kolmykov_shishkin_stepanov/listeners/RestartActionListener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/kolmykov_shishkin_stepanov/listeners/ResultActionListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_02_07_2020_18_16__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_02_07_2020_18_16__Default_Changelist_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_02_07_2020_21_44__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_02_07_2020_21_44__Default_Changelist_.xml" afterDir="false" />
+    <list default="true" id="ccbf1c18-5799-4103-9389-3cac2b35cc7d" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PRACTICE/kolmykov_shishkin_stepanov/KruskalAlgorithm.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PRACTICE/kolmykov_shishkin_stepanov/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PRACTICE/kolmykov_shishkin_stepanov/Node.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PRACTICE/kolmykov_shishkin_stepanov/graphics/Circle.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PRACTICE/kolmykov_shishkin_stepanov/graphics/GraphicsPanel.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PRACTICE/kolmykov_shishkin_stepanov/graphics/Line.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PRACTICE/kolmykov_shishkin_stepanov/graphics/Point.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PRACTICE/kolmykov_shishkin_stepanov/listeners/CreateFirstExampleActionListener.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PRACTICE/kolmykov_shishkin_stepanov/listeners/CreateNodeActionListener.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PRACTICE/kolmykov_shishkin_stepanov/listeners/CreateSecondExampleActionListener.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PRACTICE/kolmykov_shishkin_stepanov/listeners/CreateThirdExampleActionListener.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PRACTICE/kolmykov_shishkin_stepanov/listeners/StepButtonActionListener.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PRACTICE/kolmykov_shishkin_stepanov/AddEdgeWindow$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PRACTICE/kolmykov_shishkin_stepanov/AddEdgeWindow$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PRACTICE/kolmykov_shishkin_stepanov/AddEdgeWindow.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PRACTICE/kolmykov_shishkin_stepanov/AddEdgeWindow.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PRACTICE/kolmykov_shishkin_stepanov/listeners/RunActionListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PRACTICE/kolmykov_shishkin_stepanov/listeners/RunActionListener.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/kolmykov_shishkin_stepanov/AddEdgeWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kolmykov_shishkin_stepanov/AddEdgeWindow.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/kolmykov_shishkin_stepanov/KruskalAlgorithm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kolmykov_shishkin_stepanov/KruskalAlgorithm.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/kolmykov_shishkin_stepanov/Node.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kolmykov_shishkin_stepanov/Node.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/kolmykov_shishkin_stepanov/Window.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kolmykov_shishkin_stepanov/Window.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/kolmykov_shishkin_stepanov/listeners/CreateFirstExampleActionListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kolmykov_shishkin_stepanov/listeners/CreateFirstExampleActionListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/kolmykov_shishkin_stepanov/listeners/CreateSecondExampleActionListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kolmykov_shishkin_stepanov/listeners/CreateSecondExampleActionListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/kolmykov_shishkin_stepanov/listeners/CreateThirdExampleActionListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kolmykov_shishkin_stepanov/listeners/CreateThirdExampleActionListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/kolmykov_shishkin_stepanov/listeners/RunActionListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kolmykov_shishkin_stepanov/listeners/RunActionListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/kolmykov_shishkin_stepanov/exceptions/AddEdgeException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kolmykov_shishkin_stepanov/exceptions/AddEdgeException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/kolmykov_shishkin_stepanov/graphics/GraphicsPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kolmykov_shishkin_stepanov/graphics/GraphicsPanel.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DefaultGradleProjectSettings">
+    <option name="isMigrated" value="true" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -60,30 +48,40 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_BRANCH_BY_REPOSITORY">
-      <map>
-        <entry key="$PROJECT_DIR$" value="master" />
-      </map>
-    </option>
+    <option name="UPDATE_TYPE" value="REBASE" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectId" id="1e5K1lpjuGhfcNUCtr837dpLRQX" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="952" />
+    <option name="y" value="-8" />
+    <option name="width" value="976" />
+    <option name="height" value="1056" />
+  </component>
+  <component name="ProjectId" id="1e8Vaurd0rxkF9eN5JFoWrq3A9H" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="OverrideImplement.combined" value="false" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="project.structure.last.edited" value="Project" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/REPORTS/uml" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Projects\IDEA\PRACTICE\REPORTS\uml" />
+    </key>
   </component>
   <component name="RunManager">
-    <configuration name="Main" type="Application" factoryName="Application" nameIsGenerated="true">
-      <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="kolmykov_shishkin_stepanov.Main" />
       <module name="PRACTICE" />
       <extension name="coverage">
@@ -96,69 +94,47 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="a5926ede-48f8-4fc8-a141-5a6a8bf86214" name="Default Changelist" comment="" />
-      <created>1593605800881</created>
+      <changelist id="ccbf1c18-5799-4103-9389-3cac2b35cc7d" name="Default Changelist" comment="" />
+      <created>1593703273432</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1593605800881</updated>
+      <updated>1593703273432</updated>
+      <workItem from="1593796288700" duration="960000" />
+      <workItem from="1593840697947" duration="6091000" />
     </task>
-    <task id="LOCAL-00001" summary="Добавили немного комментариев и сделали пример (так же немного исправили названия переменных)">
-      <created>1593619754780</created>
+    <task id="LOCAL-00001" summary="code cleared">
+      <created>1593716849682</created>
       <option name="number" value="00001" />
       <option name="presentableId" value="LOCAL-00001" />
       <option name="project" value="LOCAL" />
-      <updated>1593619754780</updated>
+      <updated>1593716849682</updated>
     </task>
-    <task id="LOCAL-00002" summary="Добавили немного комментариев и сделали пример (так же немного исправили названия переменных)">
-      <created>1593621085056</created>
+    <task id="LOCAL-00002" summary="code cleared">
+      <created>1593796726753</created>
       <option name="number" value="00002" />
       <option name="presentableId" value="LOCAL-00002" />
       <option name="project" value="LOCAL" />
-      <updated>1593621085057</updated>
+      <updated>1593796726754</updated>
     </task>
-    <task id="LOCAL-00003" summary="Added class Window">
-      <created>1593624096115</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1593624096115</updated>
-    </task>
-    <task id="LOCAL-00004" summary="Fix">
-      <created>1593624198844</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1593624198844</updated>
-    </task>
-    <task id="LOCAL-00005" summary="Fixed">
-      <created>1593715717960</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1593715717960</updated>
-    </task>
-    <task id="LOCAL-00006" summary="Fixed">
-      <created>1593715724712</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1593715724712</updated>
-    </task>
-    <task id="LOCAL-00007" summary="Fixed">
-      <created>1593715730852</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1593715730852</updated>
-    </task>
-    <option name="localTasksCounter" value="8" />
+    <option name="localTasksCounter" value="3" />
     <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="8101000" />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -170,109 +146,58 @@
         </entry>
       </map>
     </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list />
+          </value>
+        </entry>
+        <entry key="User">
+          <value>
+            <list />
+          </value>
+        </entry>
+      </map>
+    </option>
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Добавили немного комментариев и сделали пример (так же немного исправили названия переменных)" />
-    <MESSAGE value="Added class Window" />
-    <MESSAGE value="Fix" />
-    <MESSAGE value="Fixed" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed" />
+    <MESSAGE value="code cleared" />
+    <option name="LAST_COMMIT_MESSAGE" value="code cleared" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="440" y="94" key="#Project_Structure" timestamp="1593620907552">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="458" y="223" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog" timestamp="1593855443685" />
+    <state x="458" y="223" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog/0.23.1440.877@0.23.1440.877" timestamp="1593855443685" />
+    <state x="410" y="363" width="620" height="205" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1593855443685" />
+    <state x="410" y="363" width="620" height="205" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.23.1440.877@0.23.1440.877" timestamp="1593855443685" />
+    <state width="1398" height="180" key="GridCell.Tab.0.bottom" timestamp="1593860101838">
+      <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state x="440" y="94" key="#Project_Structure/0.0.1920.1040@0.0.1920.1040" timestamp="1593620907552" />
-    <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1593621050851">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1398" height="180" key="GridCell.Tab.0.bottom/0.23.1440.877@0.23.1440.877" timestamp="1593860101838" />
+    <state width="1398" height="180" key="GridCell.Tab.0.center" timestamp="1593860101837">
+      <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1593621050851" />
-    <state x="711" y="188" key="#com.intellij.ide.util.MemberChooser" timestamp="1593853001607">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1398" height="180" key="GridCell.Tab.0.center/0.23.1440.877@0.23.1440.877" timestamp="1593860101837" />
+    <state width="1398" height="180" key="GridCell.Tab.0.left" timestamp="1593860101836">
+      <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state x="533" y="163" key="#com.intellij.ide.util.MemberChooser/0.0.1440.900@0.0.1440.900" timestamp="1593618908723" />
-    <state x="711" y="188" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1593853001607" />
-    <state x="689" y="310" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1593620868784">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1398" height="180" key="GridCell.Tab.0.left/0.23.1440.877@0.23.1440.877" timestamp="1593860101835" />
+    <state width="1398" height="180" key="GridCell.Tab.0.right" timestamp="1593860101838">
+      <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state x="689" y="310" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1593620868784" />
-    <state x="743" y="414" width="433" height="217" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1593621440273">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="743" y="414" width="433" height="217" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1920.1040@0.0.1920.1040" timestamp="1593621440273" />
-    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1593686687875">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1593686687875" />
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1593854016954">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1398" height="56" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1593619796187" />
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1593854016954" />
-    <state width="1398" height="56" key="GridCell.Tab.0.bottom/0.23.1440.877@0.23.1440.877" timestamp="1593620596824" />
-    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1593854016954">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1398" height="56" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1593619796186" />
-    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1593854016954" />
-    <state width="1398" height="56" key="GridCell.Tab.0.center/0.23.1440.877@0.23.1440.877" timestamp="1593620596823" />
-    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1593854016954">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1398" height="56" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1593619796185" />
-    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1593854016954" />
-    <state width="1398" height="56" key="GridCell.Tab.0.left/0.23.1440.877@0.23.1440.877" timestamp="1593620596823" />
-    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1593854016954">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1398" height="56" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1593619796186" />
-    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1593854016954" />
-    <state width="1398" height="56" key="GridCell.Tab.0.right/0.23.1440.877@0.23.1440.877" timestamp="1593620596823" />
-    <state width="1398" height="331" key="GridCell.Tab.1.bottom" timestamp="1593617241418">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state width="1398" height="331" key="GridCell.Tab.1.bottom/0.0.1440.900@0.0.1440.900" timestamp="1593617241418" />
-    <state width="1358" height="304" key="GridCell.Tab.1.bottom/0.23.1440.877@0.23.1440.877" timestamp="1593605918502" />
-    <state width="1398" height="331" key="GridCell.Tab.1.center" timestamp="1593617241417">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state width="1398" height="331" key="GridCell.Tab.1.center/0.0.1440.900@0.0.1440.900" timestamp="1593617241417" />
-    <state width="1358" height="304" key="GridCell.Tab.1.center/0.23.1440.877@0.23.1440.877" timestamp="1593605918502" />
-    <state width="1398" height="331" key="GridCell.Tab.1.left" timestamp="1593617241417">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state width="1398" height="331" key="GridCell.Tab.1.left/0.0.1440.900@0.0.1440.900" timestamp="1593617241417" />
-    <state width="1358" height="304" key="GridCell.Tab.1.left/0.23.1440.877@0.23.1440.877" timestamp="1593605918502" />
-    <state width="1398" height="331" key="GridCell.Tab.1.right" timestamp="1593617241418">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state width="1398" height="331" key="GridCell.Tab.1.right/0.0.1440.900@0.0.1440.900" timestamp="1593617241418" />
-    <state width="1358" height="304" key="GridCell.Tab.1.right/0.23.1440.877@0.23.1440.877" timestamp="1593605918502" />
-    <state x="598" y="281" key="MultipleFileMergeDialog" timestamp="1593849767006">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="598" y="281" key="MultipleFileMergeDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1593849767006" />
-    <state x="440" y="94" key="SettingsEditor" timestamp="1593715859300">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="440" y="94" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1593715859300" />
-    <state x="427" y="220" key="Vcs.Push.Dialog.v2" timestamp="1593624207085">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="320" y="190" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1593620064427" />
-    <state x="427" y="220" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1593624207085" />
-    <state x="770" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1593849736611">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="770" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1593849736611" />
-    <state x="385" y="210" key="run.anything.popup" timestamp="1593605844688">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state x="385" y="210" key="run.anything.popup/0.0.1440.900@0.0.1440.900" timestamp="1593605844688" />
-    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup" timestamp="1593608083749">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup/0.0.1440.900@0.0.1440.900" timestamp="1593608083749" />
+    <state width="1398" height="180" key="GridCell.Tab.0.right/0.23.1440.877@0.23.1440.877" timestamp="1593860101838" />
+    <state width="1398" height="286" key="GridCell.Tab.1.bottom" timestamp="1593855443685" />
+    <state width="1398" height="286" key="GridCell.Tab.1.bottom/0.23.1440.877@0.23.1440.877" timestamp="1593855443685" />
+    <state width="1398" height="286" key="GridCell.Tab.1.center" timestamp="1593855443685" />
+    <state width="1398" height="286" key="GridCell.Tab.1.center/0.23.1440.877@0.23.1440.877" timestamp="1593855443685" />
+    <state width="1398" height="286" key="GridCell.Tab.1.left" timestamp="1593855443685" />
+    <state width="1398" height="286" key="GridCell.Tab.1.left/0.23.1440.877@0.23.1440.877" timestamp="1593855443685" />
+    <state width="1398" height="286" key="GridCell.Tab.1.right" timestamp="1593855443685" />
+    <state width="1398" height="286" key="GridCell.Tab.1.right/0.23.1440.877@0.23.1440.877" timestamp="1593855443685" />
+    <state x="221" y="100" key="SettingsEditor" timestamp="1593855443685" />
+    <state x="221" y="100" key="SettingsEditor/0.23.1440.877@0.23.1440.877" timestamp="1593855443685" />
+    <state x="508" y="382" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1593855443685" />
+    <state x="508" y="382" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1440.877@0.23.1440.877" timestamp="1593855443685" />
   </component>
 </project>

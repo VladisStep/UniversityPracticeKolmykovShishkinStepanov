@@ -3,9 +3,7 @@ package kolmykov_shishkin_stepanov.exceptions;
 import kolmykov_shishkin_stepanov.Window;
 
 public class AddEdgeException extends Exception {
-    public AddEdgeException() {
-
-    }
+    public AddEdgeException() {}
 
     public AddEdgeException(String message) {
         super(message);
@@ -22,4 +20,7 @@ public class AddEdgeException extends Exception {
     public AddEdgeException(String message, Throwable cause, boolean enableSuppression, boolean writableStackTrace) {
         super(message, cause, enableSuppression, writableStackTrace);
     }
+
+
+
 }

@@ -68,7 +68,7 @@ public class AddEdgeWindow extends JFrame {
                     v2num = Integer.parseInt(v2Input.getText());
                     capacity = Integer.parseInt(capacityInput.getText());
 
-                    if(capacity <= 0) {
+                   /* if(capacity <= 0) {
                         JOptionPane.showMessageDialog(window, "Incorrect input (capacity <= 0)");
                         return;
                     }
@@ -79,7 +79,8 @@ public class AddEdgeWindow extends JFrame {
                     if (v1num >= window.getNodesQuantity() || v1num < 0 || v2num >= window.getNodesQuantity() || v2num < 0) {
                         JOptionPane.showMessageDialog(window, "Incorrect input (wrong nodes numbers)");
                         return;
-                    }
+                    }*/
+
                     window.addEdge(v1num, v2num, capacity);
 
                 }catch (NumberFormatException ex) {
