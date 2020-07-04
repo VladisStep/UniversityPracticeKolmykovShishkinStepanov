@@ -17,4 +17,6 @@ public class RestartActionListener implements ActionListener {
         //window.changeEnableOfResultButton();
         window.redraw();
     }
+
+
 }
