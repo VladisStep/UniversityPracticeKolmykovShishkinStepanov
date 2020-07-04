@@ -19,18 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ccbf1c18-5799-4103-9389-3cac2b35cc7d" name="Default Changelist" comment="resol 5">
-      <change beforePath="$PROJECT_DIR$/out/production/PRACTICE/kolmykov_shishkin_stepanov/AddEdgeWindow$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PRACTICE/kolmykov_shishkin_stepanov/AddEdgeWindow.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PRACTICE/kolmykov_shishkin_stepanov/listeners/RunActionListener.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/kolmykov_shishkin_stepanov/Window.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kolmykov_shishkin_stepanov/Window.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/kolmykov_shishkin_stepanov/algorithm/KruskalAlgorithm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kolmykov_shishkin_stepanov/algorithm/KruskalAlgorithm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/kolmykov_shishkin_stepanov/exceptions/AddEdgeException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kolmykov_shishkin_stepanov/exceptions/AddEdgeException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/kolmykov_shishkin_stepanov/listeners/CreateFirstExampleActionListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kolmykov_shishkin_stepanov/listeners/CreateFirstExampleActionListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/kolmykov_shishkin_stepanov/listeners/CreateNodeActionListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kolmykov_shishkin_stepanov/listeners/CreateNodeActionListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/kolmykov_shishkin_stepanov/listeners/RunActionListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kolmykov_shishkin_stepanov/listeners/RunActionListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/kolmykov_shishkin_stepanov/listeners/StepButtonActionListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kolmykov_shishkin_stepanov/listeners/StepButtonActionListener.java" afterDir="false" />
-    </list>
+    <list default="true" id="ccbf1c18-5799-4103-9389-3cac2b35cc7d" name="Default Changelist" comment="resol 6" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -137,7 +126,21 @@
       <option name="project" value="LOCAL" />
       <updated>1593885106481</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="resol 6">
+      <created>1593885511067</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1593885511067</updated>
+    </task>
+    <task id="LOCAL-00006" summary="resol 6">
+      <created>1593885712316</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1593885712316</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -176,7 +179,8 @@
     <MESSAGE value="code cleared" />
     <MESSAGE value="button visibility fix" />
     <MESSAGE value="resol 5" />
-    <option name="LAST_COMMIT_MESSAGE" value="resol 5" />
+    <MESSAGE value="resol 6" />
+    <option name="LAST_COMMIT_MESSAGE" value="resol 6" />
   </component>
   <component name="WindowStateProjectService">
     <state x="458" y="223" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog" timestamp="1593855443685" />
@@ -213,9 +217,10 @@
     <state width="1398" height="286" key="GridCell.Tab.1.right/0.23.1440.877@0.23.1440.877" timestamp="1593855443685" />
     <state x="221" y="100" key="SettingsEditor" timestamp="1593855443685" />
     <state x="221" y="100" key="SettingsEditor/0.23.1440.877@0.23.1440.877" timestamp="1593855443685" />
-    <state x="320" y="201" key="Vcs.Push.Dialog.v2" timestamp="1593885115536">
-      <screen x="0" y="23" width="1440" height="877" />
+    <state x="320" y="183" key="Vcs.Push.Dialog.v2" timestamp="1593885720293">
+      <screen x="0" y="0" width="1440" height="900" />
     </state>
+    <state x="320" y="183" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1593885720293" />
     <state x="320" y="201" key="Vcs.Push.Dialog.v2/0.23.1440.877@0.23.1440.877" timestamp="1593885115536" />
     <state x="508" y="382" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1593855443685" />
     <state x="508" y="382" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1440.877@0.23.1440.877" timestamp="1593855443685" />
