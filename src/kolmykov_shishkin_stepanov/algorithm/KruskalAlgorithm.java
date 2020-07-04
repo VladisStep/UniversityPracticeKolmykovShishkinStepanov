@@ -5,8 +5,6 @@ import kolmykov_shishkin_stepanov.Window;
 import kolmykov_shishkin_stepanov.exceptions.AddEdgeException;
 
 import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.PriorityQueue;
 
 public class KruskalAlgorithm {
     private int nodesNumber= 0;
