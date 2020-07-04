@@ -1,6 +1,7 @@
 package kolmykov_shishkin_stepanov.graphics;
 
 import kolmykov_shishkin_stepanov.Node;
+import kolmykov_shishkin_stepanov.algorithm.Edge;
 
 import javax.swing.*;
 import java.awt.*;
@@ -19,9 +20,9 @@ public class GraphicsPanel extends JPanel {
         clear();
         for (Node node : nodes) {
             drawNode(node.getNumber(), nodes.length);
-            Map<Integer, Integer> edgesMap = node.getEdgesMap();
+            Map<Integer, Edge> edgesMap = node.getEdgesMap();
             for (Integer neighbourNumber : edgesMap.keySet()) {
-                drawEdge(node.getNumber(), neighbourNumber, edgesMap.get(neighbourNumber), nodes.length);
+                drawEdge(node.getNumber(), neighbourNumber, edgesMap.get(neighbourNumber).getCapacity(), nodes.length);
             }
         }
     }
@@ -78,10 +79,9 @@ public class GraphicsPanel extends JPanel {
     }
 
     private void clear() {
-        Graphics2D graphics2D;
-        graphics2D = (Graphics2D) getGraphics();
+        Graphics2D graphics2D = (Graphics2D) getGraphics();
         graphics2D.setBackground(Color.WHITE);
         graphics2D.setColor(Color.WHITE);
-        graphics2D.fillRect(0, 0, 1300, 1000);
+        graphics2D.fillRect(300, 0, 1000, 1000);
     }
 }

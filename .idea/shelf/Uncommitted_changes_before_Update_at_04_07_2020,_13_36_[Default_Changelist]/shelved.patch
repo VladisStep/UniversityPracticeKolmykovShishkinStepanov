@@ -1,0 +1,436 @@
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<project version=\"4\">\n  <component name=\"BranchesTreeState\">\n    <expand>\n      <path>\n        <item name=\"ROOT\" type=\"e8cecc67:BranchNodeDescriptor\" />\n        <item name=\"LOCAL_ROOT\" type=\"e8cecc67:BranchNodeDescriptor\" />\n      </path>\n      <path>\n        <item name=\"ROOT\" type=\"e8cecc67:BranchNodeDescriptor\" />\n        <item name=\"REMOTE_ROOT\" type=\"e8cecc67:BranchNodeDescriptor\" />\n      </path>\n      <path>\n        <item name=\"ROOT\" type=\"e8cecc67:BranchNodeDescriptor\" />\n        <item name=\"REMOTE_ROOT\" type=\"e8cecc67:BranchNodeDescriptor\" />\n        <item name=\"GROUP_NODE:origin\" type=\"e8cecc67:BranchNodeDescriptor\" />\n      </path>\n    </expand>\n    <select />\n  </component>\n  <component name=\"ChangeListManager\">\n    <list default=\"true\" id=\"ccbf1c18-5799-4103-9389-3cac2b35cc7d\" name=\"Default Changelist\" comment=\"\">\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/src/kolmykov_shishkin_stepanov/KruskalAlgorithm.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/kolmykov_shishkin_stepanov/KruskalAlgorithm.java\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/src/kolmykov_shishkin_stepanov/Node.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/kolmykov_shishkin_stepanov/Node.java\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/src/kolmykov_shishkin_stepanov/Window.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/kolmykov_shishkin_stepanov/Window.java\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/src/kolmykov_shishkin_stepanov/graphics/GraphicsPanel.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/kolmykov_shishkin_stepanov/graphics/GraphicsPanel.java\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/src/kolmykov_shishkin_stepanov/listeners/CreateFirstExampleActionListener.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/kolmykov_shishkin_stepanov/listeners/CreateFirstExampleActionListener.java\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/src/kolmykov_shishkin_stepanov/listeners/RunActionListener.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/kolmykov_shishkin_stepanov/listeners/RunActionListener.java\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/src/kolmykov_shishkin_stepanov/listeners/StepButtonActionListener.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/kolmykov_shishkin_stepanov/listeners/StepButtonActionListener.java\" afterDir=\"false\" />\n    </list>\n    <ignored path=\"$PROJECT_DIR$/out/\" />\n    <option name=\"EXCLUDED_CONVERTED_TO_IGNORED\" value=\"true\" />\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\n  </component>\n  <component name=\"DefaultGradleProjectSettings\">\n    <option name=\"isMigrated\" value=\"true\" />\n  </component>\n  <component name=\"FileEditorManager\">\n    <leaf SIDE_TABS_SIZE_LIMIT_KEY=\"300\">\n      <file pinned=\"false\" current-in-tab=\"true\">\n        <entry file=\"file://$PROJECT_DIR$/src/kolmykov_shishkin_stepanov/Window.java\">\n          <provider selected=\"true\" editor-type-id=\"text-editor\">\n            <state relative-caret-position=\"-313\">\n              <caret line=\"136\" column=\"41\" lean-forward=\"true\" selection-start-line=\"136\" selection-start-column=\"41\" selection-end-line=\"136\" selection-end-column=\"41\" />\n              <folding>\n                <element signature=\"imports\" expanded=\"true\" />\n                <element signature=\"e#7015#7016#0\" expanded=\"true\" />\n                <element signature=\"e#7088#7089#0\" expanded=\"true\" />\n                <element signature=\"e#7120#7121#0\" expanded=\"true\" />\n                <element signature=\"e#7163#7164#0\" expanded=\"true\" />\n                <marker date=\"1593846075491\" expanded=\"true\" signature=\"5199:5989\" ph=\"...\" />\n              </folding>\n            </state>\n          </provider>\n        </entry>\n      </file>\n      <file pinned=\"false\" current-in-tab=\"false\">\n        <entry file=\"file://$PROJECT_DIR$/src/kolmykov_shishkin_stepanov/KruskalAlgorithm.java\">\n          <provider selected=\"true\" editor-type-id=\"text-editor\">\n            <state relative-caret-position=\"469\">\n              <caret line=\"38\" lean-forward=\"true\" selection-start-line=\"38\" selection-end-line=\"38\" />\n              <folding>\n                <element signature=\"e#861#862#0\" expanded=\"true\" />\n                <element signature=\"e#901#902#0\" expanded=\"true\" />\n              </folding>\n            </state>\n          </provider>\n        </entry>\n      </file>\n      <file pinned=\"false\" current-in-tab=\"false\">\n        <entry file=\"file://$PROJECT_DIR$/src/kolmykov_shishkin_stepanov/graphics/GraphicsPanel.java\">\n          <provider selected=\"true\" editor-type-id=\"text-editor\">\n            <state relative-caret-position=\"435\">\n              <caret line=\"84\" column=\"5\" selection-start-line=\"84\" selection-start-column=\"5\" selection-end-line=\"84\" selection-end-column=\"5\" />\n              <folding>\n                <element signature=\"imports\" expanded=\"true\" />\n              </folding>\n            </state>\n          </provider>\n        </entry>\n      </file>\n      <file pinned=\"false\" current-in-tab=\"false\">\n        <entry file=\"file://$PROJECT_DIR$/src/kolmykov_shishkin_stepanov/Node.java\">\n          <provider selected=\"true\" editor-type-id=\"text-editor\">\n            <state relative-caret-position=\"306\">\n              <caret line=\"18\" column=\"106\" lean-forward=\"true\" selection-start-line=\"18\" selection-start-column=\"106\" selection-end-line=\"18\" selection-end-column=\"106\" />\n              <folding>\n                <element signature=\"imports\" expanded=\"true\" />\n                <element signature=\"e#110#111#0\" expanded=\"true\" />\n                <element signature=\"e#146#147#0\" expanded=\"true\" />\n                <element signature=\"e#176#177#0\" expanded=\"true\" />\n                <element signature=\"e#205#206#0\" expanded=\"true\" />\n                <element signature=\"e#748#749#0\" expanded=\"true\" />\n                <element signature=\"e#773#774#0\" expanded=\"true\" />\n              </folding>\n            </state>\n          </provider>\n        </entry>\n      </file>\n      <file pinned=\"false\" current-in-tab=\"false\">\n        <entry file=\"file://$PROJECT_DIR$/src/kolmykov_shishkin_stepanov/listeners/CreateFirstExampleActionListener.java\">\n          <provider selected=\"true\" editor-type-id=\"text-editor\">\n            <state relative-caret-position=\"425\">\n              <caret line=\"32\" column=\"33\" selection-start-line=\"32\" selection-start-column=\"33\" selection-end-line=\"32\" selection-end-column=\"33\" />\n            </state>\n          </provider>\n        </entry>\n      </file>\n    </leaf>\n  </component>\n  <component name=\"FileTemplateManagerImpl\">\n    <option name=\"RECENT_TEMPLATES\">\n      <list>\n        <option value=\"Class\" />\n      </list>\n    </option>\n  </component>\n  <component name=\"Git.Settings\">\n    <option name=\"UPDATE_TYPE\" value=\"REBASE\" />\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\n  </component>\n  <component name=\"IdeDocumentHistory\">\n    <option name=\"CHANGED_PATHS\">\n      <list>\n        <option value=\"$PROJECT_DIR$/src/kolmykov_shishkin_stepanov/listeners/CreateEdgeActionListener.java\" />\n        <option value=\"$PROJECT_DIR$/src/kolmykov_shishkin_stepanov/listeners/StepButtonActionListener.java\" />\n        <option value=\"$PROJECT_DIR$/src/kolmykov_shishkin_stepanov/listeners/CreateFirstExampleActionListener.java\" />\n        <option value=\"$PROJECT_DIR$/src/kolmykov_shishkin_stepanov/Node.java\" />\n        <option value=\"$PROJECT_DIR$/src/kolmykov_shishkin_stepanov/KruskalAlgorithm.java\" />\n        <option value=\"$PROJECT_DIR$/src/kolmykov_shishkin_stepanov/Window.java\" />\n        <option value=\"$PROJECT_DIR$/src/kolmykov_shishkin_stepanov/listeners/RunActionListener.java\" />\n        <option value=\"$PROJECT_DIR$/src/kolmykov_shishkin_stepanov/graphics/GraphicsPanel.java\" />\n      </list>\n    </option>\n  </component>\n  <component name=\"ProjectFrameBounds\" extendedState=\"6\">\n    <option name=\"x\" value=\"952\" />\n    <option name=\"y\" value=\"-8\" />\n    <option name=\"width\" value=\"976\" />\n    <option name=\"height\" value=\"1056\" />\n  </component>\n  <component name=\"ProjectId\" id=\"1e8Vaurd0rxkF9eN5JFoWrq3A9H\" />\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"true\">\n    <ConfirmationsSetting value=\"2\" id=\"Add\" />\n  </component>\n  <component name=\"ProjectView\">\n    <navigator proportions=\"\" version=\"1\">\n      <foldersAlwaysOnTop value=\"true\" />\n    </navigator>\n    <panes>\n      <pane id=\"Scope\" />\n      <pane id=\"ProjectPane\">\n        <subPane>\n          <expand>\n            <path>\n              <item name=\"PRACTICE\" type=\"b2602c69:ProjectViewProjectNode\" />\n              <item name=\"PRACTICE\" type=\"462c0819:PsiDirectoryNode\" />\n            </path>\n            <path>\n              <item name=\"PRACTICE\" type=\"b2602c69:ProjectViewProjectNode\" />\n              <item name=\"PRACTICE\" type=\"462c0819:PsiDirectoryNode\" />\n              <item name=\"src\" type=\"462c0819:PsiDirectoryNode\" />\n            </path>\n            <path>\n              <item name=\"PRACTICE\" type=\"b2602c69:ProjectViewProjectNode\" />\n              <item name=\"PRACTICE\" type=\"462c0819:PsiDirectoryNode\" />\n              <item name=\"src\" type=\"462c0819:PsiDirectoryNode\" />\n              <item name=\"kolmykov_shishkin_stepanov\" type=\"462c0819:PsiDirectoryNode\" />\n            </path>\n            <path>\n              <item name=\"PRACTICE\" type=\"b2602c69:ProjectViewProjectNode\" />\n              <item name=\"PRACTICE\" type=\"462c0819:PsiDirectoryNode\" />\n              <item name=\"src\" type=\"462c0819:PsiDirectoryNode\" />\n              <item name=\"kolmykov_shishkin_stepanov\" type=\"462c0819:PsiDirectoryNode\" />\n              <item name=\"graphics\" type=\"462c0819:PsiDirectoryNode\" />\n            </path>\n            <path>\n              <item name=\"PRACTICE\" type=\"b2602c69:ProjectViewProjectNode\" />\n              <item name=\"PRACTICE\" type=\"462c0819:PsiDirectoryNode\" />\n              <item name=\"src\" type=\"462c0819:PsiDirectoryNode\" />\n              <item name=\"kolmykov_shishkin_stepanov\" type=\"462c0819:PsiDirectoryNode\" />\n              <item name=\"listeners\" type=\"462c0819:PsiDirectoryNode\" />\n            </path>\n          </expand>\n          <select />\n        </subPane>\n      </pane>\n      <pane id=\"PackagesPane\" />\n    </panes>\n  </component>\n  <component name=\"ProjectViewState\">\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\n    <option name=\"showLibraryContents\" value=\"true\" />\n  </component>\n  <component name=\"PropertiesComponent\">\n    <property name=\"OverrideImplement.combined\" value=\"false\" />\n    <property name=\"RunOnceActivity.OpenProjectViewOnStart\" value=\"true\" />\n    <property name=\"RunOnceActivity.ShowReadmeOnStart\" value=\"true\" />\n    <property name=\"SHARE_PROJECT_CONFIGURATION_FILES\" value=\"true\" />\n    <property name=\"WebServerToolWindowFactoryState\" value=\"false\" />\n    <property name=\"aspect.path.notification.shown\" value=\"true\" />\n    <property name=\"last_opened_file_path\" value=\"$PROJECT_DIR$/REPORTS/uml\" />\n    <property name=\"settings.editor.selected.configurable\" value=\"preferences.lookFeel\" />\n  </component>\n  <component name=\"RecentsManager\">\n    <key name=\"CopyFile.RECENT_KEYS\">\n      <recent name=\"D:\\Projects\\IDEA\\PRACTICE\\REPORTS\\uml\" />\n    </key>\n  </component>\n  <component name=\"RunDashboard\">\n    <option name=\"ruleStates\">\n      <list>\n        <RuleState>\n          <option name=\"name\" value=\"ConfigurationTypeDashboardGroupingRule\" />\n        </RuleState>\n        <RuleState>\n          <option name=\"name\" value=\"StatusDashboardGroupingRule\" />\n        </RuleState>\n      </list>\n    </option>\n  </component>\n  <component name=\"RunManager\">\n    <configuration name=\"Main\" type=\"Application\" factoryName=\"Application\" temporary=\"true\" nameIsGenerated=\"true\">\n      <option name=\"MAIN_CLASS_NAME\" value=\"kolmykov_shishkin_stepanov.Main\" />\n      <module name=\"PRACTICE\" />\n      <extension name=\"coverage\">\n        <pattern>\n          <option name=\"PATTERN\" value=\"kolmykov_shishkin_stepanov.*\" />\n          <option name=\"ENABLED\" value=\"true\" />\n        </pattern>\n      </extension>\n      <method v=\"2\">\n        <option name=\"Make\" enabled=\"true\" />\n      </method>\n    </configuration>\n    <recent_temporary>\n      <list>\n        <item itemvalue=\"Application.Main\" />\n      </list>\n    </recent_temporary>\n  </component>\n  <component name=\"SvnConfiguration\">\n    <configuration />\n  </component>\n  <component name=\"TaskManager\">\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\n      <changelist id=\"ccbf1c18-5799-4103-9389-3cac2b35cc7d\" name=\"Default Changelist\" comment=\"\" />\n      <created>1593703273432</created>\n      <option name=\"number\" value=\"Default\" />\n      <option name=\"presentableId\" value=\"Default\" />\n      <updated>1593703273432</updated>\n      <workItem from=\"1593796288700\" duration=\"960000\" />\n      <workItem from=\"1593840697947\" duration=\"6091000\" />\n    </task>\n    <task id=\"LOCAL-00001\" summary=\"code cleared\">\n      <created>1593716849682</created>\n      <option name=\"number\" value=\"00001\" />\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1593716849682</updated>\n    </task>\n    <task id=\"LOCAL-00002\" summary=\"code cleared\">\n      <created>1593796726753</created>\n      <option name=\"number\" value=\"00002\" />\n      <option name=\"presentableId\" value=\"LOCAL-00002\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1593796726754</updated>\n    </task>\n    <option name=\"localTasksCounter\" value=\"3\" />\n    <servers />\n  </component>\n  <component name=\"TimeTrackingManager\">\n    <option name=\"totallyTimeSpent\" value=\"8101000\" />\n  </component>\n  <component name=\"ToolWindowManager\">\n    <frame x=\"-8\" y=\"-8\" width=\"1936\" height=\"1056\" extended-state=\"6\" />\n    <editor active=\"true\" />\n    <layout>\n      <window_info content_ui=\"combo\" id=\"Project\" order=\"0\" visible=\"true\" weight=\"0.26865673\" />\n      <window_info id=\"Structure\" order=\"1\" side_tool=\"true\" weight=\"0.25\" />\n      <window_info id=\"Image Layers\" order=\"2\" />\n      <window_info id=\"Designer\" order=\"3\" />\n      <window_info id=\"UI Designer\" order=\"4\" />\n      <window_info id=\"Capture Tool\" order=\"5\" />\n      <window_info id=\"Favorites\" order=\"6\" side_tool=\"true\" />\n      <window_info anchor=\"bottom\" id=\"Message\" order=\"0\" />\n      <window_info anchor=\"bottom\" id=\"Find\" order=\"1\" />\n      <window_info active=\"true\" anchor=\"bottom\" id=\"Run\" order=\"2\" sideWeight=\"0.49946696\" visible=\"true\" weight=\"0.32936078\" />\n      <window_info anchor=\"bottom\" id=\"Debug\" order=\"3\" weight=\"0.3997833\" />\n      <window_info anchor=\"bottom\" id=\"Cvs\" order=\"4\" weight=\"0.25\" />\n      <window_info anchor=\"bottom\" id=\"Inspection\" order=\"5\" weight=\"0.4\" />\n      <window_info anchor=\"bottom\" id=\"TODO\" order=\"6\" />\n      <window_info anchor=\"bottom\" id=\"Docker\" order=\"7\" show_stripe_button=\"false\" />\n      <window_info anchor=\"bottom\" id=\"Version Control\" order=\"8\" sideWeight=\"0.49946696\" weight=\"0.32936078\" />\n      <window_info anchor=\"bottom\" id=\"Database Changes\" order=\"9\" />\n      <window_info anchor=\"bottom\" id=\"Terminal\" order=\"10\" />\n      <window_info anchor=\"bottom\" id=\"Event Log\" order=\"11\" sideWeight=\"0.50053304\" side_tool=\"true\" weight=\"0.32936078\" />\n      <window_info anchor=\"bottom\" id=\"Messages\" order=\"12\" weight=\"0.32936078\" />\n      <window_info anchor=\"bottom\" id=\"SVN Repositories\" order=\"13\" weight=\"0.32936078\" />\n      <window_info anchor=\"right\" id=\"Commander\" internal_type=\"SLIDING\" order=\"0\" type=\"SLIDING\" weight=\"0.4\" />\n      <window_info anchor=\"right\" id=\"Ant Build\" order=\"1\" weight=\"0.25\" />\n      <window_info anchor=\"right\" content_ui=\"combo\" id=\"Hierarchy\" order=\"2\" weight=\"0.25\" />\n      <window_info anchor=\"right\" id=\"Palette\" order=\"3\" />\n      <window_info anchor=\"right\" id=\"Database\" order=\"4\" />\n      <window_info anchor=\"right\" id=\"Theme Preview\" order=\"5\" />\n      <window_info anchor=\"right\" id=\"Maven\" order=\"6\" />\n      <window_info anchor=\"right\" id=\"Capture Analysis\" order=\"7\" />\n      <window_info anchor=\"right\" id=\"Palette&#9;\" order=\"8\" />\n    </layout>\n  </component>\n  <component name=\"TypeScriptGeneratedFilesManager\">\n    <option name=\"version\" value=\"1\" />\n  </component>\n  <component name=\"Vcs.Log.Tabs.Properties\">\n    <option name=\"TAB_STATES\">\n      <map>\n        <entry key=\"MAIN\">\n          <value>\n            <State>\n              <option name=\"RECENTLY_FILTERED_USER_GROUPS\">\n                <collection />\n              </option>\n              <option name=\"RECENTLY_FILTERED_BRANCH_GROUPS\">\n                <collection />\n              </option>\n            </State>\n          </value>\n        </entry>\n      </map>\n    </option>\n    <option name=\"RECENT_FILTERS\">\n      <map>\n        <entry key=\"Branch\">\n          <value>\n            <list />\n          </value>\n        </entry>\n        <entry key=\"User\">\n          <value>\n            <list />\n          </value>\n        </entry>\n      </map>\n    </option>\n  </component>\n  <component name=\"VcsManagerConfiguration\">\n    <MESSAGE value=\"code cleared\" />\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"code cleared\" />\n  </component>\n  <component name=\"WindowStateProjectService\">\n    <state x=\"458\" y=\"223\" key=\"#com.intellij.codeInsight.editorActions.RestoreReferencesDialog\" />\n    <state x=\"458\" y=\"223\" key=\"#com.intellij.codeInsight.editorActions.RestoreReferencesDialog/0.23.1440.877@0.23.1440.877\" />\n    <state x=\"410\" y=\"363\" width=\"620\" height=\"205\" key=\"#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes\" />\n    <state x=\"410\" y=\"363\" width=\"620\" height=\"205\" key=\"#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.23.1440.877@0.23.1440.877\" />\n    <state width=\"1398\" height=\"269\" key=\"GridCell.Tab.0.bottom\" />\n    <state width=\"1398\" height=\"269\" key=\"GridCell.Tab.0.bottom/0.23.1440.877@0.23.1440.877\" />\n    <state width=\"1398\" height=\"269\" key=\"GridCell.Tab.0.center\" />\n    <state width=\"1398\" height=\"269\" key=\"GridCell.Tab.0.center/0.23.1440.877@0.23.1440.877\" />\n    <state width=\"1398\" height=\"269\" key=\"GridCell.Tab.0.left\" />\n    <state width=\"1398\" height=\"269\" key=\"GridCell.Tab.0.left/0.23.1440.877@0.23.1440.877\" />\n    <state width=\"1398\" height=\"269\" key=\"GridCell.Tab.0.right\" />\n    <state width=\"1398\" height=\"269\" key=\"GridCell.Tab.0.right/0.23.1440.877@0.23.1440.877\" />\n    <state width=\"1398\" height=\"286\" key=\"GridCell.Tab.1.bottom\" />\n    <state width=\"1398\" height=\"286\" key=\"GridCell.Tab.1.bottom/0.23.1440.877@0.23.1440.877\" />\n    <state width=\"1398\" height=\"286\" key=\"GridCell.Tab.1.center\" />\n    <state width=\"1398\" height=\"286\" key=\"GridCell.Tab.1.center/0.23.1440.877@0.23.1440.877\" />\n    <state width=\"1398\" height=\"286\" key=\"GridCell.Tab.1.left\" />\n    <state width=\"1398\" height=\"286\" key=\"GridCell.Tab.1.left/0.23.1440.877@0.23.1440.877\" />\n    <state width=\"1398\" height=\"286\" key=\"GridCell.Tab.1.right\" />\n    <state width=\"1398\" height=\"286\" key=\"GridCell.Tab.1.right/0.23.1440.877@0.23.1440.877\" />\n    <state x=\"221\" y=\"100\" key=\"SettingsEditor\" />\n    <state x=\"221\" y=\"100\" key=\"SettingsEditor/0.23.1440.877@0.23.1440.877\" />\n    <state x=\"508\" y=\"382\" key=\"com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2\" />\n    <state x=\"508\" y=\"382\" key=\"com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1440.877@0.23.1440.877\" />\n  </component>\n  <component name=\"editorHistoryManager\">\n    <entry file=\"file://$PROJECT_DIR$/REPORTS/genious interface/главное окно.png\">\n      <provider selected=\"true\" editor-type-id=\"images\" />\n    </entry>\n    <entry file=\"file://$PROJECT_DIR$/src/kolmykov_shishkin_stepanov/listeners/CreateEdgeActionListener.java\">\n      <provider selected=\"true\" editor-type-id=\"text-editor\">\n        <state relative-caret-position=\"272\">\n          <caret line=\"20\" selection-start-line=\"20\" selection-end-line=\"20\" />\n          <folding>\n            <element signature=\"imports\" expanded=\"true\" />\n          </folding>\n        </state>\n      </provider>\n    </entry>\n    <entry file=\"file://$PROJECT_DIR$/src/kolmykov_shishkin_stepanov/AddEdgeWindow.java\">\n      <provider selected=\"true\" editor-type-id=\"text-editor\">\n        <state relative-caret-position=\"833\">\n          <caret line=\"54\" column=\"72\" selection-start-line=\"54\" selection-start-column=\"72\" selection-end-line=\"54\" selection-end-column=\"72\" />\n          <folding>\n            <element signature=\"imports\" expanded=\"true\" />\n          </folding>\n        </state>\n      </provider>\n    </entry>\n    <entry file=\"file://$PROJECT_DIR$/src/kolmykov_shishkin_stepanov/listeners/StepButtonActionListener.java\">\n      <provider selected=\"true\" editor-type-id=\"text-editor\">\n        <state relative-caret-position=\"289\">\n          <caret line=\"23\" lean-forward=\"true\" selection-start-line=\"23\" selection-end-line=\"23\" />\n          <folding>\n            <element signature=\"e#378#379#0\" expanded=\"true\" />\n            <element signature=\"e#414#415#0\" expanded=\"true\" />\n          </folding>\n        </state>\n      </provider>\n    </entry>\n    <entry file=\"file://$PROJECT_DIR$/src/kolmykov_shishkin_stepanov/KruskalAlgorithm.java\">\n      <provider selected=\"true\" editor-type-id=\"text-editor\">\n        <state relative-caret-position=\"469\">\n          <caret line=\"38\" lean-forward=\"true\" selection-start-line=\"38\" selection-end-line=\"38\" />\n          <folding>\n            <element signature=\"e#861#862#0\" expanded=\"true\" />\n            <element signature=\"e#901#902#0\" expanded=\"true\" />\n          </folding>\n        </state>\n      </provider>\n    </entry>\n    <entry file=\"file://$PROJECT_DIR$/src/kolmykov_shishkin_stepanov/graphics/GraphicsPanel.java\">\n      <provider selected=\"true\" editor-type-id=\"text-editor\">\n        <state relative-caret-position=\"435\">\n          <caret line=\"84\" column=\"5\" selection-start-line=\"84\" selection-start-column=\"5\" selection-end-line=\"84\" selection-end-column=\"5\" />\n          <folding>\n            <element signature=\"imports\" expanded=\"true\" />\n          </folding>\n        </state>\n      </provider>\n    </entry>\n    <entry file=\"file://$PROJECT_DIR$/src/kolmykov_shishkin_stepanov/listeners/RunActionListener.java\">\n      <provider selected=\"true\" editor-type-id=\"text-editor\">\n        <state relative-caret-position=\"221\">\n          <caret line=\"20\" column=\"24\" selection-start-line=\"20\" selection-start-column=\"24\" selection-end-line=\"20\" selection-end-column=\"24\" />\n        </state>\n      </provider>\n    </entry>\n    <entry file=\"file://$PROJECT_DIR$/src/kolmykov_shishkin_stepanov/Node.java\">\n      <provider selected=\"true\" editor-type-id=\"text-editor\">\n        <state relative-caret-position=\"306\">\n          <caret line=\"18\" column=\"106\" lean-forward=\"true\" selection-start-line=\"18\" selection-start-column=\"106\" selection-end-line=\"18\" selection-end-column=\"106\" />\n          <folding>\n            <element signature=\"imports\" expanded=\"true\" />\n            <element signature=\"e#110#111#0\" expanded=\"true\" />\n            <element signature=\"e#146#147#0\" expanded=\"true\" />\n            <element signature=\"e#176#177#0\" expanded=\"true\" />\n            <element signature=\"e#205#206#0\" expanded=\"true\" />\n            <element signature=\"e#748#749#0\" expanded=\"true\" />\n            <element signature=\"e#773#774#0\" expanded=\"true\" />\n          </folding>\n        </state>\n      </provider>\n    </entry>\n    <entry file=\"file://$PROJECT_DIR$/src/kolmykov_shishkin_stepanov/listeners/CreateFirstExampleActionListener.java\">\n      <provider selected=\"true\" editor-type-id=\"text-editor\">\n        <state relative-caret-position=\"425\">\n          <caret line=\"32\" column=\"33\" selection-start-line=\"32\" selection-start-column=\"33\" selection-end-line=\"32\" selection-end-column=\"33\" />\n        </state>\n      </provider>\n    </entry>\n    <entry file=\"file://$PROJECT_DIR$/src/kolmykov_shishkin_stepanov/Window.java\">\n      <provider selected=\"true\" editor-type-id=\"text-editor\">\n        <state relative-caret-position=\"-313\">\n          <caret line=\"136\" column=\"41\" lean-forward=\"true\" selection-start-line=\"136\" selection-start-column=\"41\" selection-end-line=\"136\" selection-end-column=\"41\" />\n          <folding>\n            <element signature=\"imports\" expanded=\"true\" />\n            <element signature=\"e#7015#7016#0\" expanded=\"true\" />\n            <element signature=\"e#7088#7089#0\" expanded=\"true\" />\n            <element signature=\"e#7120#7121#0\" expanded=\"true\" />\n            <element signature=\"e#7163#7164#0\" expanded=\"true\" />\n            <marker date=\"1593846075491\" expanded=\"true\" signature=\"5199:5989\" ph=\"...\" />\n          </folding>\n        </state>\n      </provider>\n    </entry>\n  </component>\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/workspace.xml	(revision d4f7e1339693fae68d2e522e858297f64baf1546)
++++ .idea/workspace.xml	(date 1593854598931)
+@@ -21,16 +21,14 @@
+   <component name="ChangeListManager">
+     <list default="true" id="ccbf1c18-5799-4103-9389-3cac2b35cc7d" name="Default Changelist" comment="">
+       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/kolmykov_shishkin_stepanov/KruskalAlgorithm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kolmykov_shishkin_stepanov/KruskalAlgorithm.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/kolmykov_shishkin_stepanov/Node.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kolmykov_shishkin_stepanov/Node.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/kolmykov_shishkin_stepanov/Window.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kolmykov_shishkin_stepanov/Window.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/kolmykov_shishkin_stepanov/graphics/GraphicsPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kolmykov_shishkin_stepanov/graphics/GraphicsPanel.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/kolmykov_shishkin_stepanov/listeners/CreateFirstExampleActionListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kolmykov_shishkin_stepanov/listeners/CreateFirstExampleActionListener.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/kolmykov_shishkin_stepanov/listeners/RunActionListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kolmykov_shishkin_stepanov/listeners/RunActionListener.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/kolmykov_shishkin_stepanov/listeners/StepButtonActionListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kolmykov_shishkin_stepanov/listeners/StepButtonActionListener.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/out/production/PRACTICE/kolmykov_shishkin_stepanov/KruskalAlgorithm.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PRACTICE/kolmykov_shishkin_stepanov/KruskalAlgorithm.class" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/out/production/PRACTICE/kolmykov_shishkin_stepanov/Node.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PRACTICE/kolmykov_shishkin_stepanov/Node.class" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/out/production/PRACTICE/kolmykov_shishkin_stepanov/Window.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PRACTICE/kolmykov_shishkin_stepanov/Window.class" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/out/production/PRACTICE/kolmykov_shishkin_stepanov/graphics/GraphicsPanel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PRACTICE/kolmykov_shishkin_stepanov/graphics/GraphicsPanel.class" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/out/production/PRACTICE/kolmykov_shishkin_stepanov/listeners/CreateEdgeActionListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PRACTICE/kolmykov_shishkin_stepanov/listeners/CreateEdgeActionListener.class" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/out/production/PRACTICE/kolmykov_shishkin_stepanov/listeners/CreateFirstExampleActionListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PRACTICE/kolmykov_shishkin_stepanov/listeners/CreateFirstExampleActionListener.class" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/out/production/PRACTICE/kolmykov_shishkin_stepanov/listeners/StepButtonActionListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PRACTICE/kolmykov_shishkin_stepanov/listeners/StepButtonActionListener.class" afterDir="false" />
+     </list>
+-    <ignored path="$PROJECT_DIR$/out/" />
+-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+@@ -38,79 +36,6 @@
+   </component>
+   <component name="DefaultGradleProjectSettings">
+     <option name="isMigrated" value="true" />
+-  </component>
+-  <component name="FileEditorManager">
+-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+-      <file pinned="false" current-in-tab="true">
+-        <entry file="file://$PROJECT_DIR$/src/kolmykov_shishkin_stepanov/Window.java">
+-          <provider selected="true" editor-type-id="text-editor">
+-            <state relative-caret-position="-313">
+-              <caret line="136" column="41" lean-forward="true" selection-start-line="136" selection-start-column="41" selection-end-line="136" selection-end-column="41" />
+-              <folding>
+-                <element signature="imports" expanded="true" />
+-                <element signature="e#7015#7016#0" expanded="true" />
+-                <element signature="e#7088#7089#0" expanded="true" />
+-                <element signature="e#7120#7121#0" expanded="true" />
+-                <element signature="e#7163#7164#0" expanded="true" />
+-                <marker date="1593846075491" expanded="true" signature="5199:5989" ph="..." />
+-              </folding>
+-            </state>
+-          </provider>
+-        </entry>
+-      </file>
+-      <file pinned="false" current-in-tab="false">
+-        <entry file="file://$PROJECT_DIR$/src/kolmykov_shishkin_stepanov/KruskalAlgorithm.java">
+-          <provider selected="true" editor-type-id="text-editor">
+-            <state relative-caret-position="469">
+-              <caret line="38" lean-forward="true" selection-start-line="38" selection-end-line="38" />
+-              <folding>
+-                <element signature="e#861#862#0" expanded="true" />
+-                <element signature="e#901#902#0" expanded="true" />
+-              </folding>
+-            </state>
+-          </provider>
+-        </entry>
+-      </file>
+-      <file pinned="false" current-in-tab="false">
+-        <entry file="file://$PROJECT_DIR$/src/kolmykov_shishkin_stepanov/graphics/GraphicsPanel.java">
+-          <provider selected="true" editor-type-id="text-editor">
+-            <state relative-caret-position="435">
+-              <caret line="84" column="5" selection-start-line="84" selection-start-column="5" selection-end-line="84" selection-end-column="5" />
+-              <folding>
+-                <element signature="imports" expanded="true" />
+-              </folding>
+-            </state>
+-          </provider>
+-        </entry>
+-      </file>
+-      <file pinned="false" current-in-tab="false">
+-        <entry file="file://$PROJECT_DIR$/src/kolmykov_shishkin_stepanov/Node.java">
+-          <provider selected="true" editor-type-id="text-editor">
+-            <state relative-caret-position="306">
+-              <caret line="18" column="106" lean-forward="true" selection-start-line="18" selection-start-column="106" selection-end-line="18" selection-end-column="106" />
+-              <folding>
+-                <element signature="imports" expanded="true" />
+-                <element signature="e#110#111#0" expanded="true" />
+-                <element signature="e#146#147#0" expanded="true" />
+-                <element signature="e#176#177#0" expanded="true" />
+-                <element signature="e#205#206#0" expanded="true" />
+-                <element signature="e#748#749#0" expanded="true" />
+-                <element signature="e#773#774#0" expanded="true" />
+-              </folding>
+-            </state>
+-          </provider>
+-        </entry>
+-      </file>
+-      <file pinned="false" current-in-tab="false">
+-        <entry file="file://$PROJECT_DIR$/src/kolmykov_shishkin_stepanov/listeners/CreateFirstExampleActionListener.java">
+-          <provider selected="true" editor-type-id="text-editor">
+-            <state relative-caret-position="425">
+-              <caret line="32" column="33" selection-start-line="32" selection-start-column="33" selection-end-line="32" selection-end-column="33" />
+-            </state>
+-          </provider>
+-        </entry>
+-      </file>
+-    </leaf>
+   </component>
+   <component name="FileTemplateManagerImpl">
+     <option name="RECENT_TEMPLATES">
+@@ -122,20 +47,6 @@
+   <component name="Git.Settings">
+     <option name="UPDATE_TYPE" value="REBASE" />
+     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+-  </component>
+-  <component name="IdeDocumentHistory">
+-    <option name="CHANGED_PATHS">
+-      <list>
+-        <option value="$PROJECT_DIR$/src/kolmykov_shishkin_stepanov/listeners/CreateEdgeActionListener.java" />
+-        <option value="$PROJECT_DIR$/src/kolmykov_shishkin_stepanov/listeners/StepButtonActionListener.java" />
+-        <option value="$PROJECT_DIR$/src/kolmykov_shishkin_stepanov/listeners/CreateFirstExampleActionListener.java" />
+-        <option value="$PROJECT_DIR$/src/kolmykov_shishkin_stepanov/Node.java" />
+-        <option value="$PROJECT_DIR$/src/kolmykov_shishkin_stepanov/KruskalAlgorithm.java" />
+-        <option value="$PROJECT_DIR$/src/kolmykov_shishkin_stepanov/Window.java" />
+-        <option value="$PROJECT_DIR$/src/kolmykov_shishkin_stepanov/listeners/RunActionListener.java" />
+-        <option value="$PROJECT_DIR$/src/kolmykov_shishkin_stepanov/graphics/GraphicsPanel.java" />
+-      </list>
+-    </option>
+   </component>
+   <component name="ProjectFrameBounds" extendedState="6">
+     <option name="x" value="952" />
+@@ -146,51 +57,6 @@
+   <component name="ProjectId" id="1e8Vaurd0rxkF9eN5JFoWrq3A9H" />
+   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+     <ConfirmationsSetting value="2" id="Add" />
+-  </component>
+-  <component name="ProjectView">
+-    <navigator proportions="" version="1">
+-      <foldersAlwaysOnTop value="true" />
+-    </navigator>
+-    <panes>
+-      <pane id="Scope" />
+-      <pane id="ProjectPane">
+-        <subPane>
+-          <expand>
+-            <path>
+-              <item name="PRACTICE" type="b2602c69:ProjectViewProjectNode" />
+-              <item name="PRACTICE" type="462c0819:PsiDirectoryNode" />
+-            </path>
+-            <path>
+-              <item name="PRACTICE" type="b2602c69:ProjectViewProjectNode" />
+-              <item name="PRACTICE" type="462c0819:PsiDirectoryNode" />
+-              <item name="src" type="462c0819:PsiDirectoryNode" />
+-            </path>
+-            <path>
+-              <item name="PRACTICE" type="b2602c69:ProjectViewProjectNode" />
+-              <item name="PRACTICE" type="462c0819:PsiDirectoryNode" />
+-              <item name="src" type="462c0819:PsiDirectoryNode" />
+-              <item name="kolmykov_shishkin_stepanov" type="462c0819:PsiDirectoryNode" />
+-            </path>
+-            <path>
+-              <item name="PRACTICE" type="b2602c69:ProjectViewProjectNode" />
+-              <item name="PRACTICE" type="462c0819:PsiDirectoryNode" />
+-              <item name="src" type="462c0819:PsiDirectoryNode" />
+-              <item name="kolmykov_shishkin_stepanov" type="462c0819:PsiDirectoryNode" />
+-              <item name="graphics" type="462c0819:PsiDirectoryNode" />
+-            </path>
+-            <path>
+-              <item name="PRACTICE" type="b2602c69:ProjectViewProjectNode" />
+-              <item name="PRACTICE" type="462c0819:PsiDirectoryNode" />
+-              <item name="src" type="462c0819:PsiDirectoryNode" />
+-              <item name="kolmykov_shishkin_stepanov" type="462c0819:PsiDirectoryNode" />
+-              <item name="listeners" type="462c0819:PsiDirectoryNode" />
+-            </path>
+-          </expand>
+-          <select />
+-        </subPane>
+-      </pane>
+-      <pane id="PackagesPane" />
+-    </panes>
+   </component>
+   <component name="ProjectViewState">
+     <option name="hideEmptyMiddlePackages" value="true" />
+@@ -211,18 +77,6 @@
+       <recent name="D:\Projects\IDEA\PRACTICE\REPORTS\uml" />
+     </key>
+   </component>
+-  <component name="RunDashboard">
+-    <option name="ruleStates">
+-      <list>
+-        <RuleState>
+-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+-        </RuleState>
+-        <RuleState>
+-          <option name="name" value="StatusDashboardGroupingRule" />
+-        </RuleState>
+-      </list>
+-    </option>
+-  </component>
+   <component name="RunManager">
+     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+       <option name="MAIN_CLASS_NAME" value="kolmykov_shishkin_stepanov.Main" />
+@@ -276,42 +130,6 @@
+   <component name="TimeTrackingManager">
+     <option name="totallyTimeSpent" value="8101000" />
+   </component>
+-  <component name="ToolWindowManager">
+-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+-    <editor active="true" />
+-    <layout>
+-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26865673" />
+-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+-      <window_info id="Image Layers" order="2" />
+-      <window_info id="Designer" order="3" />
+-      <window_info id="UI Designer" order="4" />
+-      <window_info id="Capture Tool" order="5" />
+-      <window_info id="Favorites" order="6" side_tool="true" />
+-      <window_info anchor="bottom" id="Message" order="0" />
+-      <window_info anchor="bottom" id="Find" order="1" />
+-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49946696" visible="true" weight="0.32936078" />
+-      <window_info anchor="bottom" id="Debug" order="3" weight="0.3997833" />
+-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+-      <window_info anchor="bottom" id="TODO" order="6" />
+-      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+-      <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.49946696" weight="0.32936078" />
+-      <window_info anchor="bottom" id="Database Changes" order="9" />
+-      <window_info anchor="bottom" id="Terminal" order="10" />
+-      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50053304" side_tool="true" weight="0.32936078" />
+-      <window_info anchor="bottom" id="Messages" order="12" weight="0.32936078" />
+-      <window_info anchor="bottom" id="SVN Repositories" order="13" weight="0.32936078" />
+-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+-      <window_info anchor="right" id="Palette" order="3" />
+-      <window_info anchor="right" id="Database" order="4" />
+-      <window_info anchor="right" id="Theme Preview" order="5" />
+-      <window_info anchor="right" id="Maven" order="6" />
+-      <window_info anchor="right" id="Capture Analysis" order="7" />
+-      <window_info anchor="right" id="Palette&#9;" order="8" />
+-    </layout>
+-  </component>
+   <component name="TypeScriptGeneratedFilesManager">
+     <option name="version" value="1" />
+   </component>
+@@ -320,14 +138,7 @@
+       <map>
+         <entry key="MAIN">
+           <value>
+-            <State>
+-              <option name="RECENTLY_FILTERED_USER_GROUPS">
+-                <collection />
+-              </option>
+-              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+-                <collection />
+-              </option>
+-            </State>
++            <State />
+           </value>
+         </entry>
+       </map>
+@@ -346,137 +157,44 @@
+         </entry>
+       </map>
+     </option>
++    <option name="oldMeFiltersMigrated" value="true" />
+   </component>
+   <component name="VcsManagerConfiguration">
+     <MESSAGE value="code cleared" />
+     <option name="LAST_COMMIT_MESSAGE" value="code cleared" />
+   </component>
+   <component name="WindowStateProjectService">
+-    <state x="458" y="223" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog" />
+-    <state x="458" y="223" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog/0.23.1440.877@0.23.1440.877" />
+-    <state x="410" y="363" width="620" height="205" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" />
+-    <state x="410" y="363" width="620" height="205" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.23.1440.877@0.23.1440.877" />
+-    <state width="1398" height="269" key="GridCell.Tab.0.bottom" />
+-    <state width="1398" height="269" key="GridCell.Tab.0.bottom/0.23.1440.877@0.23.1440.877" />
+-    <state width="1398" height="269" key="GridCell.Tab.0.center" />
+-    <state width="1398" height="269" key="GridCell.Tab.0.center/0.23.1440.877@0.23.1440.877" />
+-    <state width="1398" height="269" key="GridCell.Tab.0.left" />
+-    <state width="1398" height="269" key="GridCell.Tab.0.left/0.23.1440.877@0.23.1440.877" />
+-    <state width="1398" height="269" key="GridCell.Tab.0.right" />
+-    <state width="1398" height="269" key="GridCell.Tab.0.right/0.23.1440.877@0.23.1440.877" />
+-    <state width="1398" height="286" key="GridCell.Tab.1.bottom" />
+-    <state width="1398" height="286" key="GridCell.Tab.1.bottom/0.23.1440.877@0.23.1440.877" />
+-    <state width="1398" height="286" key="GridCell.Tab.1.center" />
+-    <state width="1398" height="286" key="GridCell.Tab.1.center/0.23.1440.877@0.23.1440.877" />
+-    <state width="1398" height="286" key="GridCell.Tab.1.left" />
+-    <state width="1398" height="286" key="GridCell.Tab.1.left/0.23.1440.877@0.23.1440.877" />
+-    <state width="1398" height="286" key="GridCell.Tab.1.right" />
+-    <state width="1398" height="286" key="GridCell.Tab.1.right/0.23.1440.877@0.23.1440.877" />
+-    <state x="221" y="100" key="SettingsEditor" />
+-    <state x="221" y="100" key="SettingsEditor/0.23.1440.877@0.23.1440.877" />
+-    <state x="508" y="382" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" />
+-    <state x="508" y="382" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1440.877@0.23.1440.877" />
+-  </component>
+-  <component name="editorHistoryManager">
+-    <entry file="file://$PROJECT_DIR$/REPORTS/genious interface/главное окно.png">
+-      <provider selected="true" editor-type-id="images" />
+-    </entry>
+-    <entry file="file://$PROJECT_DIR$/src/kolmykov_shishkin_stepanov/listeners/CreateEdgeActionListener.java">
+-      <provider selected="true" editor-type-id="text-editor">
+-        <state relative-caret-position="272">
+-          <caret line="20" selection-start-line="20" selection-end-line="20" />
+-          <folding>
+-            <element signature="imports" expanded="true" />
+-          </folding>
+-        </state>
+-      </provider>
+-    </entry>
+-    <entry file="file://$PROJECT_DIR$/src/kolmykov_shishkin_stepanov/AddEdgeWindow.java">
+-      <provider selected="true" editor-type-id="text-editor">
+-        <state relative-caret-position="833">
+-          <caret line="54" column="72" selection-start-line="54" selection-start-column="72" selection-end-line="54" selection-end-column="72" />
+-          <folding>
+-            <element signature="imports" expanded="true" />
+-          </folding>
+-        </state>
+-      </provider>
+-    </entry>
+-    <entry file="file://$PROJECT_DIR$/src/kolmykov_shishkin_stepanov/listeners/StepButtonActionListener.java">
+-      <provider selected="true" editor-type-id="text-editor">
+-        <state relative-caret-position="289">
+-          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
+-          <folding>
+-            <element signature="e#378#379#0" expanded="true" />
+-            <element signature="e#414#415#0" expanded="true" />
+-          </folding>
+-        </state>
+-      </provider>
+-    </entry>
+-    <entry file="file://$PROJECT_DIR$/src/kolmykov_shishkin_stepanov/KruskalAlgorithm.java">
+-      <provider selected="true" editor-type-id="text-editor">
+-        <state relative-caret-position="469">
+-          <caret line="38" lean-forward="true" selection-start-line="38" selection-end-line="38" />
+-          <folding>
+-            <element signature="e#861#862#0" expanded="true" />
+-            <element signature="e#901#902#0" expanded="true" />
+-          </folding>
+-        </state>
+-      </provider>
+-    </entry>
+-    <entry file="file://$PROJECT_DIR$/src/kolmykov_shishkin_stepanov/graphics/GraphicsPanel.java">
+-      <provider selected="true" editor-type-id="text-editor">
+-        <state relative-caret-position="435">
+-          <caret line="84" column="5" selection-start-line="84" selection-start-column="5" selection-end-line="84" selection-end-column="5" />
+-          <folding>
+-            <element signature="imports" expanded="true" />
+-          </folding>
+-        </state>
+-      </provider>
+-    </entry>
+-    <entry file="file://$PROJECT_DIR$/src/kolmykov_shishkin_stepanov/listeners/RunActionListener.java">
+-      <provider selected="true" editor-type-id="text-editor">
+-        <state relative-caret-position="221">
+-          <caret line="20" column="24" selection-start-line="20" selection-start-column="24" selection-end-line="20" selection-end-column="24" />
+-        </state>
+-      </provider>
+-    </entry>
+-    <entry file="file://$PROJECT_DIR$/src/kolmykov_shishkin_stepanov/Node.java">
+-      <provider selected="true" editor-type-id="text-editor">
+-        <state relative-caret-position="306">
+-          <caret line="18" column="106" lean-forward="true" selection-start-line="18" selection-start-column="106" selection-end-line="18" selection-end-column="106" />
+-          <folding>
+-            <element signature="imports" expanded="true" />
+-            <element signature="e#110#111#0" expanded="true" />
+-            <element signature="e#146#147#0" expanded="true" />
+-            <element signature="e#176#177#0" expanded="true" />
+-            <element signature="e#205#206#0" expanded="true" />
+-            <element signature="e#748#749#0" expanded="true" />
+-            <element signature="e#773#774#0" expanded="true" />
+-          </folding>
+-        </state>
+-      </provider>
+-    </entry>
+-    <entry file="file://$PROJECT_DIR$/src/kolmykov_shishkin_stepanov/listeners/CreateFirstExampleActionListener.java">
+-      <provider selected="true" editor-type-id="text-editor">
+-        <state relative-caret-position="425">
+-          <caret line="32" column="33" selection-start-line="32" selection-start-column="33" selection-end-line="32" selection-end-column="33" />
+-        </state>
+-      </provider>
+-    </entry>
+-    <entry file="file://$PROJECT_DIR$/src/kolmykov_shishkin_stepanov/Window.java">
+-      <provider selected="true" editor-type-id="text-editor">
+-        <state relative-caret-position="-313">
+-          <caret line="136" column="41" lean-forward="true" selection-start-line="136" selection-start-column="41" selection-end-line="136" selection-end-column="41" />
+-          <folding>
+-            <element signature="imports" expanded="true" />
+-            <element signature="e#7015#7016#0" expanded="true" />
+-            <element signature="e#7088#7089#0" expanded="true" />
+-            <element signature="e#7120#7121#0" expanded="true" />
+-            <element signature="e#7163#7164#0" expanded="true" />
+-            <marker date="1593846075491" expanded="true" signature="5199:5989" ph="..." />
+-          </folding>
+-        </state>
+-      </provider>
+-    </entry>
++    <state x="458" y="223" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog" timestamp="1593852632393" />
++    <state x="458" y="223" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog/0.23.1440.877@0.23.1440.877" timestamp="1593852632393" />
++    <state x="410" y="363" width="620" height="205" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1593852632393" />
++    <state x="410" y="363" width="620" height="205" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.23.1440.877@0.23.1440.877" timestamp="1593852632393" />
++    <state width="1398" height="284" key="GridCell.Tab.0.bottom" timestamp="1593854328957">
++      <screen x="0" y="23" width="1440" height="877" />
++    </state>
++    <state width="1398" height="284" key="GridCell.Tab.0.bottom/0.23.1440.877@0.23.1440.877" timestamp="1593854328957" />
++    <state width="1398" height="284" key="GridCell.Tab.0.center" timestamp="1593854328956">
++      <screen x="0" y="23" width="1440" height="877" />
++    </state>
++    <state width="1398" height="284" key="GridCell.Tab.0.center/0.23.1440.877@0.23.1440.877" timestamp="1593854328956" />
++    <state width="1398" height="284" key="GridCell.Tab.0.left" timestamp="1593854328956">
++      <screen x="0" y="23" width="1440" height="877" />
++    </state>
++    <state width="1398" height="284" key="GridCell.Tab.0.left/0.23.1440.877@0.23.1440.877" timestamp="1593854328956" />
++    <state width="1398" height="284" key="GridCell.Tab.0.right" timestamp="1593854328957">
++      <screen x="0" y="23" width="1440" height="877" />
++    </state>
++    <state width="1398" height="284" key="GridCell.Tab.0.right/0.23.1440.877@0.23.1440.877" timestamp="1593854328957" />
++    <state width="1398" height="286" key="GridCell.Tab.1.bottom" timestamp="1593852632393" />
++    <state width="1398" height="286" key="GridCell.Tab.1.bottom/0.23.1440.877@0.23.1440.877" timestamp="1593852632393" />
++    <state width="1398" height="286" key="GridCell.Tab.1.center" timestamp="1593852632393" />
++    <state width="1398" height="286" key="GridCell.Tab.1.center/0.23.1440.877@0.23.1440.877" timestamp="1593852632393" />
++    <state width="1398" height="286" key="GridCell.Tab.1.left" timestamp="1593852632393" />
++    <state width="1398" height="286" key="GridCell.Tab.1.left/0.23.1440.877@0.23.1440.877" timestamp="1593852632393" />
++    <state width="1398" height="286" key="GridCell.Tab.1.right" timestamp="1593852632393" />
++    <state width="1398" height="286" key="GridCell.Tab.1.right/0.23.1440.877@0.23.1440.877" timestamp="1593852632393" />
++    <state x="221" y="100" key="SettingsEditor" timestamp="1593852632393" />
++    <state x="221" y="100" key="SettingsEditor/0.23.1440.877@0.23.1440.877" timestamp="1593852632393" />
++    <state x="508" y="382" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1593852632393" />
++    <state x="508" y="382" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1440.877@0.23.1440.877" timestamp="1593852632393" />
+   </component>
+ </project>
+\ No newline at end of file

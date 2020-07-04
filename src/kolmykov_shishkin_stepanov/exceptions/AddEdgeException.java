@@ -1,7 +1,5 @@
 package kolmykov_shishkin_stepanov.exceptions;
 
-import kolmykov_shishkin_stepanov.Window;
-
 public class AddEdgeException extends Exception {
     public AddEdgeException() {}
 

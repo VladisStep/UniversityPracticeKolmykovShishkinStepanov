@@ -1,0 +1,116 @@
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<project version=\"4\">\n  <component name=\"BranchesTreeState\">\n    <expand>\n      <path>\n        <item name=\"ROOT\" type=\"e8cecc67:BranchNodeDescriptor\" />\n        <item name=\"LOCAL_ROOT\" type=\"e8cecc67:BranchNodeDescriptor\" />\n      </path>\n      <path>\n        <item name=\"ROOT\" type=\"e8cecc67:BranchNodeDescriptor\" />\n        <item name=\"REMOTE_ROOT\" type=\"e8cecc67:BranchNodeDescriptor\" />\n      </path>\n      <path>\n        <item name=\"ROOT\" type=\"e8cecc67:BranchNodeDescriptor\" />\n        <item name=\"REMOTE_ROOT\" type=\"e8cecc67:BranchNodeDescriptor\" />\n        <item name=\"GROUP_NODE:origin\" type=\"e8cecc67:BranchNodeDescriptor\" />\n      </path>\n    </expand>\n    <select />\n  </component>\n  <component name=\"ChangeListManager\">\n    <list default=\"true\" id=\"43c3fb61-41d8-42c9-a7c7-774e4963a245\" name=\"Default Changelist\" comment=\"add buttons\">\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/out/production/PRACTICE/kolmykov_shishkin_stepanov/Window.class\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/out/production/PRACTICE/kolmykov_shishkin_stepanov/Window.class\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/out/production/PRACTICE/kolmykov_shishkin_stepanov/listeners/CreateEdgeActionListener.class\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/out/production/PRACTICE/kolmykov_shishkin_stepanov/listeners/CreateEdgeActionListener.class\" afterDir=\"false\" />\n    </list>\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\n  </component>\n  <component name=\"FileTemplateManagerImpl\">\n    <option name=\"RECENT_TEMPLATES\">\n      <list>\n        <option value=\"Class\" />\n      </list>\n    </option>\n  </component>\n  <component name=\"Git.Settings\">\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\n  </component>\n  <component name=\"ProjectId\" id=\"1e8Vaurd0rxkF9eN5JFoWrq3A9H\" />\n  <component name=\"ProjectLevelVcsManager\">\n    <ConfirmationsSetting value=\"2\" id=\"Add\" />\n  </component>\n  <component name=\"ProjectViewState\">\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\n    <option name=\"showLibraryContents\" value=\"true\" />\n  </component>\n  <component name=\"PropertiesComponent\">\n    <property name=\"RunOnceActivity.OpenProjectViewOnStart\" value=\"true\" />\n    <property name=\"RunOnceActivity.ShowReadmeOnStart\" value=\"true\" />\n    <property name=\"settings.editor.selected.configurable\" value=\"preferences.lookFeel\" />\n  </component>\n  <component name=\"RunManager\">\n    <configuration name=\"Main\" type=\"Application\" factoryName=\"Application\" temporary=\"true\" nameIsGenerated=\"true\">\n      <option name=\"MAIN_CLASS_NAME\" value=\"kolmykov_shishkin_stepanov.Main\" />\n      <module name=\"PRACTICE\" />\n      <extension name=\"coverage\">\n        <pattern>\n          <option name=\"PATTERN\" value=\"kolmykov_shishkin_stepanov.*\" />\n          <option name=\"ENABLED\" value=\"true\" />\n        </pattern>\n      </extension>\n      <method v=\"2\">\n        <option name=\"Make\" enabled=\"true\" />\n      </method>\n    </configuration>\n    <recent_temporary>\n      <list>\n        <item itemvalue=\"Application.Main\" />\n      </list>\n    </recent_temporary>\n  </component>\n  <component name=\"SvnConfiguration\">\n    <configuration />\n  </component>\n  <component name=\"TaskManager\">\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\n      <changelist id=\"43c3fb61-41d8-42c9-a7c7-774e4963a245\" name=\"Default Changelist\" comment=\"\" />\n      <created>1593703273432</created>\n      <option name=\"number\" value=\"Default\" />\n      <option name=\"presentableId\" value=\"Default\" />\n      <updated>1593703273432</updated>\n    </task>\n    <task id=\"LOCAL-00001\" summary=\"add buttons\">\n      <created>1593715161591</created>\n      <option name=\"number\" value=\"00001\" />\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1593715161591</updated>\n    </task>\n    <task id=\"LOCAL-00002\" summary=\"add buttons\">\n      <created>1593715231776</created>\n      <option name=\"number\" value=\"00002\" />\n      <option name=\"presentableId\" value=\"LOCAL-00002\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1593715231776</updated>\n    </task>\n    <option name=\"localTasksCounter\" value=\"3\" />\n    <servers />\n  </component>\n  <component name=\"Vcs.Log.Tabs.Properties\">\n    <option name=\"TAB_STATES\">\n      <map>\n        <entry key=\"MAIN\">\n          <value>\n            <State />\n          </value>\n        </entry>\n      </map>\n    </option>\n    <option name=\"oldMeFiltersMigrated\" value=\"true\" />\n  </component>\n  <component name=\"VcsManagerConfiguration\">\n    <MESSAGE value=\"add buttons\" />\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"add buttons\" />\n  </component>\n  <component name=\"WindowStateProjectService\">\n    <state x=\"458\" y=\"223\" key=\"#com.intellij.codeInsight.editorActions.RestoreReferencesDialog\" timestamp=\"1593708767818\">\n      <screen x=\"0\" y=\"23\" width=\"1440\" height=\"877\" />\n    </state>\n    <state x=\"458\" y=\"223\" key=\"#com.intellij.codeInsight.editorActions.RestoreReferencesDialog/0.23.1440.877@0.23.1440.877\" timestamp=\"1593708767818\" />\n    <state x=\"410\" y=\"363\" width=\"620\" height=\"205\" key=\"#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes\" timestamp=\"1593706566086\">\n      <screen x=\"0\" y=\"23\" width=\"1440\" height=\"877\" />\n    </state>\n    <state x=\"410\" y=\"363\" width=\"620\" height=\"205\" key=\"#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.23.1440.877@0.23.1440.877\" timestamp=\"1593706566086\" />\n    <state width=\"1398\" height=\"269\" key=\"GridCell.Tab.0.bottom\" timestamp=\"1593715530711\">\n      <screen x=\"0\" y=\"23\" width=\"1440\" height=\"877\" />\n    </state>\n    <state width=\"1398\" height=\"269\" key=\"GridCell.Tab.0.bottom/0.23.1440.877@0.23.1440.877\" timestamp=\"1593715530711\" />\n    <state width=\"1398\" height=\"269\" key=\"GridCell.Tab.0.center\" timestamp=\"1593715530710\">\n      <screen x=\"0\" y=\"23\" width=\"1440\" height=\"877\" />\n    </state>\n    <state width=\"1398\" height=\"269\" key=\"GridCell.Tab.0.center/0.23.1440.877@0.23.1440.877\" timestamp=\"1593715530710\" />\n    <state width=\"1398\" height=\"269\" key=\"GridCell.Tab.0.left\" timestamp=\"1593715530710\">\n      <screen x=\"0\" y=\"23\" width=\"1440\" height=\"877\" />\n    </state>\n    <state width=\"1398\" height=\"269\" key=\"GridCell.Tab.0.left/0.23.1440.877@0.23.1440.877\" timestamp=\"1593715530710\" />\n    <state width=\"1398\" height=\"269\" key=\"GridCell.Tab.0.right\" timestamp=\"1593715530710\">\n      <screen x=\"0\" y=\"23\" width=\"1440\" height=\"877\" />\n    </state>\n    <state width=\"1398\" height=\"269\" key=\"GridCell.Tab.0.right/0.23.1440.877@0.23.1440.877\" timestamp=\"1593715530710\" />\n    <state width=\"1398\" height=\"286\" key=\"GridCell.Tab.1.bottom\" timestamp=\"1593714782434\">\n      <screen x=\"0\" y=\"23\" width=\"1440\" height=\"877\" />\n    </state>\n    <state width=\"1398\" height=\"286\" key=\"GridCell.Tab.1.bottom/0.23.1440.877@0.23.1440.877\" timestamp=\"1593714782434\" />\n    <state width=\"1398\" height=\"286\" key=\"GridCell.Tab.1.center\" timestamp=\"1593714782433\">\n      <screen x=\"0\" y=\"23\" width=\"1440\" height=\"877\" />\n    </state>\n    <state width=\"1398\" height=\"286\" key=\"GridCell.Tab.1.center/0.23.1440.877@0.23.1440.877\" timestamp=\"1593714782433\" />\n    <state width=\"1398\" height=\"286\" key=\"GridCell.Tab.1.left\" timestamp=\"1593714782433\">\n      <screen x=\"0\" y=\"23\" width=\"1440\" height=\"877\" />\n    </state>\n    <state width=\"1398\" height=\"286\" key=\"GridCell.Tab.1.left/0.23.1440.877@0.23.1440.877\" timestamp=\"1593714782433\" />\n    <state width=\"1398\" height=\"286\" key=\"GridCell.Tab.1.right\" timestamp=\"1593714782433\">\n      <screen x=\"0\" y=\"23\" width=\"1440\" height=\"877\" />\n    </state>\n    <state width=\"1398\" height=\"286\" key=\"GridCell.Tab.1.right/0.23.1440.877@0.23.1440.877\" timestamp=\"1593714782433\" />\n    <state x=\"221\" y=\"100\" key=\"SettingsEditor\" timestamp=\"1593713418540\">\n      <screen x=\"0\" y=\"23\" width=\"1440\" height=\"877\" />\n    </state>\n    <state x=\"221\" y=\"100\" key=\"SettingsEditor/0.23.1440.877@0.23.1440.877\" timestamp=\"1593713418540\" />\n    <state x=\"320\" y=\"201\" key=\"Vcs.Push.Dialog.v2\" timestamp=\"1593715238508\">\n      <screen x=\"0\" y=\"23\" width=\"1440\" height=\"877\" />\n    </state>\n    <state x=\"320\" y=\"201\" key=\"Vcs.Push.Dialog.v2/0.23.1440.877@0.23.1440.877\" timestamp=\"1593715238508\" />\n    <state x=\"508\" y=\"382\" key=\"com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2\" timestamp=\"1593715379679\">\n      <screen x=\"0\" y=\"23\" width=\"1440\" height=\"877\" />\n    </state>\n    <state x=\"508\" y=\"382\" key=\"com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1440.877@0.23.1440.877\" timestamp=\"1593715379679\" />\n  </component>\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/workspace.xml	(revision 955f9e484ff06d0e7cdd629e4348e3be8c715175)
++++ .idea/workspace.xml	(date 1593852420448)
+@@ -19,10 +19,9 @@
+     <select />
+   </component>
+   <component name="ChangeListManager">
+-    <list default="true" id="43c3fb61-41d8-42c9-a7c7-774e4963a245" name="Default Changelist" comment="add buttons">
++    <list default="true" id="43c3fb61-41d8-42c9-a7c7-774e4963a245" name="Default Changelist" comment="fix">
+       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/out/production/PRACTICE/kolmykov_shishkin_stepanov/Window.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PRACTICE/kolmykov_shishkin_stepanov/Window.class" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/out/production/PRACTICE/kolmykov_shishkin_stepanov/listeners/CreateEdgeActionListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PRACTICE/kolmykov_shishkin_stepanov/listeners/CreateEdgeActionListener.class" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/out/production/PRACTICE/META-INF/PRACTICE.kotlin_module" beforeDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+@@ -97,7 +96,14 @@
+       <option name="project" value="LOCAL" />
+       <updated>1593715231776</updated>
+     </task>
+-    <option name="localTasksCounter" value="3" />
++    <task id="LOCAL-00003" summary="fix">
++      <created>1593715843132</created>
++      <option name="number" value="00003" />
++      <option name="presentableId" value="LOCAL-00003" />
++      <option name="project" value="LOCAL" />
++      <updated>1593715843132</updated>
++    </task>
++    <option name="localTasksCounter" value="4" />
+     <servers />
+   </component>
+   <component name="Vcs.Log.Tabs.Properties">
+@@ -114,7 +120,8 @@
+   </component>
+   <component name="VcsManagerConfiguration">
+     <MESSAGE value="add buttons" />
+-    <option name="LAST_COMMIT_MESSAGE" value="add buttons" />
++    <MESSAGE value="fix" />
++    <option name="LAST_COMMIT_MESSAGE" value="fix" />
+   </component>
+   <component name="WindowStateProjectService">
+     <state x="458" y="223" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog" timestamp="1593708767818">
+@@ -125,38 +132,38 @@
+       <screen x="0" y="23" width="1440" height="877" />
+     </state>
+     <state x="410" y="363" width="620" height="205" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.23.1440.877@0.23.1440.877" timestamp="1593706566086" />
+-    <state width="1398" height="269" key="GridCell.Tab.0.bottom" timestamp="1593715530711">
++    <state width="1398" height="269" key="GridCell.Tab.0.bottom" timestamp="1593716499141">
+       <screen x="0" y="23" width="1440" height="877" />
+     </state>
+-    <state width="1398" height="269" key="GridCell.Tab.0.bottom/0.23.1440.877@0.23.1440.877" timestamp="1593715530711" />
+-    <state width="1398" height="269" key="GridCell.Tab.0.center" timestamp="1593715530710">
++    <state width="1398" height="269" key="GridCell.Tab.0.bottom/0.23.1440.877@0.23.1440.877" timestamp="1593716499141" />
++    <state width="1398" height="269" key="GridCell.Tab.0.center" timestamp="1593716499141">
+       <screen x="0" y="23" width="1440" height="877" />
+     </state>
+-    <state width="1398" height="269" key="GridCell.Tab.0.center/0.23.1440.877@0.23.1440.877" timestamp="1593715530710" />
+-    <state width="1398" height="269" key="GridCell.Tab.0.left" timestamp="1593715530710">
++    <state width="1398" height="269" key="GridCell.Tab.0.center/0.23.1440.877@0.23.1440.877" timestamp="1593716499141" />
++    <state width="1398" height="269" key="GridCell.Tab.0.left" timestamp="1593716499141">
+       <screen x="0" y="23" width="1440" height="877" />
+     </state>
+-    <state width="1398" height="269" key="GridCell.Tab.0.left/0.23.1440.877@0.23.1440.877" timestamp="1593715530710" />
+-    <state width="1398" height="269" key="GridCell.Tab.0.right" timestamp="1593715530710">
++    <state width="1398" height="269" key="GridCell.Tab.0.left/0.23.1440.877@0.23.1440.877" timestamp="1593716499141" />
++    <state width="1398" height="269" key="GridCell.Tab.0.right" timestamp="1593716499141">
+       <screen x="0" y="23" width="1440" height="877" />
+     </state>
+-    <state width="1398" height="269" key="GridCell.Tab.0.right/0.23.1440.877@0.23.1440.877" timestamp="1593715530710" />
+-    <state width="1398" height="286" key="GridCell.Tab.1.bottom" timestamp="1593714782434">
++    <state width="1398" height="269" key="GridCell.Tab.0.right/0.23.1440.877@0.23.1440.877" timestamp="1593716499141" />
++    <state width="1398" height="286" key="GridCell.Tab.1.bottom" timestamp="1593716499136">
+       <screen x="0" y="23" width="1440" height="877" />
+     </state>
+-    <state width="1398" height="286" key="GridCell.Tab.1.bottom/0.23.1440.877@0.23.1440.877" timestamp="1593714782434" />
+-    <state width="1398" height="286" key="GridCell.Tab.1.center" timestamp="1593714782433">
++    <state width="1398" height="286" key="GridCell.Tab.1.bottom/0.23.1440.877@0.23.1440.877" timestamp="1593716499136" />
++    <state width="1398" height="286" key="GridCell.Tab.1.center" timestamp="1593716499136">
+       <screen x="0" y="23" width="1440" height="877" />
+     </state>
+-    <state width="1398" height="286" key="GridCell.Tab.1.center/0.23.1440.877@0.23.1440.877" timestamp="1593714782433" />
+-    <state width="1398" height="286" key="GridCell.Tab.1.left" timestamp="1593714782433">
++    <state width="1398" height="286" key="GridCell.Tab.1.center/0.23.1440.877@0.23.1440.877" timestamp="1593716499136" />
++    <state width="1398" height="286" key="GridCell.Tab.1.left" timestamp="1593716499135">
+       <screen x="0" y="23" width="1440" height="877" />
+     </state>
+-    <state width="1398" height="286" key="GridCell.Tab.1.left/0.23.1440.877@0.23.1440.877" timestamp="1593714782433" />
+-    <state width="1398" height="286" key="GridCell.Tab.1.right" timestamp="1593714782433">
++    <state width="1398" height="286" key="GridCell.Tab.1.left/0.23.1440.877@0.23.1440.877" timestamp="1593716499135" />
++    <state width="1398" height="286" key="GridCell.Tab.1.right" timestamp="1593716499136">
+       <screen x="0" y="23" width="1440" height="877" />
+     </state>
+-    <state width="1398" height="286" key="GridCell.Tab.1.right/0.23.1440.877@0.23.1440.877" timestamp="1593714782433" />
++    <state width="1398" height="286" key="GridCell.Tab.1.right/0.23.1440.877@0.23.1440.877" timestamp="1593716499136" />
+     <state x="221" y="100" key="SettingsEditor" timestamp="1593713418540">
+       <screen x="0" y="23" width="1440" height="877" />
+     </state>
+@@ -165,9 +172,9 @@
+       <screen x="0" y="23" width="1440" height="877" />
+     </state>
+     <state x="320" y="201" key="Vcs.Push.Dialog.v2/0.23.1440.877@0.23.1440.877" timestamp="1593715238508" />
+-    <state x="508" y="382" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1593715379679">
++    <state x="508" y="382" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1593852338815">
+       <screen x="0" y="23" width="1440" height="877" />
+     </state>
+-    <state x="508" y="382" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1440.877@0.23.1440.877" timestamp="1593715379679" />
++    <state x="508" y="382" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1440.877@0.23.1440.877" timestamp="1593852338815" />
+   </component>
+ </project>
+\ No newline at end of file
