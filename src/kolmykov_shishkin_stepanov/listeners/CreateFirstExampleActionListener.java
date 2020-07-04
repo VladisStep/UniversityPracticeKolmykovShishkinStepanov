@@ -18,7 +18,8 @@ public class CreateFirstExampleActionListener implements ActionListener {
     public void actionPerformed(ActionEvent e) {
 
         window.setNumberOfNodes(7);
-        window.changeEnableOfCreateMenu();
+        //window.changeEnableOfCreateMenu();
+        window.changeEnableOfExample();
 
         window.addEdge(0, 1, 7);
         window.addEdge(0, 3, 5);

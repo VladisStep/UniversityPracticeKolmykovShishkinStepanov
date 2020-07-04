@@ -1,5 +1,7 @@
 package kolmykov_shishkin_stepanov;
 
+import kolmykov_shishkin_stepanov.exceptions.AddEdgeException;
+
 import javax.swing.*;
 import javax.swing.text.NumberFormatter;
 import java.awt.*;
@@ -58,23 +60,29 @@ public class AddEdgeWindow extends JFrame {
         addButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
+                int v1num = 0;
+                int v2num = 0;
+                int capacity = 0;
                 try {
-                    int v1num = Integer.parseInt(v1Input.getText());
-                    int v2num = Integer.parseInt(v2Input.getText());
-                    int capacity = Integer.parseInt(capacityInput.getText());
-                    if(capacity <= 0) {
+                    v1num = Integer.parseInt(v1Input.getText());
+                    v2num = Integer.parseInt(v2Input.getText());
+                    capacity = Integer.parseInt(capacityInput.getText());
+
+                   /* if(capacity <= 0) {
                         JOptionPane.showMessageDialog(window, "Incorrect input (capacity <= 0)");
                         return;
                     }
                     if(v1num == v2num) {
-                        JOptionPane.showMessageDialog(window, "Incorrect input (same node's number)");
+                        JOptionPane.showMessageDialog(window, "Incorrect input (same nodes number)");
                         return;
                     }
                     if (v1num >= window.getNodesQuantity() || v1num < 0 || v2num >= window.getNodesQuantity() || v2num < 0) {
                         JOptionPane.showMessageDialog(window, "Incorrect input (wrong nodes numbers)");
                         return;
-                    }
+                    }*/
+
                     window.addEdge(v1num, v2num, capacity);
+
                 }catch (NumberFormatException ex) {
                     JOptionPane.showMessageDialog(window, "Incorrect input (NaN)");
                 }

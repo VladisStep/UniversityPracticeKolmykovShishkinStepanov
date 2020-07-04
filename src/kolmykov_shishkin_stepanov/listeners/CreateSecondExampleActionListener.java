@@ -17,7 +17,8 @@ public class CreateSecondExampleActionListener implements ActionListener {
     public void actionPerformed(ActionEvent e) {
 
         window.setNumberOfNodes(5);
-        window.changeEnableOfCreateMenu();
+        //window.changeEnableOfCreateMenu();
+        window.changeEnableOfExample();
 
         window.addEdge(0, 1, 3);
         window.addEdge(0, 4, 1);
