@@ -17,9 +17,7 @@ public class RunActionListener implements ActionListener {
 
     @Override
     public void actionPerformed(ActionEvent e) {
-
-    window.changeEnableOfstepButton();
-
-
+        window.changeEnableOfStepButton();
+        window.redraw();
     }
 }

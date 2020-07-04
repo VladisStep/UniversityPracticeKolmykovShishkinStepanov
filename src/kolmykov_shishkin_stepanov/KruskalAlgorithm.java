@@ -1,8 +1,8 @@
 package kolmykov_shishkin_stepanov;
 
-public class KruskalAlgorithm {
+public class KruskalAlgorithm implements Runnable{
     private int num = 0;
-    private Node[] nodes;
+    private Node[] nodes = new Node[0];
     private Window window;
 
     public KruskalAlgorithm(Window window) {
@@ -13,11 +13,26 @@ public class KruskalAlgorithm {
         nodes = new Node[num];
         for (int i = 0; i < num; i++) {
             nodes[i] = new Node(i);
-            window.getGraphicsPanel().drawNode(i, num);
         }
+        makeDrawRequest();
     }
 
-    public void addVertex(int number1, int number2, int value) {
-        //TODO реализовать
+    public void addVertex(int number1, int number2, int capacity) throws Exception { //TODO поменять exception на свое исключение
+        if (number1 >= nodes.length || number2 >= nodes.length) {
+            throw new Exception("Incorrect number of node");
+        }
+        nodes[number1].addEdge(number2, capacity);
+        nodes[number2].addEdge(number1, capacity);
+        makeDrawRequest();
+    }
+
+    public void makeDrawRequest() {
+        window.getGraphicsPanel().drawGraph(nodes);
+    }
+
+
+    @Override
+    public void run() {
+        //TODO здесь будет сам алгоритм
     }
 }

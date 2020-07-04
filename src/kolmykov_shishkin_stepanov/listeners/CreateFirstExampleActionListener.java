@@ -31,15 +31,5 @@ public class CreateFirstExampleActionListener implements ActionListener {
         window.addEdge(4, 5, 8);
         window.addEdge(4, 6, 9);
         window.addEdge(5, 6, 11);
-
-
-
-
-
-
-
-
-
-
     }
 }

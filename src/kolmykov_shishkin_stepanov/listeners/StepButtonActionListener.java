@@ -19,7 +19,5 @@ public class StepButtonActionListener implements ActionListener {
     @Override
     public void actionPerformed(ActionEvent e) {
 
-        System.out.println("Ваня лох");
-
     }
 }
