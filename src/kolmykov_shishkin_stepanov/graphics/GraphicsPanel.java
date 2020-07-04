@@ -1,8 +1,10 @@
 package kolmykov_shishkin_stepanov.graphics;
 
+import kolmykov_shishkin_stepanov.Node;
+
 import javax.swing.*;
 import java.awt.*;
-import java.util.ArrayList;
+import java.util.Map;
 
 public class GraphicsPanel extends JPanel {
     private final double RADIUS = 300; // было 450, на 13-дюймовый экран не все вершины влезают
@@ -12,6 +14,17 @@ public class GraphicsPanel extends JPanel {
     private final double Y0 = 450;
     private final int RECT_H = 15;
     private final int RECT_W = 15;
+
+    public void drawGraph(Node[] nodes) { //Для каждой вершины отрисовывается вершина и ребра к ее соседям
+        clear();
+        for (Node node : nodes) {
+            drawNode(node.getNumber(), nodes.length);
+            Map<Integer, Integer> edgesMap = node.getEdgesMap();
+            for (Integer neighbourNumber : edgesMap.keySet()) {
+                drawEdge(node.getNumber(), neighbourNumber, edgesMap.get(neighbourNumber), nodes.length);
+            }
+        }
+    }
 
     public void drawNode(int number, int quantity) {
         double angle = Math.PI* 2/quantity * number;
@@ -62,5 +75,12 @@ public class GraphicsPanel extends JPanel {
         Graphics2D graphics2D = (Graphics2D) getGraphics();
         graphics2D.setColor(Color.WHITE);
         graphics2D.fillRect(x, y, w, h);
+    }
+
+    private void clear() {
+        Graphics2D graphics2D = (Graphics2D) getGraphics();
+        graphics2D.setBackground(Color.WHITE);
+        graphics2D.setColor(Color.WHITE);
+        graphics2D.fillRect(0, 0, 1300, 1000);
     }
 }
