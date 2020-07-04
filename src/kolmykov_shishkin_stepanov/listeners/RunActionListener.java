@@ -18,5 +18,6 @@ public class RunActionListener implements ActionListener {
     public void actionPerformed(ActionEvent e) {
         window.changeEnableOfRunAlgButton();
         window.redraw();
+        window.runAlgorithm();
     }
 }
