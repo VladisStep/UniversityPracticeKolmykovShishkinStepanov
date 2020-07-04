@@ -19,19 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ccbf1c18-5799-4103-9389-3cac2b35cc7d" name="Default Changelist" comment="add exceptions, new button &quot;Prev&quot;, fix some bugs">
-      <change afterPath="$PROJECT_DIR$/src/kolmykov_shishkin_stepanov/algorithm/DSF.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/kolmykov_shishkin_stepanov/algorithm/Edge.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/kolmykov_shishkin_stepanov/algorithm/EdgeColor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PRACTICE/kolmykov_shishkin_stepanov/listeners/RunActionListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PRACTICE/kolmykov_shishkin_stepanov/listeners/RunActionListener.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/kolmykov_shishkin_stepanov/KruskalAlgorithm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kolmykov_shishkin_stepanov/algorithm/KruskalAlgorithm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/kolmykov_shishkin_stepanov/Node.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kolmykov_shishkin_stepanov/Node.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/kolmykov_shishkin_stepanov/Window.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kolmykov_shishkin_stepanov/Window.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/kolmykov_shishkin_stepanov/graphics/GraphicsPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kolmykov_shishkin_stepanov/graphics/GraphicsPanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/kolmykov_shishkin_stepanov/listeners/ResultActionListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kolmykov_shishkin_stepanov/listeners/ResultActionListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/kolmykov_shishkin_stepanov/listeners/RunActionListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kolmykov_shishkin_stepanov/listeners/RunActionListener.java" afterDir="false" />
-    </list>
+    <list default="true" id="ccbf1c18-5799-4103-9389-3cac2b35cc7d" name="Default Changelist" comment="add new" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -135,7 +123,14 @@
       <option name="project" value="LOCAL" />
       <updated>1593868304711</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="add new">
+      <created>1593883819809</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1593883819809</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -173,7 +168,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="code cleared" />
     <MESSAGE value="add exceptions, new button &quot;Prev&quot;, fix some bugs" />
-    <option name="LAST_COMMIT_MESSAGE" value="add exceptions, new button &quot;Prev&quot;, fix some bugs" />
+    <MESSAGE value="add new" />
+    <option name="LAST_COMMIT_MESSAGE" value="add new" />
   </component>
   <component name="WindowStateProjectService">
     <state x="458" y="223" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog" timestamp="1593855443685" />
@@ -184,22 +180,22 @@
     <state x="533" y="175" key="#com.intellij.ide.util.MemberChooser/0.23.1440.877@0.23.1440.877" timestamp="1593883468384" />
     <state x="410" y="363" width="620" height="205" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1593855443685" />
     <state x="410" y="363" width="620" height="205" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.23.1440.877@0.23.1440.877" timestamp="1593855443685" />
-    <state width="1398" height="198" key="GridCell.Tab.0.bottom" timestamp="1593880773527">
+    <state width="1398" height="198" key="GridCell.Tab.0.bottom" timestamp="1593883772712">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="1398" height="198" key="GridCell.Tab.0.bottom/0.23.1440.877@0.23.1440.877" timestamp="1593880773527" />
-    <state width="1398" height="198" key="GridCell.Tab.0.center" timestamp="1593880773526">
+    <state width="1398" height="198" key="GridCell.Tab.0.bottom/0.23.1440.877@0.23.1440.877" timestamp="1593883772712" />
+    <state width="1398" height="198" key="GridCell.Tab.0.center" timestamp="1593883772711">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="1398" height="198" key="GridCell.Tab.0.center/0.23.1440.877@0.23.1440.877" timestamp="1593880773526" />
-    <state width="1398" height="198" key="GridCell.Tab.0.left" timestamp="1593880773526">
+    <state width="1398" height="198" key="GridCell.Tab.0.center/0.23.1440.877@0.23.1440.877" timestamp="1593883772711" />
+    <state width="1398" height="198" key="GridCell.Tab.0.left" timestamp="1593883772711">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="1398" height="198" key="GridCell.Tab.0.left/0.23.1440.877@0.23.1440.877" timestamp="1593880773526" />
-    <state width="1398" height="198" key="GridCell.Tab.0.right" timestamp="1593880773527">
+    <state width="1398" height="198" key="GridCell.Tab.0.left/0.23.1440.877@0.23.1440.877" timestamp="1593883772711" />
+    <state width="1398" height="198" key="GridCell.Tab.0.right" timestamp="1593883772711">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="1398" height="198" key="GridCell.Tab.0.right/0.23.1440.877@0.23.1440.877" timestamp="1593880773527" />
+    <state width="1398" height="198" key="GridCell.Tab.0.right/0.23.1440.877@0.23.1440.877" timestamp="1593883772711" />
     <state width="1398" height="152" key="GridCell.Tab.1.bottom" timestamp="1593880293610">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
@@ -218,10 +214,10 @@
     <state width="1398" height="152" key="GridCell.Tab.1.right/0.23.1440.877@0.23.1440.877" timestamp="1593880293610" />
     <state x="221" y="100" key="SettingsEditor" timestamp="1593855443685" />
     <state x="221" y="100" key="SettingsEditor/0.23.1440.877@0.23.1440.877" timestamp="1593855443685" />
-    <state x="320" y="201" key="Vcs.Push.Dialog.v2" timestamp="1593868324086">
+    <state x="320" y="201" key="Vcs.Push.Dialog.v2" timestamp="1593883828644">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state x="320" y="201" key="Vcs.Push.Dialog.v2/0.23.1440.877@0.23.1440.877" timestamp="1593868324086" />
+    <state x="320" y="201" key="Vcs.Push.Dialog.v2/0.23.1440.877@0.23.1440.877" timestamp="1593883828644" />
     <state x="508" y="382" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1593855443685" />
     <state x="508" y="382" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1440.877@0.23.1440.877" timestamp="1593855443685" />
   </component>

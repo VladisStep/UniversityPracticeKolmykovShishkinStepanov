@@ -1,14 +1,15 @@
 package kolmykov_shishkin_stepanov;
 
-import kolmykov_shishkin_stepanov.algorithm.KruskalAlgorithm;
 import kolmykov_shishkin_stepanov.exceptions.AddEdgeException;
 import kolmykov_shishkin_stepanov.graphics.GraphicsPanel;
 import kolmykov_shishkin_stepanov.listeners.*;
 
 import javax.swing.*;
+import javax.swing.event.AncestorEvent;
+import javax.swing.event.AncestorListener;
+import javax.swing.event.ChangeEvent;
+import javax.swing.event.ChangeListener;
 import java.awt.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
 import java.awt.event.ComponentAdapter;
 import java.awt.event.ComponentEvent;
 
@@ -87,13 +88,14 @@ public class Window extends JFrame {
         weightOfMST = new JLabel("Weight: ");
         weightOfMST.setFont(bigFontTR);
         buttonsPanel.add(weightOfMST);
+        weightOfMST.setVisible(false);
 
         stepButton = new JButton("Step");
         stepButton.setMaximumSize(new Dimension(20, 20));
         stepButton.setFont(bigFontTR);
         stepButton.addActionListener(new StepButtonActionListener(this));
         buttonsPanel.add(stepButton);
-        //stepButton.setVisible(false);
+        stepButton.setVisible(false);
         stepButton.setEnabled(false);
 
         prevButton = new JButton("Prev");
@@ -101,24 +103,15 @@ public class Window extends JFrame {
         prevButton.setFont(bigFontTR);
         prevButton.addActionListener(new StepButtonActionListener(this));
         buttonsPanel.add(prevButton);
-        //stepButton.setVisible(false);
+        prevButton.setVisible(false);
         prevButton.setEnabled(false);
 
         showResultButton = new JButton("Result");
         showResultButton.setPreferredSize(new Dimension(120, 50));
         showResultButton.setFont(bigFontTR);
-        //showResultButton.addActionListener(new ResultActionListener(this));
-        showResultButton.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                algorithm.getResult();
-                changeEnableOfResultButton();
-                redraw();
-                weightOfMST.setText("Weight: " + algorithm.getMinMSTWeight());
-            }
-        });
+        showResultButton.addActionListener(new ResultActionListener(this));
         buttonsPanel.add(showResultButton);
-        //showResultButton.setVisible(false);
+        showResultButton.setVisible(false);
         showResultButton.setEnabled(false);
 
         restartButton = new JButton("Restart");
@@ -126,8 +119,24 @@ public class Window extends JFrame {
         restartButton.setFont(bigFontTR);
         restartButton.addActionListener(new RestartActionListener(this));
         buttonsPanel.add(restartButton);
-        //restartButton.setVisible(false);
+        restartButton.setVisible(false);
         restartButton.setEnabled(false);
+        restartButton.addAncestorListener(new AncestorListener() {
+            @Override
+            public void ancestorAdded(AncestorEvent event) {
+                redraw();
+            }
+
+            @Override
+            public void ancestorRemoved(AncestorEvent event) {
+                redraw();
+            }
+
+            @Override
+            public void ancestorMoved(AncestorEvent event) {
+                redraw();
+            }
+        });
 
         createAlgorithmMenu = new JMenu("Algorithm");
         menuBar.add(createAlgorithmMenu);
@@ -150,29 +159,30 @@ public class Window extends JFrame {
             @Override
             public void componentResized(ComponentEvent e) {
                 super.componentResized(e);
-                algorithm.makeDrawRequest();
+                redraw();
             }
 
             @Override
             public void componentMoved(ComponentEvent e) {
                 super.componentMoved(e);
-                algorithm.makeDrawRequest();
+                redraw();
             }
 
             @Override
             public void componentShown(ComponentEvent e) {
                 super.componentShown(e);
-                algorithm.makeDrawRequest();
+                redraw();
             }
 
             @Override
             public void componentHidden(ComponentEvent e) {
                 super.componentHidden(e);
-                algorithm.makeDrawRequest();
+                redraw();
             }
         });
 
-        this.setVisible(true);     // отображение формы
+        setResizable(false);
+        setVisible(true);     // отображение формы
     }
 
     public void addEdge(int number1, int number2, int capacity) {
@@ -209,16 +219,17 @@ public class Window extends JFrame {
         prevButton.setEnabled(true);
         showResultButton.setEnabled(true);
         restartButton.setEnabled(true);
-//        stepButton.setVisible(true);
-//        stepButton.setEnabled(true);
-//        showResultButton.setVisible(true);
-//        restartButton.setVisible(true);
+        weightOfMST.setVisible(true);
+        prevButton.setVisible(true);
+        stepButton.setVisible(true);
+        showResultButton.setVisible(true);
+        restartButton.setVisible(true);
     }
 
     public void changeEnableOfExample(){
         createNodesMenuItem.setEnabled(true);
         createEdgeMenuItem.setEnabled(false);
-        createExampleMenu.setEnabled(false);
+        //createExampleMenu.setEnabled(false);
         createRunItem.setEnabled(true);
     }
 
@@ -245,7 +256,4 @@ public class Window extends JFrame {
     public void redraw() {
         algorithm.makeDrawRequest();
     }
-
-    public void runAlgorithm () { algorithm.run();}
-
 }
