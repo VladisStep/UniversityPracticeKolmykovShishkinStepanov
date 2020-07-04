@@ -1,5 +1,7 @@
 package kolmykov_shishkin_stepanov;
 
+import kolmykov_shishkin_stepanov.exceptions.AddEdgeException;
+
 public class KruskalAlgorithm implements Runnable{
     private int num = 0;
     private Node[] nodes = new Node[0];
@@ -10,6 +12,7 @@ public class KruskalAlgorithm implements Runnable{
     }
 
     public void setNumOfNodes(int num) {
+        this.num = num;
         nodes = new Node[num];
         for (int i = 0; i < num; i++) {
             nodes[i] = new Node(i);
@@ -17,9 +20,9 @@ public class KruskalAlgorithm implements Runnable{
         makeDrawRequest();
     }
 
-    public void addVertex(int number1, int number2, int capacity) throws Exception { //TODO поменять exception на свое исключение
+    public void addEdge(int number1, int number2, int capacity) throws AddEdgeException { //TODO поменять exception на свое исключение
         if (number1 >= nodes.length || number2 >= nodes.length) {
-            throw new Exception("Incorrect number of node");
+            throw new AddEdgeException("Incorrect number of node");
         }
         nodes[number1].addEdge(number2, capacity);
         nodes[number2].addEdge(number1, capacity);
