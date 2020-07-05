@@ -117,6 +117,7 @@ public class Window extends JFrame {
             public void actionPerformed(ActionEvent e) {
                 algorithm.prev();
                 redraw();
+                weightOfMST.setText("Weight: " + algorithm.getMinMSTWeight());
             }
         });
         buttonsPanel.add(prevButton);

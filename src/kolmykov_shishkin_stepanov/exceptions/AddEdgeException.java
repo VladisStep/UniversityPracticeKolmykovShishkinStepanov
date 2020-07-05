@@ -19,6 +19,4 @@ public class AddEdgeException extends Exception {
         super(message, cause, enableSuppression, writableStackTrace);
     }
 
-
-
 }

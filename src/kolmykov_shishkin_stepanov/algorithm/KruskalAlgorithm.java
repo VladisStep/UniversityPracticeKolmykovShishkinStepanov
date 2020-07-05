@@ -4,6 +4,7 @@ import kolmykov_shishkin_stepanov.Node;
 import kolmykov_shishkin_stepanov.Window;
 import kolmykov_shishkin_stepanov.exceptions.AddEdgeException;
 
+import javax.swing.*;
 import java.awt.*;
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -34,7 +35,7 @@ public class KruskalAlgorithm {
         makeDrawRequest();
     }
 
-    public void addEdge(int number1, int number2, int capacity) throws AddEdgeException { //TODO поменять exception на свое исключение
+    public void addEdge(int number1, int number2, int capacity) throws AddEdgeException {
         if (number1 >= nodes.length || number1 < 0) {
             throw new AddEdgeException("There is no such vertex(" + number1 + ")");
         } else if (number2 >= nodes.length || number2 < 0) {
@@ -129,6 +130,43 @@ public class KruskalAlgorithm {
     }
 
     public void prev() {
-        //TODO реализовать
+        boolean isPrevAtIndex0 = false;
+        if (currentEdgeIndex == 0) {
+            currentEdge = edges.get(currentEdgeIndex);
+            if (currentEdge.getColor() == Color.YELLOW) {
+                isPrevAtIndex0 = true;
+                currentEdge.setColor(Color.BLACK);
+            }
+            currentEdge = null;
+        }
+
+        if (currentEdgeIndex <= 0) {
+            if (!isPrevAtIndex0)
+                JOptionPane.showMessageDialog(window, "You can't click this button because you haven't pressed the button \"step\" yet");
+            return;
+        }
+
+        if (currentEdge == null) {
+            rehandleEdgeForPrev();
+        }
+        else if (currentEdge.getColor() == Color.YELLOW) {
+            rechooseEdgeForPrev();
+            currentEdge = null;
+        }
+    }
+
+    private void rechooseEdgeForPrev() {    //Если перед нажатием "prev" ребро закрашено в желтый
+        currentEdge = edges.get(currentEdgeIndex);
+        currentEdge.setColor(Color.BLACK);
+    }
+
+    private void rehandleEdgeForPrev() {    //Если перед нажатием "prev" ребро закрашено в зеленый или красный
+        currentEdgeIndex--;
+        currentEdge = edges.get(currentEdgeIndex);
+        if (currentEdge.getColor() == Color.GREEN) {
+            minMSTWeight -= currentEdge.getCapacity();
+        }
+        currentEdge.setColor(Color.YELLOW);
+        dsf.unUnionForPrev();
     }
 }
