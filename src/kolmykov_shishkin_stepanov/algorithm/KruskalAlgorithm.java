@@ -40,6 +40,9 @@ public class KruskalAlgorithm {
         } else if (number2 >= nodes.length || number2 < 0) {
             throw new AddEdgeException("There is no such vertex(" + number2 + ")");
         }
+        else if (number1 == number2) {
+            throw new AddEdgeException("Same vertex");
+        }
 
         Edge edge = new Edge(number1, number2, capacity);
         nodes[number1].addEdge(number2, edge);
@@ -90,10 +93,6 @@ public class KruskalAlgorithm {
             currentEdge.setColor(Color.RED);
         }
         currentEdgeIndex++;
-
-        /*if (currentEdgeIndex == edges.size()-1){
-            //TODO сделать обращение к окну с блокировкой кнопок
-        }*/
     }
 
     public int getMinMSTWeight() {

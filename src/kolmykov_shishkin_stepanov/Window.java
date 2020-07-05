@@ -46,7 +46,6 @@ public class Window extends JFrame {
         this.setLocationRelativeTo(null);                       // открытие формы посередине экрана
         this.setLayout(new GridBagLayout());
 
-// TODO сделать граф левее и немного выше
 
         menuBar = new JMenuBar();            // создание и установка меню-бара
         this.setJMenuBar(menuBar);
@@ -220,9 +219,6 @@ public class Window extends JFrame {
         }
         catch (AddEdgeException eex){
             JOptionPane.showMessageDialog(this, eex.getMessage());
-        }
-        catch (Exception e) { //TODO заменить на свое исключение, возможно обработать его нормально
-            e.printStackTrace();
         }
     }
 

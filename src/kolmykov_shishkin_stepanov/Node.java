@@ -17,7 +17,7 @@ public class Node {
         return number;
     }
 
-    public void addEdge(int number, Edge edge) throws AddEdgeException { //TODO написать классы для исключений
+    public void addEdge(int number, Edge edge) throws AddEdgeException {
         edgesMap.put(number, edge);
     }
 
