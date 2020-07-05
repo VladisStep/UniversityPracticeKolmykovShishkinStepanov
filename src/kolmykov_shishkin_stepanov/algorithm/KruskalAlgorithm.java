@@ -127,4 +127,8 @@ public class KruskalAlgorithm {
         }
         return (visited.size() == nodes.length);
     }
+
+    public void prev() {
+        //TODO реализовать
+    }
 }

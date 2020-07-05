@@ -112,7 +112,13 @@ public class Window extends JFrame {
         prevButton = new JButton("Prev");
         prevButton.setMaximumSize(new Dimension(20, 20));
         prevButton.setFont(bigFontTR);
-        prevButton.addActionListener(new StepButtonActionListener(this));
+        prevButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                algorithm.prev();
+                redraw();
+            }
+        });
         buttonsPanel.add(prevButton);
         prevButton.setVisible(false);
         prevButton.setEnabled(false);
