@@ -1,5 +1,6 @@
 package kolmykov_shishkin_stepanov.algorithm;
 
+import java.util.ArrayList;
 import java.util.Vector;
 
 public class DSF { // класс системы непересекающихся множеств
@@ -7,8 +8,9 @@ public class DSF { // класс системы непересекающихся
     int[] rnk; // ранг
     int size = 0;
 
-    Vector<Vector<Integer>> prevSet = new Vector<Vector<Integer>>();
-    Vector<Vector<Integer>> prevRnk = new Vector<Vector<Integer>>();
+    ArrayList<ArrayList<Integer>> prevSet = new ArrayList<ArrayList<Integer>>();
+    ArrayList<ArrayList<Integer>> prevRnk = new ArrayList<ArrayList<Integer>>();
+
 
     DSF(int size) {
         this.size = size;
@@ -26,25 +28,25 @@ public class DSF { // класс системы непересекающихся
     // Если u и v лежат в разных множествах, то сливаем их и возвращаем true
     boolean union(int u, int v) {   //функция слияния
         if ((u = set(u)) == (v = set(v))) {
-            Vector <Integer> tmpSet = new Vector<>();
-            Vector <Integer> tmpRnk = new Vector<>();
+            ArrayList <Integer> tmpSet = new ArrayList<>();
+            ArrayList <Integer> tmpRnk = new ArrayList<>();
             for (int i = 0; i < size; i++) {
-                tmpSet.addElement(set[i]);
-                tmpRnk.addElement(rnk[i]);
+                tmpSet.add(set[i]);
+                tmpRnk.add(rnk[i]);
             }
-            prevSet.addElement(tmpSet);
-            prevRnk.addElement(tmpRnk);
+            prevSet.add(tmpSet);
+            prevRnk.add(tmpRnk);
             return false;
         }
 
-        Vector <Integer> tmpSet = new Vector<>();
-        Vector <Integer> tmpRnk = new Vector<>();
+        ArrayList <Integer> tmpSet = new ArrayList<>();
+        ArrayList <Integer> tmpRnk = new ArrayList<>();
         for (int i = 0; i < size; i++) {
-            tmpSet.addElement(set[i]);
-            tmpRnk.addElement(rnk[i]);
+            tmpSet.add(set[i]);
+            tmpRnk.add(rnk[i]);
         }
-        prevSet.addElement(tmpSet);
-        prevRnk.addElement(tmpRnk);
+        prevSet.add(tmpSet);
+        prevRnk.add(tmpRnk);
 
         if (rnk[u] < rnk[v]) {
             set[u] = v;
@@ -57,14 +59,15 @@ public class DSF { // класс системы непересекающихся
     }
 
     void unUnionForPrev() {     //функция, которая отменяет предыдущее слияние для отката назад
-        Vector <Integer> tmpSet = new Vector<>();
-        Vector <Integer> tmpRnk = new Vector<>();
-        tmpSet = prevSet.lastElement();
-        tmpRnk = prevRnk.lastElement();
+
+        ArrayList <Integer> tmpSet = new ArrayList<>();
+        ArrayList <Integer> tmpRnk = new ArrayList<>();
+        tmpSet = prevSet.get(prevSet.size() - 1);
+        tmpRnk = prevRnk.get(prevRnk.size() - 1);
 
         for (int i = 0; i < size; i++) {
-            set[i] = tmpSet.elementAt(i);
-            rnk[i] = tmpRnk.elementAt(i);
+            set[i] = tmpSet.get(i);
+            rnk[i] = tmpRnk.get(i);
         }
 
         prevSet.remove(prevSet.size() - 1);
