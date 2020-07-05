@@ -17,19 +17,8 @@ public class Node {
         return number;
     }
 
-    public void addEdge(int number, int capacity) throws AddEdgeException { //TODO написать классы для исключений
-        if (capacity > 0 && number >= 0 && this.number != number) {
-            edgesMap.put(number, new Edge(this.number, number, capacity));
-        }
-        else {
-            if (capacity <= 0){
-                throw new AddEdgeException("Capacity should be > 0, but your capacity " + capacity + " <= 0");
-            }else if (number < 0){
-                throw  new AddEdgeException("There is no such vertex (" + number + ")");
-            }else if (number == this.number){
-                throw  new AddEdgeException("Vertex1 can't be equal to Vertex2");
-            }
-        }
+    public void addEdge(int number, Edge edge) throws AddEdgeException {
+        edgesMap.put(number, edge);
     }
 
     public Map<Integer, Edge> getEdgesMap() {
