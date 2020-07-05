@@ -4,10 +4,13 @@ import kolmykov_shishkin_stepanov.Node;
 import kolmykov_shishkin_stepanov.Window;
 import kolmykov_shishkin_stepanov.exceptions.AddEdgeException;
 
+import java.awt.*;
 import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Map;
 
 public class KruskalAlgorithm {
-    private int nodesNumber= 0;
+    private int nodesNumber = 0;
     private Node[] nodes = new Node[0];
     private Window window;
 
@@ -27,20 +30,21 @@ public class KruskalAlgorithm {
         for (int i = 0; i < num; i++) {
             nodes[i] = new Node(i);
         }
+        edges = new ArrayList<>();
         makeDrawRequest();
     }
 
     public void addEdge(int number1, int number2, int capacity) throws AddEdgeException { //TODO поменять exception на свое исключение
         if (number1 >= nodes.length || number1 < 0) {
-            throw new AddEdgeException("There is no such vertex(" + number1 +")");
-        } else if ( number2 >= nodes.length || number2 < 0){
-            throw new AddEdgeException("There is no such vertex(" + number2 +")");
+            throw new AddEdgeException("There is no such vertex(" + number1 + ")");
+        } else if (number2 >= nodes.length || number2 < 0) {
+            throw new AddEdgeException("There is no such vertex(" + number2 + ")");
         }
-        nodes[number1].addEdge(number2, capacity);
-        nodes[number2].addEdge(number1, capacity);
 
-
-        edges.add(new Edge(number1, number2, capacity));
+        Edge edge = new Edge(number1, number2, capacity);
+        nodes[number1].addEdge(number2, edge);
+        nodes[number2].addEdge(number1, edge);
+        edges.add(edge);
         makeDrawRequest();
     }
 
@@ -49,30 +53,15 @@ public class KruskalAlgorithm {
     }
 
     public void run() {
+        currentEdge = null;
+        currentEdgeIndex = 0;
+        minMSTWeight = 0;
 
         dsf = new DSF(nodesNumber); // СНМ
-
         edges.sort(Edge::compareTo); // Сортируем ребра
-
-       /* int ret = 0; // результат
-
-        for (Edge e : edges) {// перебираем ребра в порядке возрастания
-            System.out.println("Чекаем ребро " + e.getFrom() + " - " + e.getTo() + " с весом " + e.getCapacity() + " (Yellow)");
-            if (dsf.union(e.getFrom(), e.getTo())) {// если ребра принадлежат разным компонентам
-                //System.out.println("GREEN");
-                //e.setColor();
-                ret += e.getCapacity(); // добавляем вес ребра к стоимости MST
-            }
-            else {
-                //System.out.println("RED");
-                //e.setGreen(false);
-            }
-        }
-
-        System.out.println(ret);*/
     }
 
-    public boolean step () {
+    public boolean step() {
 
         if (currentEdge == null) {
             chooseEdge();
@@ -81,28 +70,24 @@ public class KruskalAlgorithm {
             currentEdge = null;
         }
 
-        if (currentEdgeIndex == edges.size()){
-            //TODO сделать обращение к окну с блокировкой кнопок
+        if (currentEdgeIndex == edges.size()) {
             return false;
         }
 
         return true;
     }
 
-    private void chooseEdge(){
+    private void chooseEdge() {
         currentEdge = edges.get(currentEdgeIndex);
-        currentEdge.setColor(EdgeColor.YELLOW);
+        currentEdge.setColor(Color.YELLOW);
     }
 
-    private void handleEdge(){
-
-
+    private void handleEdge() {
         if (dsf.union(currentEdge.getFrom(), currentEdge.getTo())) {// если ребра принадлежат разным компонентам
-            currentEdge.setColor(EdgeColor.GREEN);
+            currentEdge.setColor(Color.GREEN);
             minMSTWeight += currentEdge.getCapacity(); // добавляем вес ребра к стоимости MST
-        }
-        else {
-            currentEdge.setColor(EdgeColor.RED);
+        } else {
+            currentEdge.setColor(Color.RED);
         }
         currentEdgeIndex++;
 
@@ -115,7 +100,32 @@ public class KruskalAlgorithm {
         return minMSTWeight;
     }
 
-    public void getResult(){
-        while (step()){}
+    public void getResult() {
+        while (step()) {
+        }
+    }
+
+    public void restart() {
+        currentEdge = null;
+        currentEdgeIndex = 0;
+        minMSTWeight = 0;
+        dsf = new DSF(nodesNumber); // СНМ
+
+        for (Edge edge : edges) {
+            edge.setColor(Color.BLACK);
+        }
+    }
+
+    public boolean isValidGraph() { //проверка связности
+        ArrayList<Integer> visited = new ArrayList<>();
+        visited.add(0);
+        for (int i = 0; i < visited.size(); i++) {
+            for (Integer neighborNumber : nodes[visited.get(i)].getEdgesMap().keySet()) {
+                if (!visited.contains(neighborNumber)) {
+                    visited.add(neighborNumber);
+                }
+            }
+        }
+        return (visited.size() == nodes.length);
     }
 }

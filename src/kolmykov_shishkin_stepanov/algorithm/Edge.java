@@ -1,10 +1,12 @@
 package kolmykov_shishkin_stepanov.algorithm;
 
+import java.awt.*;
+
 public class Edge implements Comparable<Edge> {
     private int from;
     private int to;
     private int capacity;
-    EdgeColor color = EdgeColor.DEFAULT;
+    Color color = Color.BLACK;
 
 
     public Edge(int from, int to, int capacity){
@@ -25,11 +27,11 @@ public class Edge implements Comparable<Edge> {
     public int getFrom () {return from;}
     public int getTo () {return  to;}
 
-    public EdgeColor getColor() {
+    public Color getColor() {
         return color;
     }
 
-    public void setColor(EdgeColor color) {
+    public void setColor(Color color) {
         this.color = color;
     }
 }

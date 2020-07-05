@@ -17,6 +17,9 @@ public class CreateNodeActionListener implements ActionListener {
     public void actionPerformed(ActionEvent e) {
         String input = JOptionPane.showInputDialog("Enter the number of vertices (2 <= number <= 15)");
         int num;
+        if(input == null) {
+            return;
+        }
         try {
             num = Integer.parseInt(input);
         }catch (NumberFormatException ex) {

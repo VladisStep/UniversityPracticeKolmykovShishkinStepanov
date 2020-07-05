@@ -22,7 +22,7 @@ public class GraphicsPanel extends JPanel {
             drawNode(node.getNumber(), nodes.length);
             Map<Integer, Edge> edgesMap = node.getEdgesMap();
             for (Integer neighbourNumber : edgesMap.keySet()) {
-                drawEdge(node.getNumber(), neighbourNumber, edgesMap.get(neighbourNumber).getCapacity(), nodes.length);
+                drawEdge(node.getNumber(), neighbourNumber, edgesMap.get(neighbourNumber).getCapacity(), nodes.length, edgesMap.get(neighbourNumber).getColor());
             }
         }
     }
@@ -35,7 +35,7 @@ public class GraphicsPanel extends JPanel {
         drawNumber(number, x, y, Color.WHITE);
     }
 
-    public void drawEdge(int number1, int number2, int value, int quantity) {
+    public void drawEdge(int number1, int number2, int value, int quantity, Color color) {
         double angle1 = Math.PI* 2/quantity * number1;
         double x1 = X0 + RADIUS * Math.cos(angle1) + 20;
         double y1 = Y0 + RADIUS * Math.sin(angle1) + 30;
@@ -44,16 +44,17 @@ public class GraphicsPanel extends JPanel {
         double x2 = X0 + RADIUS * Math.cos(angle2) + 20;
         double y2 = Y0 + RADIUS * Math.sin(angle2) + 30;
 
-        drawLine(x1, y1, x2, y2);
+        drawLine(x1, y1, x2, y2, color);
         drawSquare((int)((x1 + x2)/2), (int)((y1 + y2)/2 - 10), RECT_W, RECT_H);
         drawNumber(value, (x1 + x2 - 40)/2, (y1 + y2 - 60)/2, Color.BLACK);
         drawNode(number1, quantity);
         drawNode(number2, quantity);
     }
 
-    private void drawLine(double x1, double y1, double x2, double y2) {
+    private void drawLine(double x1, double y1, double x2, double y2, Color color) {
         Graphics2D graphics2D = (Graphics2D) getGraphics();
-        graphics2D.setColor(Color.BLACK);
+        graphics2D.setColor(color);
+        graphics2D.setBackground(color);
         graphics2D.setStroke(new BasicStroke(4));
         graphics2D.draw(new Line(x1, y1, x2, y2));
         graphics2D.dispose();
