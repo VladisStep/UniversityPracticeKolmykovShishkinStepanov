@@ -8,8 +8,6 @@ import kolmykov_shishkin_stepanov.listeners.*;
 import javax.swing.*;
 import javax.swing.event.AncestorEvent;
 import javax.swing.event.AncestorListener;
-import javax.swing.event.ChangeEvent;
-import javax.swing.event.ChangeListener;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -48,7 +46,6 @@ public class Window extends JFrame {
         this.setLocationRelativeTo(null);                       // открытие формы посередине экрана
         this.setLayout(new GridBagLayout());
 
-// TODO сделать граф левее и немного выше
 
         menuBar = new JMenuBar();            // создание и установка меню-бара
         this.setJMenuBar(menuBar);
@@ -88,7 +85,7 @@ public class Window extends JFrame {
 
         Font bigFontTR = new Font("Arial", Font.BOLD, 20);
 
-        weightOfMST = new JLabel("Weight: ");
+        weightOfMST = new JLabel("Weight: 0");
         weightOfMST.setFont(bigFontTR);
         buttonsPanel.add(weightOfMST);
         weightOfMST.setVisible(false);
@@ -100,11 +97,29 @@ public class Window extends JFrame {
         buttonsPanel.add(stepButton);
         stepButton.setVisible(false);
         stepButton.setEnabled(false);
+        stepButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                boolean isRun = algorithm.step();
+                redraw();
+                weightOfMST.setText("Weight: " + algorithm.getMinMSTWeight());
+                if (!isRun) {
+                    changeEnableOfResultButton();
+                }
+            }
+        });
 
         prevButton = new JButton("Prev");
         prevButton.setMaximumSize(new Dimension(20, 20));
         prevButton.setFont(bigFontTR);
-        prevButton.addActionListener(new StepButtonActionListener(this));
+        prevButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                algorithm.prev();
+                redraw();
+                weightOfMST.setText("Weight: " + algorithm.getMinMSTWeight());
+            }
+        });
         buttonsPanel.add(prevButton);
         prevButton.setVisible(false);
         prevButton.setEnabled(false);
@@ -147,6 +162,14 @@ public class Window extends JFrame {
             @Override
             public void ancestorMoved(AncestorEvent event) {
                 redraw();
+            }
+        });
+        restartButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                algorithm.restart();
+                redraw();
+                weightOfMST.setText("Weight: 0");
             }
         });
 
@@ -204,14 +227,12 @@ public class Window extends JFrame {
         catch (AddEdgeException eex){
             JOptionPane.showMessageDialog(this, eex.getMessage());
         }
-        catch (Exception e) { //TODO заменить на свое исключение, возможно обработать его нормально
-            e.printStackTrace();
-        }
     }
 
     public void setNumberOfNodes(int num) {
         nodesQuantity = num;
         algorithm.setNumOfNodes(num);
+        makeInvisibleAlgoButtons();
     }
 
     public void changeEnableOfCreateMenu() {   // "Create new graph" – нельзя, "Add edge" – можно, "Examples" - нельзя
@@ -227,6 +248,7 @@ public class Window extends JFrame {
         createMenu.setEnabled(false);
         createExampleMenu.setEnabled(false);
 
+        weightOfMST.setText("Weight: 0");
         stepButton.setEnabled(true);
         prevButton.setEnabled(true);
         showResultButton.setEnabled(true);
@@ -271,4 +293,15 @@ public class Window extends JFrame {
 
     public void runAlgorithm () { algorithm.run();}
 
+    public void makeInvisibleAlgoButtons() {
+        weightOfMST.setVisible(false);
+        stepButton.setVisible(false);
+        prevButton.setVisible(false);
+        showResultButton.setVisible(false);
+        restartButton.setVisible(false);
+    }
+
+    public boolean checkValidate() {
+        return algorithm.isValidGraph();
+    }
 }
