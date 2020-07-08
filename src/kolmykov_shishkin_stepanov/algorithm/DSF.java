@@ -1,7 +1,6 @@
 package kolmykov_shishkin_stepanov.algorithm;
 
 import java.util.ArrayList;
-import java.util.Vector;
 
 public class DSF { // класс системы непересекающихся множеств
     int[] set; // номер множества
@@ -11,13 +10,13 @@ public class DSF { // класс системы непересекающихся
     ArrayList<ArrayList<Integer>> prevSet = new ArrayList<ArrayList<Integer>>();
     ArrayList<ArrayList<Integer>> prevRnk = new ArrayList<ArrayList<Integer>>();
 
-
     DSF(int size) {
         this.size = size;
         set = new int[size];
         rnk = new int[size];
-        for (int i = 0; i < size; i++)
+        for (int i = 0; i < size; i++) {
             set[i] = i;
+        }
     }
 
     // Возвращает множество, которому принадлежит x

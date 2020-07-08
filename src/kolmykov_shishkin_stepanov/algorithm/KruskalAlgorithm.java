@@ -37,9 +37,9 @@ public class KruskalAlgorithm {
 
     public void addEdge(int number1, int number2, int capacity) throws AddEdgeException {
         if (number1 >= nodes.length || number1 < 0) {
-            throw new AddEdgeException("There is no such vertex(" + number1 + ")");
+            throw new AddEdgeException("There is no such vertex (" + number1 + ")");
         } else if (number2 >= nodes.length || number2 < 0) {
-            throw new AddEdgeException("There is no such vertex(" + number2 + ")");
+            throw new AddEdgeException("There is no such vertex (" + number2 + ")");
         }
         else if (number1 == number2) {
             throw new AddEdgeException("Same vertex");
