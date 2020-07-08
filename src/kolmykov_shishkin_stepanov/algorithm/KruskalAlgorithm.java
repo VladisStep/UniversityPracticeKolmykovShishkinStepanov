@@ -1,12 +1,10 @@
 package kolmykov_shishkin_stepanov.algorithm;
 
 import kolmykov_shishkin_stepanov.Node;
-import kolmykov_shishkin_stepanov.Window;
 import kolmykov_shishkin_stepanov.exceptions.AddEdgeException;
 import kolmykov_shishkin_stepanov.exceptions.IncoherentGraphException;
 import kolmykov_shishkin_stepanov.exceptions.PrevBeforeStepException;
 
-import javax.swing.*;
 import java.awt.*;
 import java.util.ArrayList;
 

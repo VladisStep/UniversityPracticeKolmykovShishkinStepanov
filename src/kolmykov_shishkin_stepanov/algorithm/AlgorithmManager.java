@@ -71,4 +71,8 @@ public class AlgorithmManager {
     public void makeDrawGraphRequest(Node[] nodes) {
         window.makeDrawGraphRequest(nodes);
     }
+
+    public void log(String str) {
+        window.log(str);
+    }
 }
