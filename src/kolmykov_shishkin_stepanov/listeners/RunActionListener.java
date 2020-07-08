@@ -1,5 +1,7 @@
 package kolmykov_shishkin_stepanov.listeners;
 
+import kolmykov_shishkin_stepanov.AddEdgeWindow;
+import kolmykov_shishkin_stepanov.AlgorithmLoggingWindow;
 import kolmykov_shishkin_stepanov.Window;
 
 import javax.swing.*;

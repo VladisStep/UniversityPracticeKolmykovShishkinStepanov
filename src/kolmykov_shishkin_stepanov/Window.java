@@ -38,7 +38,9 @@ public class Window extends JFrame {
     private JLabel weightOfMST;
 
     private int nodesQuantity;
+
     private AlgorithmManager algorithmManager;
+
 
     public Window() {
         super("Genius app");                                // создание формы
@@ -76,6 +78,9 @@ public class Window extends JFrame {
         createThirdExampleItem.addActionListener(new CreateThirdExampleActionListener(this));
         createExampleMenu.add(createThirdExampleItem);
 
+        alw = new AlgorithmLoggingWindow(this);
+        alw.setVisible(true);
+
         JPanel buttonsPanel = new JPanel();
         buttonsPanel.setLayout(new GridLayout(0,1));
         add(buttonsPanel,new GridBagConstraints(1, 0, 1, 1, 0.1, 0.4,
@@ -94,7 +99,6 @@ public class Window extends JFrame {
         stepButton = new JButton("Step");
         stepButton.setMaximumSize(new Dimension(20, 20));
         stepButton.setFont(bigFontTR);
-        stepButton.addActionListener(new StepButtonActionListener(this));
         buttonsPanel.add(stepButton);
         stepButton.setVisible(false);
         stepButton.setEnabled(false);
@@ -107,6 +111,8 @@ public class Window extends JFrame {
                 if (!isRun) {
                     changeEnableOfResultButton();
                 }
+
+                alw.printCondition("STEP");
             }
         });
 
@@ -175,6 +181,7 @@ public class Window extends JFrame {
                 algorithmManager.restartAlgorithm();
                 redraw();
                 weightOfMST.setText("Weight: 0");
+                alw.printCondition("Algorithm restart");
             }
         });
 
@@ -269,7 +276,6 @@ public class Window extends JFrame {
     public void changeEnableOfExample(){
         createNodesMenuItem.setEnabled(true);
         createEdgeMenuItem.setEnabled(false);
-        //createExampleMenu.setEnabled(false);
         createRunItem.setEnabled(true);
     }
 
@@ -287,10 +293,6 @@ public class Window extends JFrame {
 
     public GraphicsPanel getGraphicsPanel() {
         return graphicsPanel;
-    }
-
-    public int getNodesQuantity() {
-        return nodesQuantity;
     }
 
     public void redraw() {
