@@ -1,28 +1,24 @@
 package kolmykov_shishkin_stepanov.algorithm;
 
 import kolmykov_shishkin_stepanov.Node;
-import kolmykov_shishkin_stepanov.Window;
 import kolmykov_shishkin_stepanov.exceptions.AddEdgeException;
+import kolmykov_shishkin_stepanov.exceptions.IncoherentGraphException;
+import kolmykov_shishkin_stepanov.exceptions.PrevBeforeStepException;
 
-import javax.swing.*;
 import java.awt.*;
 import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.Map;
 
-public class KruskalAlgorithm {
+public class KruskalAlgorithm extends Algorithm {
     private int nodesNumber = 0;
     private Node[] nodes = new Node[0];
-    private Window window;
-
     private ArrayList<Edge> edges = new ArrayList<>();
     private DSF dsf;
     private Edge currentEdge;
     private int currentEdgeIndex;
     private int minMSTWeight = 0;
 
-    public KruskalAlgorithm(Window window) {
-        this.window = window;
+    public KruskalAlgorithm(AlgorithmManager algorithmManager) {
+        super(algorithmManager);
     }
 
     public void setNumOfNodes(int num) {
@@ -37,12 +33,14 @@ public class KruskalAlgorithm {
 
     public void addEdge(int number1, int number2, int capacity) throws AddEdgeException {
         if (number1 >= nodes.length || number1 < 0) {
-            throw new AddEdgeException("There is no such vertex(" + number1 + ")");
+            throw new AddEdgeException("There is no such vertex (" + number1 + ")");
         } else if (number2 >= nodes.length || number2 < 0) {
-            throw new AddEdgeException("There is no such vertex(" + number2 + ")");
+            throw new AddEdgeException("There is no such vertex (" + number2 + ")");
         }
         else if (number1 == number2) {
             throw new AddEdgeException("Same vertex");
+        } else if (capacity <= 0) {
+            throw new AddEdgeException("Capacity <= 0");
         }
 
         Edge edge = new Edge(number1, number2, capacity);
@@ -52,11 +50,14 @@ public class KruskalAlgorithm {
         makeDrawRequest();
     }
 
-    public void makeDrawRequest() {
-        window.getGraphicsPanel().drawGraph(nodes);
+    private void makeDrawRequest() {
+        algorithmManager.makeDrawGraphRequest(nodes);
     }
 
-    public void run() {
+    public void run() throws IncoherentGraphException{
+        if (!isValid()) {
+            throw new IncoherentGraphException("Graph is inherit");
+        }
         currentEdge = null;
         currentEdgeIndex = 0;
         minMSTWeight = 0;
@@ -96,12 +97,18 @@ public class KruskalAlgorithm {
         currentEdgeIndex++;
     }
 
-    public int getMinMSTWeight() {
+    public int getIntermediateResult() {
         return minMSTWeight;
     }
 
     public void getResult() {
         while (step()) {
+//            window.redraw();
+//            try {
+//                Thread.sleep(500);
+//            } catch (InterruptedException e) {
+//                e.printStackTrace();
+//            }
         }
     }
 
@@ -116,7 +123,7 @@ public class KruskalAlgorithm {
         }
     }
 
-    public boolean isValidGraph() { //проверка связности
+    public boolean isValid() { //проверка связности
         ArrayList<Integer> visited = new ArrayList<>();
         visited.add(0);
         for (int i = 0; i < visited.size(); i++) {
@@ -129,7 +136,7 @@ public class KruskalAlgorithm {
         return (visited.size() == nodes.length);
     }
 
-    public void prev() {
+    public void prev() throws PrevBeforeStepException{
         boolean isPrevAtIndex0 = false;
         if (currentEdgeIndex == 0) {
             currentEdge = edges.get(currentEdgeIndex);
@@ -142,7 +149,7 @@ public class KruskalAlgorithm {
 
         if (currentEdgeIndex <= 0) {
             if (!isPrevAtIndex0)
-                JOptionPane.showMessageDialog(window, "You can't click this button because you haven't pressed the button \"step\" yet");
+                throw new PrevBeforeStepException("You can't click this button because you haven't pressed the button \"step\" yet");
             return;
         }
 

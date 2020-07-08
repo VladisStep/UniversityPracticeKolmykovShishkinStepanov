@@ -1,5 +1,7 @@
 package kolmykov_shishkin_stepanov.listeners;
 
+import kolmykov_shishkin_stepanov.AddEdgeWindow;
+import kolmykov_shishkin_stepanov.AlgorithmLoggingWindow;
 import kolmykov_shishkin_stepanov.Window;
 
 import javax.swing.*;
@@ -15,13 +17,13 @@ public class RunActionListener implements ActionListener {
 
     @Override
     public void actionPerformed(ActionEvent e) {
-        if (window.checkValidate()){
+        try {
+            window.runAlgorithm();
             window.changeEnableOfRunAlgButton();
             window.redraw();
-            window.runAlgorithm();
         }
-        else {
-            JOptionPane.showMessageDialog(window, "Graph is not connected");
+        catch (Exception ex){
+            JOptionPane.showMessageDialog(window, ex.getMessage());
         }
     }
 }

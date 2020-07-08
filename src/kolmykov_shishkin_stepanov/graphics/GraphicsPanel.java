@@ -16,7 +16,16 @@ public class GraphicsPanel extends JPanel {
     private final int RECT_H = 15;
     private final int RECT_W = 15;
 
+    private Node[] lastNodes;
+
+    public void redrawGraph() {
+        if(lastNodes != null) {
+            drawGraph(lastNodes);
+        }
+    }
+
     public void drawGraph(Node[] nodes) { //Для каждой вершины отрисовывается вершина и ребра к ее соседям
+        this.lastNodes = nodes;
         clear();
         for (Node node : nodes) {
             drawNode(node.getNumber(), nodes.length);
