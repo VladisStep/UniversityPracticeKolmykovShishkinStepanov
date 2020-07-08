@@ -34,5 +34,7 @@ public class CreateThirdExampleActionListener implements ActionListener {
         window.addEdge(3, 5, 14);
         window.addEdge(5, 4, 10);
         window.addEdge(3, 4, 9);
+
+        window.log("Third example loaded");
     }
 }

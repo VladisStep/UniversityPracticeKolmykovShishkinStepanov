@@ -24,17 +24,22 @@ public class CreateNodeActionListener implements ActionListener {
             num = Integer.parseInt(input);
         }catch (NumberFormatException ex) {
             JOptionPane.showMessageDialog(window, "Incorrect input");
+            window.log("Error: Incorrect input");
             return;
         }
         if (num < 2) {
             JOptionPane.showMessageDialog(window, "Incorrect input (< 2)");
+            window.log("Error: Incorrect input (< 2)");
             return;
         } else if (num > 15) {
             JOptionPane.showMessageDialog(window, "Incorrect input (> 15)");
+            window.log("Error: Incorrect input (> 15)");
             return;
         }
         window.setNumberOfNodes(num);
 
         window.changeEnableOfCreateMenu();
+
+        window.log("Created a new graph with " + num + " vertices");
     }
 }

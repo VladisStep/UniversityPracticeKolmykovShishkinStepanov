@@ -85,14 +85,18 @@ public class KruskalAlgorithm extends Algorithm {
     private void chooseEdge() {
         currentEdge = edges.get(currentEdgeIndex);
         currentEdge.setColor(Color.YELLOW);
+        algorithmManager.log("Select edge " + currentEdge.getFrom() + " - " + currentEdge.getTo() + " to check");
     }
 
     private void handleEdge() {
         if (dsf.union(currentEdge.getFrom(), currentEdge.getTo())) {// если ребра принадлежат разным компонентам
             currentEdge.setColor(Color.GREEN);
             minMSTWeight += currentEdge.getCapacity(); // добавляем вес ребра к стоимости MST
+            algorithmManager.log("Edge " + currentEdge.getFrom() + " - " + currentEdge.getTo() +
+                    " doesn't form cycles and is added to the spanning tree");
         } else {
             currentEdge.setColor(Color.RED);
+            algorithmManager.log("Edge " + currentEdge.getFrom() + " - " + currentEdge.getTo() + " form cycles");
         }
         currentEdgeIndex++;
     }
@@ -165,6 +169,7 @@ public class KruskalAlgorithm extends Algorithm {
     private void rechooseEdgeForPrev() {    //Если перед нажатием "prev" ребро закрашено в желтый
         currentEdge = edges.get(currentEdgeIndex);
         currentEdge.setColor(Color.BLACK);
+        algorithmManager.log("Edge " + currentEdge.getFrom() + " - " + currentEdge.getTo() + " is painted black");
     }
 
     private void rehandleEdgeForPrev() {    //Если перед нажатием "prev" ребро закрашено в зеленый или красный
@@ -175,5 +180,6 @@ public class KruskalAlgorithm extends Algorithm {
         }
         currentEdge.setColor(Color.YELLOW);
         dsf.unUnionForPrev();
+        algorithmManager.log("Edge " + currentEdge.getFrom() + " - " + currentEdge.getTo() + " is painted yellow");
     }
 }

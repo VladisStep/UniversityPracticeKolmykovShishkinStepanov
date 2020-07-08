@@ -27,5 +27,7 @@ public class CreateSecondExampleActionListener implements ActionListener {
         window.addEdge(2, 4, 6);
         window.addEdge(2, 3, 2);
         window.addEdge(3, 4, 7);
+
+        window.log("Second example loaded");
     }
 }
