@@ -316,6 +316,6 @@ public class Window extends JFrame {
     }
 
     public void log(String str) {
-        //TODO логгер
+        alw.printCondition(str);
     }
 }
