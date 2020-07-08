@@ -39,6 +39,8 @@ public class Window extends JFrame {
 
     private int nodesQuantity;
 
+    private AlgorithmLoggingWindow alw;
+
     private AlgorithmManager algorithmManager;
 
 
@@ -311,5 +313,9 @@ public class Window extends JFrame {
 
     public void makeDrawGraphRequest(Node[] nodes) {
         graphicsPanel.drawGraph(nodes);
+    }
+
+    public void log(String str) {
+        //TODO логгер
     }
 }
