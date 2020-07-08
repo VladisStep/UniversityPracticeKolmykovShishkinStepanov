@@ -7,7 +7,7 @@ import java.awt.*;
 import java.util.Map;
 
 public class GraphGraphicManager {
-    GraphicsPanel graphicsPanel;
+    private GraphicsPanel graphicsPanel;
 
     private final double RADIUS = 300; // было 450, на 13-дюймовый экран не все вершины влезают
     private final double H = 50;
