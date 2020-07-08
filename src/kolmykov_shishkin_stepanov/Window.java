@@ -3,6 +3,7 @@ package kolmykov_shishkin_stepanov;
 import kolmykov_shishkin_stepanov.algorithm.AlgorithmManager;
 import kolmykov_shishkin_stepanov.algorithm.KruskalAlgorithm;
 import kolmykov_shishkin_stepanov.exceptions.AddEdgeException;
+import kolmykov_shishkin_stepanov.graphics.GraphGraphicManager;
 import kolmykov_shishkin_stepanov.graphics.GraphicsPanel;
 import kolmykov_shishkin_stepanov.listeners.*;
 
@@ -14,13 +15,17 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.ComponentAdapter;
 import java.awt.event.ComponentEvent;
+import java.io.*;
 
 public class Window extends JFrame {
     private JMenuBar menuBar;
     private JMenu createMenu;
     private JMenuItem createNodesMenuItem;
     private JMenuItem createEdgeMenuItem;
+    private JMenuItem createFromFileMenuItem;
+
     private GraphicsPanel graphicsPanel;
+    private GraphGraphicManager graphGraphicManager;
 
     private JMenu createExampleMenu;
     private JMenuItem createFirstExampleItem;
@@ -43,6 +48,7 @@ public class Window extends JFrame {
 
     private AlgorithmManager algorithmManager;
 
+    private JFileChooser jFileChooser;
 
     public Window() {
         super("Genius app");                                // создание формы
@@ -64,6 +70,20 @@ public class Window extends JFrame {
         createEdgeMenuItem.addActionListener(new CreateEdgeActionListener(this));
         createMenu.add(createEdgeMenuItem);
         createEdgeMenuItem.setEnabled(false);                                       // блокировка кнопки "Add edge"
+        createFromFileMenuItem = new JMenuItem("From file...");
+        createFromFileMenuItem.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                int ret = jFileChooser.showDialog(null, "Open");
+                if (ret == JFileChooser.APPROVE_OPTION) {
+                    File file = jFileChooser.getSelectedFile();
+                    if (file != null) {
+                        getGraphFromFile(file);
+                    }
+                }
+            }
+        });
+        createMenu.add(createFromFileMenuItem);
 
         createExampleMenu = new JMenu("Examples");
         menuBar.add(createExampleMenu);
@@ -194,6 +214,7 @@ public class Window extends JFrame {
         createAlgorithmMenu.add(createRunItem);
 
         graphicsPanel = new GraphicsPanel();
+        graphGraphicManager = new GraphGraphicManager(graphicsPanel);
         this.add(graphicsPanel,
                 new GridBagConstraints(0, 0, 1, 1, 1, 1,
                         GridBagConstraints.NORTH,
@@ -229,6 +250,8 @@ public class Window extends JFrame {
                 redraw();
             }
         });
+
+        jFileChooser = new JFileChooser();
 
         setResizable(false);
         setVisible(true);     // отображение формы
@@ -300,7 +323,7 @@ public class Window extends JFrame {
     }
 
     public void redraw() {
-        graphicsPanel.redrawGraph();
+        graphGraphicManager.redrawGraph();
     }
 
     public void runAlgorithm () throws Exception{ algorithmManager.runAlgorithm();}
@@ -314,10 +337,34 @@ public class Window extends JFrame {
     }
 
     public void makeDrawGraphRequest(Node[] nodes) {
-        graphicsPanel.drawGraph(nodes);
+        graphGraphicManager.drawGraph(nodes);
     }
 
     public void log(String str) {
         alw.printCondition(str);
+    }
+
+    private void getGraphFromFile(File file) {
+        log("Ввод из файла" + file.getAbsolutePath());
+        try {
+            BufferedReader reader = new BufferedReader(new InputStreamReader(new FileInputStream(file)));
+            int num = Integer.parseInt(reader.readLine());
+            setNumberOfNodes(num);
+            String str;
+            while((str = reader.readLine()) != null ) {
+                String[] input = str.split("\\s");
+                int v1 = Integer.parseInt(input[0]);
+                int v2 = Integer.parseInt(input[1]);
+                int capacity = Integer.parseInt(input[2]);
+                addEdge(v1,v2, capacity);
+            }
+            changeEnableOfExample();
+        }catch (IOException e) {
+            JOptionPane.showMessageDialog(this, "IO error: " + e.getMessage());
+            log("IO error: " + e.getMessage());
+        }catch (NumberFormatException | IndexOutOfBoundsException e) {
+            JOptionPane.showMessageDialog(this, "IO error: incorrect input file");
+            log("IO error: incorrect input file");
+        }
     }
 }
