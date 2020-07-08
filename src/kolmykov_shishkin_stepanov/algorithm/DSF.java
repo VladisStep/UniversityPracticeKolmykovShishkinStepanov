@@ -1,7 +1,6 @@
 package kolmykov_shishkin_stepanov.algorithm;
 
 import java.util.ArrayList;
-import java.util.Vector;
 
 public class DSF { // класс системы непересекающихся множеств
     int[] set; // номер множества

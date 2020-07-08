@@ -1,5 +1,6 @@
 package kolmykov_shishkin_stepanov;
 
+import kolmykov_shishkin_stepanov.algorithm.AlgorithmManager;
 import kolmykov_shishkin_stepanov.algorithm.KruskalAlgorithm;
 import kolmykov_shishkin_stepanov.exceptions.AddEdgeException;
 import kolmykov_shishkin_stepanov.graphics.GraphicsPanel;
@@ -37,7 +38,7 @@ public class Window extends JFrame {
     private JLabel weightOfMST;
 
     private int nodesQuantity;
-    private KruskalAlgorithm algorithm;
+    private AlgorithmManager algorithmManager;
 
     public Window() {
         super("Genius app");                                // создание формы
@@ -100,9 +101,9 @@ public class Window extends JFrame {
         stepButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                boolean isRun = algorithm.step();
+                boolean isRun = algorithmManager.makeStep();
                 redraw();
-                weightOfMST.setText("Weight: " + algorithm.getMinMSTWeight());
+                weightOfMST.setText("Weight: " + algorithmManager.getIntermediateResultOfAlgorithm());
                 if (!isRun) {
                     changeEnableOfResultButton();
                 }
@@ -115,9 +116,13 @@ public class Window extends JFrame {
         prevButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                algorithm.prev();
-                redraw();
-                weightOfMST.setText("Weight: " + algorithm.getMinMSTWeight());
+                try {
+                    algorithmManager.makePrev();
+                    redraw();
+                    weightOfMST.setText("Weight: " + algorithmManager.getIntermediateResultOfAlgorithm());
+                }catch (Exception ex) {
+                    JOptionPane.showMessageDialog(((JButton)e.getSource()), ex.getMessage());
+                }
             }
         });
         buttonsPanel.add(prevButton);
@@ -131,10 +136,10 @@ public class Window extends JFrame {
         showResultButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                algorithm.getResult();
+                algorithmManager.getResultOfAlgorithm();
                 changeEnableOfResultButton();
                 redraw();
-                weightOfMST.setText("Weight: " + algorithm.getMinMSTWeight());
+                weightOfMST.setText("Weight: " + algorithmManager.getIntermediateResultOfAlgorithm());
             }
         });
         buttonsPanel.add(showResultButton);
@@ -167,7 +172,7 @@ public class Window extends JFrame {
         restartButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                algorithm.restart();
+                algorithmManager.restartAlgorithm();
                 redraw();
                 weightOfMST.setText("Weight: 0");
             }
@@ -188,7 +193,8 @@ public class Window extends JFrame {
                         new Insets(2, 2, 2, 2),
                         0, 0));
 
-        algorithm = new KruskalAlgorithm(this);
+        algorithmManager = new AlgorithmManager(this);
+        algorithmManager.setAlgorithm(new KruskalAlgorithm(algorithmManager));
 
         addComponentListener(new ComponentAdapter() {
             @Override
@@ -222,7 +228,7 @@ public class Window extends JFrame {
 
     public void addEdge(int number1, int number2, int capacity) {
         try {
-            algorithm.addEdge(number1, number2, capacity);
+            algorithmManager.addEdge(number1, number2, capacity);
         }
         catch (AddEdgeException eex){
             JOptionPane.showMessageDialog(this, eex.getMessage());
@@ -231,7 +237,7 @@ public class Window extends JFrame {
 
     public void setNumberOfNodes(int num) {
         nodesQuantity = num;
-        algorithm.setNumOfNodes(num);
+        algorithmManager.setNumOfNodes(num);
         makeInvisibleAlgoButtons();
     }
 
@@ -288,10 +294,10 @@ public class Window extends JFrame {
     }
 
     public void redraw() {
-        algorithm.makeDrawRequest();
+        graphicsPanel.redrawGraph();
     }
 
-    public void runAlgorithm () { algorithm.run();}
+    public void runAlgorithm () throws Exception{ algorithmManager.runAlgorithm();}
 
     public void makeInvisibleAlgoButtons() {
         weightOfMST.setVisible(false);
@@ -301,7 +307,7 @@ public class Window extends JFrame {
         restartButton.setVisible(false);
     }
 
-    public boolean checkValidate() {
-        return algorithm.isValidGraph();
+    public void makeDrawGraphRequest(Node[] nodes) {
+        graphicsPanel.drawGraph(nodes);
     }
 }
