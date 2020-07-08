@@ -21,9 +21,11 @@ public class RunActionListener implements ActionListener {
             window.runAlgorithm();
             window.changeEnableOfRunAlgButton();
             window.redraw();
+            window.log("Algorithm starts");
         }
         catch (Exception ex){
             JOptionPane.showMessageDialog(window, ex.getMessage());
+            window.log("Error: " + ex.getMessage());
         }
     }
 }
