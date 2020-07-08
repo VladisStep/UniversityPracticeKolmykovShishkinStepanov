@@ -3,6 +3,7 @@ package kolmykov_shishkin_stepanov;
 import kolmykov_shishkin_stepanov.algorithm.AlgorithmManager;
 import kolmykov_shishkin_stepanov.algorithm.KruskalAlgorithm;
 import kolmykov_shishkin_stepanov.exceptions.AddEdgeException;
+import kolmykov_shishkin_stepanov.graphics.GraphGraphicManager;
 import kolmykov_shishkin_stepanov.graphics.GraphicsPanel;
 import kolmykov_shishkin_stepanov.listeners.*;
 
@@ -20,7 +21,9 @@ public class Window extends JFrame {
     private JMenu createMenu;
     private JMenuItem createNodesMenuItem;
     private JMenuItem createEdgeMenuItem;
+
     private GraphicsPanel graphicsPanel;
+    private GraphGraphicManager graphGraphicManager;
 
     private JMenu createExampleMenu;
     private JMenuItem createFirstExampleItem;
@@ -195,6 +198,7 @@ public class Window extends JFrame {
         createAlgorithmMenu.add(createRunItem);
 
         graphicsPanel = new GraphicsPanel();
+        graphGraphicManager = new GraphGraphicManager(graphicsPanel);
         this.add(graphicsPanel,
                 new GridBagConstraints(0, 0, 1, 1, 1, 1,
                         GridBagConstraints.NORTH,
@@ -298,7 +302,7 @@ public class Window extends JFrame {
     }
 
     public void redraw() {
-        graphicsPanel.redrawGraph();
+        graphGraphicManager.redrawGraph();
     }
 
     public void runAlgorithm () throws Exception{ algorithmManager.runAlgorithm();}
@@ -312,7 +316,7 @@ public class Window extends JFrame {
     }
 
     public void makeDrawGraphRequest(Node[] nodes) {
-        graphicsPanel.drawGraph(nodes);
+        graphGraphicManager.drawGraph(nodes);
     }
 
     public void log(String str) {
