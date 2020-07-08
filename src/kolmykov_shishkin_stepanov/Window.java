@@ -57,7 +57,6 @@ public class Window extends JFrame {
         this.setLocationRelativeTo(null);                       // открытие формы посередине экрана
         this.setLayout(new GridBagLayout());
 
-
         menuBar = new JMenuBar();            // создание и установка меню-бара
         this.setJMenuBar(menuBar);
 
