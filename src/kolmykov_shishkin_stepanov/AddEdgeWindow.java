@@ -69,7 +69,6 @@ public class AddEdgeWindow extends JFrame {
                     capacity = Integer.parseInt(capacityInput.getText());
 
                     window.addEdge(v1num, v2num, capacity);
-
                 }catch (NumberFormatException ex) {
                     JOptionPane.showMessageDialog(window, "Incorrect input (NaN)");
                 }

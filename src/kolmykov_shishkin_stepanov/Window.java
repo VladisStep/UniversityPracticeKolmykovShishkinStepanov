@@ -113,8 +113,6 @@ public class Window extends JFrame {
                 if (!isRun) {
                     changeEnableOfResultButton();
                 }
-
-                alw.printCondition("STEP");
             }
         });
 
@@ -148,6 +146,7 @@ public class Window extends JFrame {
                 changeEnableOfResultButton();
                 redraw();
                 weightOfMST.setText("Weight: " + algorithmManager.getIntermediateResultOfAlgorithm());
+                log("Algorithm finished");
             }
         });
         buttonsPanel.add(showResultButton);
@@ -183,7 +182,7 @@ public class Window extends JFrame {
                 algorithmManager.restartAlgorithm();
                 redraw();
                 weightOfMST.setText("Weight: 0");
-                alw.printCondition("Algorithm restart");
+                alw.printCondition("Algorithm restarted");
             }
         });
 
@@ -238,10 +237,13 @@ public class Window extends JFrame {
     public void addEdge(int number1, int number2, int capacity) {
         try {
             algorithmManager.addEdge(number1, number2, capacity);
+            log("Added edge " + number1 + " - " + number2 + " with capacity " + capacity);
         }
         catch (AddEdgeException eex){
             JOptionPane.showMessageDialog(this, eex.getMessage());
+            log("Error: " + eex.getMessage());
         }
+
     }
 
     public void setNumberOfNodes(int num) {

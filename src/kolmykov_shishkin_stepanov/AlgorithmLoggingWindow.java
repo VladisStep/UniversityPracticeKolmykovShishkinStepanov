@@ -29,15 +29,5 @@ public class AlgorithmLoggingWindow extends JFrame {
 
     public void printCondition(String log){
         textArea.append(log + "\n");
-
-//        if (edge.getColor() == Color.YELLOW){
-//            text += "\nSelect edge " + edge.getFrom() + " - " + edge.getTo() + " to check";
-//        }
-//        else if (edge.getColor() == Color.GREEN){
-//            text += "\nEdge " + edge.getFrom() + " - " + edge.getTo() + " doesn't form cycles and is added to the spanning tree";
-//        }
-//        else if (edge.getColor() == Color.RED){
-//            text += "\nEdge " + edge.getFrom() + " - " + edge.getTo() + " form cycles";
-//        }
     }
 }
